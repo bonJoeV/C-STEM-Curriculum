@@ -1,3 +1,6 @@
+![OLP Logo](https://school.ourladyoftheprairie.com/wp-content/uploads/2017/07/logo.png)
+
+
 # OLP C-STEM Weekly Schedule
 
 This file provides the weekly schedule for **Our Lady of the Prairie Catholic School's C-STEM Program**, organized by grade groups. Each class follows a six-week rotation, incorporating hands-on STEM activities integrated with Catholic values. After Week 3, there will be a school-wide vote to extend one lesson for further exploration during Week 4.

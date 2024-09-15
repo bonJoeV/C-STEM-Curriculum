@@ -38,7 +38,7 @@ We provide additional resources to support students, parents, and teachers in th
 
 ## About the Instructor
 
-With over 30 years of experience in the tech industry, including 9 years at Microsoft leading cloud architecture programs, I am excited to bring my expertise into the classroom. I hold a BS in Business Systems and am certified in both technical training and classroom instruction. The C-STEM program reflects my passion for integrating faith with STEM, helping students see how science and technology can serve God’s purpose in the world.
+With over 30 years of experience in the tech industry, including the last 9 years at Microsoft leading cloud architecture programs, I am excited to bring my expertise into the classroom. I hold a BS in Business Systems and am certified in both technical training and classroom instruction. The C-STEM program reflects my passion for integrating faith with STEM, helping students see how science and technology can serve God’s purpose in the world.
 
 ## Contribution
 

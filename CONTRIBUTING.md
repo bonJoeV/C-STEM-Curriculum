@@ -33,7 +33,7 @@ If you have suggestions for improving or updating current lesson plans, you can 
    Fork the repository and create a branch, as detailed above.
 
 3. **Make Changes**:  
-   Edit the lesson plan to improve clarity, expand activities, or better integrate Catholic values into the lesson. Make sure to follow the same structure as the other lesson plans.
+   Edit the lesson plan to improve clarity, expand activities, or better integrate Catholic values into the lesson. Be sure to make use of any **CSCOE inventory tools** or **digital devices** like iPads and Chromebooks where appropriate.
 
 4. **Submit a Pull Request**:  
    Once your improvements are complete, submit a pull request to the `main` branch.
@@ -43,6 +43,7 @@ If you have suggestions for improving or updating current lesson plans, you can 
 If you have additional resources, such as recommended readings, tools, or external links, please:
 - Add your resource in the appropriate file in the `Resources/` folder.
 - Ensure that the resource aligns with the mission of the C-STEM program and integrates STEM concepts with Catholic teachings.
+- If your resource involves the use of technology or engineering tools from the **CSCOE STEM Inventory**, please make that clear in your submission.
 
 ### 5. Review and Approval
 
@@ -57,6 +58,7 @@ Once your pull request is submitted:
 - **Clarity and Accessibility**: Ensure that lesson plans and resources are written clearly and are easily accessible for all teachers.
 - **Consistency**: Follow the existing format and structure of lesson plans to maintain consistency across the curriculum.
 - **Test Your Lesson**: If you’re contributing a new lesson plan, make sure that you have tested the lesson in a classroom setting or with a small group.
+- **Integration of Tools**: Make sure to highlight any use of the **CSCOE STEM Inventory** tools or standard classroom technology such as iPads and Chromebooks.
 
 ---
 
