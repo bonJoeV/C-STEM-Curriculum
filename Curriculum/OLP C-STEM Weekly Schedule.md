@@ -44,7 +44,7 @@ This file provides the weekly schedule for **Our Lady of the Prairie Catholic Sc
 | **Week 36**     | 5/9/2025     | TBD                                                                                                                                  | TBD                                                                                                                                         | TBD                                                                                                                                                       |
 | **Week 37**     | 5/16/2025    | Last Class - Open                                                                                                                    | Last Class - Open                                                                                                                            | Last Class - Open                                                                                                                                        |
 
-## OLP C-STEM Timetable
+## OLP C-STEM Class Times
 
 Each class follows the same weekly structure, rotating through the lessons during the scheduled class time. 
 
