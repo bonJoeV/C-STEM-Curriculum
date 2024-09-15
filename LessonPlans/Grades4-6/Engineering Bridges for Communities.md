@@ -33,4 +33,36 @@ _Suggested Prayer_:
 
 ### **2. Introduction to Bridge Design (10 minutes)**  
 - **Discussion**: Discuss different types of bridges and how they serve communities by connecting people. Show examples of real-world bridges and explain the engineering behind their designs.
-- **Connection to Faith**:
+- **Connection to Faith**: Explain how, just as engineers design bridges to connect places, we are called to connect with and help others, building strong relationships and supporting those in need.
+
+### **3. Bridge Design Challenge (25 minutes)**  
+- **Activity**: Students will work in groups using the [EiE: Designing Bridges Kit](https://cscoe.myturn.com/library/) to build and test bridges that must support weight. Emphasize the importance of teamwork and problem-solving.
+- **Catholic Integration**: Reflect on how we are called to support each other, just like bridges support the weight of travelers. Discuss how helping others is a way of building a strong community.
+
+### **4. Reflection & Drawing Activity (10 minutes)**  
+- **Activity**: Ask students to reflect on how they worked as a team to build their bridges. Have them draw or write about how they can be "bridges" for others in their lives by offering help or support.
+- **Sharing**: Allow students to share their reflections and discuss how they can act as bridges in their communities.
+
+---
+
+## **Catholic Integration**
+- **Building Relationships**: Emphasize that, just as bridges connect people and places, we are called to help connect people and offer support in times of need.
+- **Helping Others**: Reflect on how being a bridge for others is a way of living out Jesus’ teachings to love and care for one another.
+
+---
+
+## **Assessment**
+- **Teamwork and Bridge Design**: Observe how well students collaborate to design and test their bridges.
+- **Reflection Activity**: Assess students’ understanding of how they can act as bridges in their own lives, helping others.
+
+---
+
+## **Closing Prayer (2 minutes)**  
+Conclude the lesson with a prayer asking for help in being strong bridges to those who need support.
+
+_Suggested Prayer_:
+> "Thank You, God, for giving us the opportunity to help others. Help us to be strong and supportive, like bridges, for those who need us. Amen."
+
+---
+
+**End of Lesson Plan**

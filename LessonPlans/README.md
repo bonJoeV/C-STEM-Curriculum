@@ -1,67 +1,67 @@
 # LessonPlans
 
-Welcome to the **LessonPlans** folder! This repository contains detailed STEM lesson plans designed for Catholic elementary school students, specifically for **Kindergarten**, **Grades 1-3**, and **Grades 4-6**. Each lesson integrates Catholic teachings, emphasizing stewardship, ethical responsibility, and creativity through hands-on technology and engineering activities.
+Welcome to the **LessonPlans** folder! This repository contains detailed STEM lesson plans for **Kindergarten**, **Grades 1-3**, and **Grades 4-6**. These lessons integrate Catholic teachings with STEM education, fostering creativity, ethical decision-making, and problem-solving through hands-on technology and engineering activities.
 
 ## Overview
 
-Each lesson plan spans a 50-minute session and focuses on topics related to **Technology** and **Engineering**, with strong connections to **Catholic values**. Lessons are grouped by grade level and cover a wide variety of topics ranging from **coding basics** to **engineering problem-solving** and **environmental stewardship**.
+Each lesson plan spans a 50-minute session and focuses on **Technology** and **Engineering**, with strong connections to **Catholic values** such as stewardship, respect for creation, and ethical responsibility. 
 
-The lesson plans are organized into weekly sessions, with resources drawn from the **CSCOE STEM Inventory**. These lessons are designed to encourage collaboration, critical thinking, and ethical discussions around the use of technology and engineering.
+Lesson plans are organized by grade level and week, each following a four-week structure with a specific focus for each week. Lessons utilize tools from the [CSCOE STEM Inventory](https://cscoe.myturn.com/library/) to engage students with hands-on learning.
 
 ## Lesson Plans by Grade
 
 ### Kindergarten
-- Week 1: [Navigating God’s Creation](Kindergarten/Week1.md)
-- Week 2: [Building Bridges and Connections](Kindergarten/Week2.md)
-- Week 3: [Protecting God’s Creation](Kindergarten/Week3.md)
-- Week 4: [Creating with Purpose](Kindergarten/Week4.md)
+- Week 1: [Navigating God’s Creation](Kindergarten/Navigating%20God's%20Creation.md)
+- Week 2: [Building Bridges and Connections](Kindergarten/Building%20Bridges%20and%20Connections.md)
+- Week 3: [Protecting God’s Creation](Kindergarten/Protecting%20God's%20Creation.md)
+- Week 4: [Creating with Purpose](Kindergarten/Creating%20with%20Purpose.md)
 
 ### Grades 1-3
-- Week 1: [Navigating God’s Creation](Grades1-3/Week1.md)
-- Week 2: [Building Bridges Like Engineers](Grades1-3/Week2.md)
-- Week 3: [Caring for Creation with Technology](Grades1-3/Week3.md)
-- Week 4: [Creating with Purpose](Grades1-3/Week4.md)
+- Week 1: [Navigating God’s Creation](Grades1-3/Navigating%20God's%20Creation.md)
+- Week 2: [Building Bridges Like Engineers](Grades1-3/Building%20Bridges%20Like%20Engineers.md)
+- Week 3: [Caring for Creation with Technology](Grades1-3/Caring%20for%20Creation%20with%20Technology.md)
+- Week 4: [Creating with Purpose](Grades1-3/Creating%20with%20Purpose.md)
 
 ### Grades 4-6
-- Week 1: [Navigating God’s Creation with Dash Robots](Grades4-6/Week1.md)
-- Week 2: [Engineering Bridges for Communities](Grades4-6/Week2.md)
-- Week 3: [Protecting God’s Creation with Engineering](Grades4-6/Week3.md)
-- Week 4: [Innovating for Good](Grades4-6/Week4.md)
+- Week 1: [Navigating God’s Creation with Dash Robots](Grades4-6/Navigating%20God's%20Creation%20with%20Dash%20Robots.md)
+- Week 2: [Engineering Bridges for Communities](Grades4-6/Engineering%20Bridges%20for%20Communities.md)
+- Week 3: [Protecting God’s Creation with Engineering](Grades4-6/Protecting%20God's%20Creation%20with%20Engineering.md)
+- Week 4: [Innovating for Good](Grades4-6/Innovating%20for%20Good.md)
 
 ## Catholic Integration
 
-Each lesson incorporates **Catholic teachings** in alignment with:
-- **Stewardship**: Reflecting on our responsibility to care for God’s creation and make ethical decisions in technology and engineering.
-- **Respect for Life and Creation**: Understanding the importance of protecting life and creation, as we are stewards of the Earth.
-- **Ethical Responsibility**: Promoting discussions on the responsible use of technology and innovation in alignment with Catholic values.
+Each lesson incorporates **Catholic teachings** that align with:
+- **Stewardship**: Understanding our responsibility to care for God's creation and to make ethical decisions in technology and engineering.
+- **Respect for Life and Creation**: Highlighting the importance of protecting life and creation as part of our Catholic values.
+- **Ethical Responsibility**: Promoting discussions about how to responsibly use technology to serve others and improve the world.
 
 ## CSCOE STEM Inventory
 
-The lessons utilize resources available from the [CSCOE STEM Inventory](https://cscoe.myturn.com/library/), which includes tools such as:
+The lessons utilize resources available from the [CSCOE STEM Inventory](https://cscoe.myturn.com/library/), including tools such as:
 - **Bee Bots** for coding and navigation
-- **EiE Engineering Kits** for problem-solving
-- **Dash Robots** for block coding
-- **Little Bits** for exploring circuits and technology
+- **EiE Engineering Kits** for hands-on problem-solving
+- **Dash Robots** for block coding and robotics
+- **Little Bits** for exploring circuits and electronics
 
-These tools help students gain practical experience with STEM while connecting their learning to Catholic faith and ethics.
+These tools help students gain practical STEM experience while connecting their learning to Catholic ethics and values.
 
 ## How to Use This Repository
 
-1. **Select Your Grade Level**: Choose the grade-specific folder (Kindergarten, Grades 1-3, Grades 4-6) for the appropriate lesson plans.
-2. **Download the Materials**: Each lesson includes a list of required materials and tools. Most of these can be accessed via the CSCOE STEM Inventory.
-3. **Follow the Lesson Plan**: Each lesson plan includes a step-by-step guide, objectives, Catholic integration, and assessment methods.
-4. **Catholic Discussion Prompts**: Encourage students to reflect on the Catholic values embedded in the lesson and connect them to the STEM activities.
+1. **Select Your Grade Level**: Choose the appropriate grade-specific folder for the lesson plans: **Kindergarten**, **Grades 1-3**, or **Grades 4-6**.
+2. **Download the Materials**: Each lesson includes a list of materials and tools, many of which are available through the CSCOE STEM Inventory.
+3. **Follow the Lesson Plan**: Each lesson plan provides a step-by-step guide, Catholic integration, reflection activities, and assessments.
+4. **Reflect on Catholic Values**: Encourage students to connect the Catholic values embedded in each lesson with their STEM activities.
 
 ## Contributions
 
-Feel free to contribute by:
-- Adding new lessons
+Contributions are welcome! You can contribute by:
+- Adding new lesson plans
 - Improving the integration of Catholic values
 - Offering feedback to enhance the educational experience
 
 ---
 
-For more information, check the [CSCOE STEM Inventory](https://cscoe.myturn.com/library/) or contact the repository owner.
+For more information, visit the [CSCOE STEM Inventory](https://cscoe.myturn.com/library/) or contact the repository owner.
 
 ---
 
