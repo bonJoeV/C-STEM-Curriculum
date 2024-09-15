@@ -7,7 +7,7 @@ The Grades 4-6 C-STEM curriculum deepens students' understanding of STEM concept
 
 ### Week 1: Exploring God's Patterns and Design
 - **Tool to Check Out**: Dash Robots
-- **Lesson Name**: [Navigating God's Creation with Dash Robots](../LessonPlans/Grades4-6/Navigating_God's_Creation_with_Dash_Robots.md)
+- **Lesson Name**: [Navigating God's Creation with Dash Robots](../LessonPlans/Grades4-6/Grades4-6_Navigating_God s_Creation.md)
 - **Topic**: Introduction to patterns and navigation in God’s world.
 
   **Activity**:  
@@ -18,7 +18,7 @@ The Grades 4-6 C-STEM curriculum deepens students' understanding of STEM concept
 
 ### Week 2: Building Strong Foundations
 - **Tool to Check Out**: EiE: Designing Bridges Kit
-- **Lesson Name**: [Engineering Bridges for Communities](../LessonPlans/Grades4-6/Engineering_Bridges_for_Communities.md)
+- **Lesson Name**: [Engineering Bridges for Communities](../LessonPlans/Grades4-6/Grades4-6_Engineering_Bridges_for_Communities.md)
 - **Topic**: Engineering strong and durable structures.
 
   **Activity**:  
@@ -29,7 +29,7 @@ The Grades 4-6 C-STEM curriculum deepens students' understanding of STEM concept
 
 ### Week 3: Protecting God’s Creation
 - **Tool to Check Out**: EiE: Cleaning an Oil Spill Kit
-- **Lesson Name**: [Protecting God’s Creation with Engineering](../LessonPlans/Grades4-6/Protecting_Gods_Creation_with_Engineering.md)
+- **Lesson Name**: [Protecting God’s Creation with Engineering](../LessonPlans/Grades4-6/Grades4-6_Protecting_Gods_Creation.md)
 - **Topic**: Engineering solutions to environmental challenges.
 
   **Activity**:  
@@ -40,7 +40,7 @@ The Grades 4-6 C-STEM curriculum deepens students' understanding of STEM concept
 
 ### Week 4: Innovating for Good
 - **Tool to Check Out**: Little Bits
-- **Lesson Name**: [Innovating for Good](../LessonPlans/Grades4-6/Innovating_for_Good.md)
+- **Lesson Name**: [Innovating for Good](../LessonPlans/Grades4-6/Grades4-6_Innovating_for_Good.md)
 - **Topic**: Exploring circuits and technology to create solutions.
 
   **Activity**:  
