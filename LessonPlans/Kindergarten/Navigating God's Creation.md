@@ -82,4 +82,9 @@ _Suggested Prayer_:
 
 ---
 
+## **For Parents**  
+[Navigating God's Creation](LessonPlans/Grades1-3/Parent%20Resources/Navigating%20God%27s%20Creation.md)
+
+---
+
 **End of Lesson Plan**

@@ -69,4 +69,9 @@ _Suggested Prayer_:
 
 ---
 
+## **For Parents**  
+[Building Bridges and Connections](LessonPlans/Grades1-3/Parent%20Resources/Building%20Bridges%20and%20Connections.md)
+
+---
+
 **End of Lesson Plan**
