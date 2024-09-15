@@ -17,7 +17,7 @@ In this lesson, students will explore basic coding and directional commands usin
 ---
 
 ## **Materials**
-- [Navigating God’s Creation Presentation](LessonPlans/Grades1-3/Presentations/Grades1-3_Navigating_Gods_Creation.pptx)
+- [Navigating God’s Creation Presentation](../LessonPlans/Grades1-3/Presentations/Grades1-3_Navigating_Gods_Creation.pptx)
 - [Bee Bots](https://cscoe.myturn.com/library/) (from CSCOE STEM Inventory)
 - iPads (optional for additional Bee Bot activities)
 - Large nature-themed maze mat
@@ -68,7 +68,7 @@ _Suggested Prayer_:
 ---
 
 ## **For Parents**  
-[Navigating God’s Creation](LessonPlans/Grades1-3/Parent_Resources/Grades1-3_Navigating_Gods_Creation.md)
+[Navigating God’s Creation](../LessonPlans/Grades1-3/Parent_Resources/Grades1-3_Navigating_Gods_Creation.md)
 
 ---
 

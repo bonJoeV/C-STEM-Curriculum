@@ -66,7 +66,7 @@ _Suggested Prayer_:
 ---
 
 ## **For Parents**  
-[Protecting God’s Creation](LessonPlans/Grades1-3/Parent_Resources/Protecting_Gods_Creation.md)
+[Protecting God’s Creation](../LessonPlans/Grades1-3/Parent_Resources/Protecting_Gods_Creation.md)
 
 ---
 
