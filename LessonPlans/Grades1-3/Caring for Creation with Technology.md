@@ -1,4 +1,4 @@
-# Grades 1-3: Week 3 - Caring for Creation with Technology
+# Grades 1-3: Caring for Creation with Technology
 
 ### **Grade**: 1-3  
 ### **Duration**: 50 minutes  

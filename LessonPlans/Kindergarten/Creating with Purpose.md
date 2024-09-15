@@ -1,4 +1,4 @@
-# Kindergarten Week 4: Creating with Purpose
+# Kindergarten: Creating with Purpose
 
 ### **Grade**: Kindergarten  
 ### **Duration**: 50 minutes  

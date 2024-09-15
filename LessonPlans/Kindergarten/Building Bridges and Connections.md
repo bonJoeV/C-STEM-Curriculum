@@ -1,4 +1,4 @@
-# Kindergarten Week 2: Building Bridges and Connections
+# Kindergarten: Building Bridges and Connections
 
 ### **Grade**: Kindergarten  
 ### **Duration**: 50 minutes  

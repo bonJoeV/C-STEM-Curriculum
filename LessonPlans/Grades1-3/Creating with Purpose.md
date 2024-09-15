@@ -1,4 +1,4 @@
-# Grades 1-3: Week 4 - Creating with Purpose
+# Grades 1-3: Creating with Purpose
 
 ### **Grade**: 1-3  
 ### **Duration**: 50 minutes  

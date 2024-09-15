@@ -1,4 +1,4 @@
-# Kindergarten Week 1: Navigating God's Creation
+# Kindergarten: Navigating God's Creation
 
 ### **Grade**: Kindergarten  
 ### **Duration**: 50 minutes  

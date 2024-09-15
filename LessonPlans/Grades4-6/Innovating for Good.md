@@ -1,4 +1,4 @@
-# Grades 4-6: Week 4 - Innovating for Good
+# Grades 4-6: Innovating for Good
 
 ### **Grade**: 4-6  
 ### **Duration**: 50 minutes  

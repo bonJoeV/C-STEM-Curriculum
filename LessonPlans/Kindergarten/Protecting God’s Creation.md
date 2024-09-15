@@ -1,4 +1,4 @@
-# Kindergarten Week 3: Protecting God’s Creation
+# Kindergarten: Protecting God’s Creation
 
 ### **Grade**: Kindergarten  
 ### **Duration**: 50 minutes  

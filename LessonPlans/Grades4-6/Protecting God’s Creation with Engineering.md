@@ -1,4 +1,4 @@
-# Grades 4-6: Week 3 - Protecting God’s Creation with Engineering
+# Grades 4-6: Protecting God’s Creation with Engineering
 
 ### **Grade**: 4-6  
 ### **Duration**: 50 minutes  

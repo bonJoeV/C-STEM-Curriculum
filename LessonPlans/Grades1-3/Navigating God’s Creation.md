@@ -1,4 +1,4 @@
-# Grades 1-3: Week 1 - Navigating God’s Creation
+# Grades 1-3: Navigating God’s Creation
 
 ### **Grade**: 1-3  
 ### **Duration**: 50 minutes  

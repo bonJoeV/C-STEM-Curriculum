@@ -1,4 +1,4 @@
-# Grades 1-3: Week 2 - Building Bridges Like Engineers
+# Grades 1-3: Building Bridges Like Engineers
 
 ### **Grade**: 1-3  
 ### **Duration**: 50 minutes  

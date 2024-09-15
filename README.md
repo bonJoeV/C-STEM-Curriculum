@@ -33,13 +33,13 @@ Our lesson plans are organized by grade group and provide detailed guidance for 
 - [Week 3: Protecting God’s Creation](./LessonPlans/Kindergarten/Protecting%20God's%20Creation.md)
 - [Week 4: Creating with Purpose](./LessonPlans/Kindergarten/Creating%20with%20Purpose.md)
 
-### 1st to 3rd Grade Lesson Plans
+### Grades 1-3 Lesson Plans
 - [Week 1: Navigating God’s Creation](./LessonPlans/Grades1-3/Navigating%20God's%20Creation.md)
 - [Week 2: Building Bridges Like Engineers](./LessonPlans/Grades1-3/Building%20Bridges%20Like%20Engineers.md)
 - [Week 3: Caring for Creation with Technology](./LessonPlans/Grades1-3/Caring%20for%20Creation%20with%20Technology.md)
 - [Week 4: Creating with Purpose](./LessonPlans/Grades1-3/Creating%20with%20Purpose.md)
 
-### 4th to 6th Grade Lesson Plans
+### Grades 4-6 Lesson Plans
 - [Week 1: Navigating God’s Creation with Dash Robots](./LessonPlans/Grades4-6/Navigating%20God's%20Creation%20with%20Dash%20Robots.md)
 - [Week 2: Engineering Bridges for Communities](./LessonPlans/Grades4-6/Engineering%20Bridges%20for%20Communities.md)
 - [Week 3: Protecting God’s Creation with Engineering](./LessonPlans/Grades4-6/Protecting%20God's%20Creation%20with%20Engineering.md)

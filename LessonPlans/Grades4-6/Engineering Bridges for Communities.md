@@ -1,4 +1,4 @@
-# Grades 4-6: Week 2 - Engineering Bridges for Communities
+# Grades 4-6: Engineering Bridges for Communities
 
 ### **Grade**: 4-6  
 ### **Duration**: 50 minutes  

@@ -1,4 +1,4 @@
-# Grades 4-6: Week 1 - Navigating God’s Creation with Dash Robots
+# Grades 4-6: Navigating God’s Creation with Dash Robots
 
 ### **Grade**: 4-6  
 ### **Duration**: 50 minutes  
