@@ -35,6 +35,12 @@ Our lesson plans are organized by grade group and provide detailed guidance for 
 
 - [All Lesson Plans](./Curriculum/LessonPlans/)
 
+## Big Bang Catholic STEM Fair
+
+The **Big Bang Catholic STEM Fair** is a wonderful opportunity for students to showcase their science and engineering projects, demonstrating how faith and science can work together to solve real-world problems. For more information, you can read the full guide by following the link below:
+
+[Big Bang Catholic STEM Fair Information](./Resources/Big_Bang_Catholic_STEM_Fair.md)
+
 ## Resources
 
 We provide additional resources to support students, parents, and teachers in the learning process:
