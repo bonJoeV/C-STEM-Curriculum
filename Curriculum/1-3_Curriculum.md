@@ -7,7 +7,7 @@ The Grades 1-3 C-STEM curriculum builds on foundational STEM concepts while inte
 
 ### Week 1: Exploring God's Patterns and Design
 - **Tool to Check Out**: Bee Bots
-- **Lesson Name**: [Navigating God's Creation](/LessonPlans/Grades1-3/Grades1-3_Navigating_God's_Creation.md)
+- **Lesson Name**: [Navigating God's Creation](/LessonPlans/Grades1-3/Grades1-3_Navigating_Gods_Creation.md)
 - **Topic**: Introduction to patterns and navigation in God’s world.
 
   **Activity**:  
