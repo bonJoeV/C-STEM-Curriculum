@@ -66,7 +66,7 @@ _Suggested Prayer_:
 ---
 
 ## **For Parents**  
-[Protecting God’s Creation](../LessonPlans/Kindergarten/Parent_Resources/Kindergarten_Protecting_Gods_Creation.md)
+[Protecting God’s Creation](/LessonPlans/Kindergarten/Parent_Resources/Kindergarten_Protecting_Gods_Creation.md)
 
 ---
 

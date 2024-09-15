@@ -83,7 +83,7 @@ _Suggested Prayer_:
 ---
 
 ## **For Parents**  
-[Navigating God's Creation](../LessonPlans/Kindergarten/Parent_Resources/Kindergarten_Navigating_Gods_Creation.md)
+[Navigating God's Creation](/LessonPlans/Kindergarten/Parent_Resources/Kindergarten_Navigating_Gods_Creation.md)
 
 ---
 

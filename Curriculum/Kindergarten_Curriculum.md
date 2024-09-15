@@ -18,7 +18,7 @@ Each lesson incorporates Catholic teachings, emphasizing:
 ## Topics and Activities
 
 ### 1. Introduction to Technology and Engineering
-- **Lesson Name**: [Navigating God's Creation](/LessonPlans/Kindergarten/Kindergarten_Navigating_God's_Creation.md)
+- **Lesson Name**: [Navigating God's Creation](/LessonPlans/Kindergarten/Kindergarten_Navigating_Gods_Creation.md)
 - **Objective**: To familiarize students with basic technology and simple engineering concepts.
 - **Activity**: Students will explore everyday technologies (e.g., household gadgets) and work together to build a simple structure using blocks or craft materials.
 - **Catholic Connection**: Discuss how technology helps us in our daily lives and how we can use it to care for others.

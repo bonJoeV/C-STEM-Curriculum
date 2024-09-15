@@ -12,7 +12,7 @@ At **Our Lady of the Prairie Catholic School**, we follow a six-week rotation fo
 
 If you would like to create your own C-STEM schedule, the C-STEM curriculum is flexible and allows for customization. You can adjust the sequence of lessons or the schedule to suit the needs of your classroom. For those outside of OLP or adapting for a different class, feel free to modify the schedule as follows:
 
-1. **Choose the Weekly Lesson Plans**: Pick a lesson from the available [Lesson Plans](../LessonPlans/). You can follow our 6-week structure or create a custom timeline.
+1. **Choose the Weekly Lesson Plans**: Pick a lesson from the available [Lesson Plans](/LessonPlans/). You can follow our 6-week structure or create a custom timeline.
 2. **Set the Weekly Rotation**: Assign specific days for each grade group to have their C-STEM lessons. This can be adapted based on your school’s timetable.
 3. **Plan for Open Tech Time**: If desired, designate a week for Open Tech Time or independent STEM projects such as science fair preparations.
 
@@ -60,10 +60,10 @@ Each curriculum overview highlights how STEM topics are integrated with Catholic
 In addition to the curriculum, you can explore detailed lesson plans in the **LessonPlans** folder, where you will find weekly activities, assessments, and Catholic reflections tailored to each grade group.
 
 For detailed lesson plans, visit:
-- [All Lesson Plans](../LessonPlans/)
-- [Kindergarten Lesson Plans](../LessonPlans/Kindergarten/)
-- [1st to 3rd Grade Lesson Plans](../LessonPlans/Grades1-3/)
-- [4th to 6th Grade Lesson Plans](../LessonPlans/Grades4-6/)
+- [All Lesson Plans](/LessonPlans/)
+- [Kindergarten Lesson Plans](/LessonPlans/Kindergarten/)
+- [1st to 3rd Grade Lesson Plans](/LessonPlans/Grades1-3/)
+- [4th to 6th Grade Lesson Plans](/LessonPlans/Grades4-6/)
 
 ---
 
