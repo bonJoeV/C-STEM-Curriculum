@@ -2,6 +2,12 @@
 
 Welcome to the repository for the C-STEM (Catholic STEM) program at Our Lady of the Prairie Catholic School. This repository contains the curriculum, lesson plans, and resources for Kindergarten through 6th grade. Our C-STEM curriculum, inspired by the Catholic Schools Center of Excellence (CSCOE), integrates Catholic values with Science, Technology, Engineering, and Mathematics (STEM) education.
 
+## OLP's C-STEM Schedule
+
+At **Our Lady of the Prairie Catholic School**, we follow a five-week rotation for our C-STEM program. Each grade group progresses through hands-on activities, exploring both STEM concepts and Catholic values. 
+
+[![OLP Logo](https://school.ourladyoftheprairie.com/wp-content/uploads/2017/07/logo.png)](./OLP_C-STEM_Weekly_Schedule.md)
+
 ## Program Overview
 
 The C-STEM program engages students in hands-on learning while fostering their faith and understanding of God's creation. By blending STEM concepts with Catholic teachings, students develop problem-solving skills, design-thinking abilities, and ethical responsibility. Our program emphasizes creativity and innovation while grounding students in Catholic values.
