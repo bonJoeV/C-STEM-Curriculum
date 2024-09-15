@@ -30,7 +30,7 @@ Each lesson incorporates Catholic teachings, emphasizing:
 - **Catholic Connection**: Talk about how God created the world with patterns, and how these patterns help us understand His creation.
 
 ### 3. Building Simple Machines
-- **Lesson Name**: [Protecting God's Creation](../LessonPlans/Kindergarten/Protecting%20God's%20Creation.md)
+- **Lesson Name**: [Protecting God's Creation](../LessonPlans/Kindergarten/Protecting%20God%27s%20Creation.md)
 - **Objective**: To introduce the concept of machines and how they make work easier.
 - **Activity**: Using toys or simple tools, students will explore how a lever or wheel and axle works. They will create their own simple machine with classroom materials.
 - **Catholic Connection**: Discuss how we can use machines to help each other and make the world a better place.

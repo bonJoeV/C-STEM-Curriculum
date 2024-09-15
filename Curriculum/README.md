@@ -1,6 +1,30 @@
 # C-STEM Curriculum Overview
 
-Welcome to the **C-STEM Curriculum** for Our Lady of the Prairie Catholic School. This folder contains the curriculum overviews for Kindergarten through 6th grade. The C-STEM program is designed to integrate **Catholic teachings** with **Science, Technology, Engineering, and Mathematics (STEM)**, creating a learning environment that fosters creativity, ethical responsibility, and problem-solving skills, all grounded in faith.
+Welcome to the **C-STEM Curriculum** for Our Lady of the Prairie Catholic School (OLP). This folder contains the curriculum overviews for Kindergarten through 6th grade. The C-STEM program is designed to integrate **Catholic teachings** with **Science, Technology, Engineering, and Mathematics (STEM)**, creating a learning environment that fosters creativity, ethical responsibility, and problem-solving skills, all grounded in faith.
+
+## OLP's C-STEM Schedule
+
+At **Our Lady of the Prairie Catholic School**, we follow a six-week rotation for our C-STEM program. Each grade group progresses through hands-on activities, exploring both STEM concepts and Catholic values. 
+
+[OLP C-STEM Weekly Schedule](./OLP%20C-STEM%20Weekly%20Schedule.md)
+
+## Create Your Own Schedule
+
+If you would like to create your own C-STEM schedule, the C-STEM curriculum is flexible and allows for customization. You can adjust the sequence of lessons or the schedule to suit the needs of your classroom. For those outside of OLP or adapting for a different class, feel free to modify the schedule as follows:
+
+1. **Choose the Weekly Lesson Plans**: Pick a lesson from the available [Lesson Plans](../LessonPlans/). You can follow our 6-week structure or create a custom timeline.
+2. **Set the Weekly Rotation**: Assign specific days for each grade group to have their C-STEM lessons. This can be adapted based on your school’s timetable.
+3. **Plan for Open Tech Time**: If desired, designate a week for Open Tech Time or independent STEM projects such as science fair preparations.
+
+### Sample Custom Schedule
+
+| **Day**       | **Grade**     | **Lesson**                                | **Time**      |
+|---------------|---------------|-------------------------------------------|---------------|
+| **Monday**    | Grades 3-5     | Weekly C-STEM Lesson                      | 10:00 AM - 11:00 AM |
+| **Tuesday**   | Kindergarten   | Weekly C-STEM Lesson                      | 1:00 PM - 2:00 PM |
+| **Wednesday** | Grades 1-2     | Weekly C-STEM Lesson                      | 9:00 AM - 10:00 AM |
+
+---
 
 ## Curriculum Structure
 

@@ -29,7 +29,7 @@ The Grades 4-6 C-STEM curriculum deepens students' understanding of STEM concept
 
 ### Week 3: Protecting God’s Creation
 - **Tool to Check Out**: EiE: Cleaning an Oil Spill Kit
-- **Lesson Name**: [Protecting God’s Creation with Engineering](../LessonPlans/Grades4-6/Protecting%20God's%20Creation%20with%20Engineering.md)
+- **Lesson Name**: [Protecting God’s Creation with Engineering](../LessonPlans/Grades4-6/Protecting%20God%27s%20Creation%20with%20Engineering.md)
 - **Topic**: Engineering solutions to environmental challenges.
 
   **Activity**:  
