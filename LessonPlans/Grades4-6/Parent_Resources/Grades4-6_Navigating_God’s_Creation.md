@@ -1,4 +1,4 @@
-### Parent Connection: Navigating God’s Creation with Dash Robots
+### Parent Connection: Navigating God’s Creation 
 
 #### What did we do today?
 - Today, students used Dash Robots to explore and navigate different spaces. We focused on programming the robots to move in specific ways, reflecting on how we navigate God’s creation and how technology can help us understand and appreciate the world around us.

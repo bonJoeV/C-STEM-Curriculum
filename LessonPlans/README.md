@@ -23,7 +23,7 @@ Lesson plans are organized by grade level and week, each following a four-week s
 - Week 4: [Creating with Purpose](Grades1-3/Grades1-3_Creating_with_Purpose.md)
 
 ### Grades 4-6
-- Week 1: [Navigating God’s Creation with Dash Robots](Grades4-6/Grades4-6_Navigating_Gods_Creation.md)
+- Week 1: [Navigating God’s Creation ](Grades4-6/Grades4-6_Navigating_Gods_Creation.md)
 - Week 2: [Engineering Bridges for Communities](Grades4-6/Grades4-6_Engineering_Bridges_for_Communities.md)
 - Week 3: [Protecting God’s Creation with Engineering](Grades4-6/Grades4-6_Protecting_Gods_Creation.md)
 - Week 4: [Innovating for Good](Grades4-6/Grades4-6_Innovating_for_Good.md)
