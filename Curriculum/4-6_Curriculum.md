@@ -6,19 +6,19 @@ The Grades 4-6 C-STEM curriculum deepens students' understanding of STEM concept
 ## Weekly Lessons
 
 ### Week 1: Exploring God's Patterns and Design
-- **Tool to Check Out**: Bee Bots
-- **Lesson Name**: Navigating God's Creation
+- **Tool to Check Out**: Dash Robots
+- **Lesson Name**: [Navigating God's Creation with Dash Robots](../LessonPlans/Grades4-6/Navigating%20God's%20Creation%20with%20Dash%20Robots.md)
 - **Topic**: Introduction to patterns and navigation in God’s world.
 
   **Activity**:  
-  Students will guide Bee Bots through a complex path that represents an act of service, such as delivering resources to people in need. They will be introduced to more advanced coding concepts, focusing on problem-solving and efficient navigation.
+  Students will guide Dash Robots through a complex path that represents an act of service, such as delivering resources to people in need. They will be introduced to more advanced coding concepts, focusing on problem-solving and efficient navigation.
   
   **Catholic Integration**:  
   Reflect on the Catholic teaching of helping those in need, as the robots mimic acts of service. Discuss how we are called to use our talents and resources to serve others.
 
 ### Week 2: Building Strong Foundations
 - **Tool to Check Out**: EiE: Designing Bridges Kit
-- **Lesson Name**: Building Bridges and Connections
+- **Lesson Name**: [Engineering Bridges for Communities](../LessonPlans/Grades4-6/Engineering%20Bridges%20for%20Communities.md)
 - **Topic**: Engineering strong and durable structures.
 
   **Activity**:  
@@ -29,7 +29,7 @@ The Grades 4-6 C-STEM curriculum deepens students' understanding of STEM concept
 
 ### Week 3: Protecting God’s Creation
 - **Tool to Check Out**: EiE: Cleaning an Oil Spill Kit
-- **Lesson Name**: Stewardship through Engineering
+- **Lesson Name**: [Protecting God’s Creation with Engineering](../LessonPlans/Grades4-6/Protecting%20God's%20Creation%20with%20Engineering.md)
 - **Topic**: Engineering solutions to environmental challenges.
 
   **Activity**:  
@@ -40,7 +40,7 @@ The Grades 4-6 C-STEM curriculum deepens students' understanding of STEM concept
 
 ### Week 4: Innovating for Good
 - **Tool to Check Out**: Little Bits
-- **Lesson Name**: Creating with Purpose
+- **Lesson Name**: [Innovating for Good](../LessonPlans/Grades4-6/Innovating%20for%20Good.md)
 - **Topic**: Exploring circuits and technology to create solutions.
 
   **Activity**:  
@@ -62,7 +62,7 @@ The Grades 4-6 C-STEM curriculum deepens students' understanding of STEM concept
 - Creativity and collaboration in developing solutions to real-world problems.
 
 ## Materials Needed
-- **Week 1**: Bee Bots, Chromebooks (optional for more complex programming)
+- **Week 1**: Dash Robots, Chromebooks (optional for more complex programming)
 - **Week 2**: EiE Designing Bridges Kit, Chromebooks (for research on bridge design)
 - **Week 3**: EiE Cleaning an Oil Spill Kit, Chromebooks
 - **Week 4**: Little Bits, Chromebooks

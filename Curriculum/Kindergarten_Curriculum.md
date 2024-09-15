@@ -18,26 +18,31 @@ Each lesson incorporates Catholic teachings, emphasizing:
 ## Topics and Activities
 
 ### 1. Introduction to Technology and Engineering
+- **Lesson Name**: [Navigating God's Creation](../LessonPlans/Kindergarten/Navigating%20God's%20Creation.md)
 - **Objective**: To familiarize students with basic technology and simple engineering concepts.
 - **Activity**: Students will explore everyday technologies (e.g., household gadgets) and work together to build a simple structure using blocks or craft materials.
 - **Catholic Connection**: Discuss how technology helps us in our daily lives and how we can use it to care for others.
 
 ### 2. Exploring Patterns in Nature
+- **Lesson Name**: [Building Bridges and Connections](../LessonPlans/Kindergarten/Building%20Bridges%20and%20Connections.md)
 - **Objective**: To observe and recognize patterns in the natural world, reflecting the order of God’s creation.
 - **Activity**: Students will go on a nature walk (or explore pictures of nature) and identify patterns in plants, animals, or weather.
 - **Catholic Connection**: Talk about how God created the world with patterns, and how these patterns help us understand His creation.
 
 ### 3. Building Simple Machines
+- **Lesson Name**: [Protecting God's Creation](../LessonPlans/Kindergarten/Protecting%20God's%20Creation.md)
 - **Objective**: To introduce the concept of machines and how they make work easier.
 - **Activity**: Using toys or simple tools, students will explore how a lever or wheel and axle works. They will create their own simple machine with classroom materials.
 - **Catholic Connection**: Discuss how we can use machines to help each other and make the world a better place.
 
 ### 4. Introduction to Coding and Sequencing
+- **Lesson Name**: [Creating with Purpose](../LessonPlans/Kindergarten/Creating%20with%20Purpose.md)
 - **Objective**: To introduce basic coding concepts using sequencing and patterns.
 - **Activity**: Students will participate in an unplugged coding activity, using cards or games to practice sequencing steps.
 - **Catholic Connection**: Talk about how God has a plan for everything and how we can follow His steps just like in a sequence.
 
 ### 5. Caring for God’s Creation
+- **Lesson Name**: [Caring for God’s Creation]  
 - **Objective**: To learn about environmental stewardship and how to protect the Earth.
 - **Activity**: Students will participate in a classroom recycling project or a "clean-up" activity, learning about taking care of their surroundings.
 - **Catholic Connection**: Emphasize the importance of taking care of God’s creation and being responsible stewards of the Earth.
