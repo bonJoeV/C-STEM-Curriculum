@@ -6,7 +6,7 @@ Welcome to the **LessonPlans** folder! This repository contains detailed STEM le
 
 Each lesson plan spans a 50-minute session and focuses on **Technology** and **Engineering**, with strong connections to **Catholic values** such as stewardship, respect for creation, and ethical responsibility. 
 
-Lesson plans are organized by grade level and week, each following a four-week structure with a specific focus for each week. Lessons utilize tools from the [CSCOE STEM Inventory](https://cscoe.myturn.com/library/){:target="_blank"} to engage students with hands-on learning.
+Lesson plans are organized by grade level and week, each following a four-week structure with a specific focus for each week. Lessons utilize tools from the [CSCOE STEM Inventory](https://cscoe.myturn.com/library/) to engage students with hands-on learning.
 
 ## Lesson Plans by Grade
 
@@ -61,7 +61,7 @@ Contributions are welcome! You can contribute by:
 
 ---
 
-For more information, visit the [CSCOE STEM Inventory](https://cscoe.myturn.com/library/) or contact the repository owner.
+For more information contact the repository owner.
 
 ---
 
