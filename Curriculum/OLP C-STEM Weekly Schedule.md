@@ -4,7 +4,7 @@ This file provides the weekly schedule for **Our Lady of the Prairie Catholic Sc
 
 ## Weekly Schedule Overview
 
-| **Week**     | **Kindergarten**                            | **Grades 1-3**                                   | **Grades 4-6**                                   |
+| **Week**        | **Kindergarten**                            | **Grades 1-3**                                   | **Grades 4-6**                                   |
 |--------------|---------------------------------------------|--------------------------------------------------|--------------------------------------------------|
 | **Week 1**   | [Navigating God’s Creation](../LessonPlans/Kindergarten/Navigating%20God's%20Creation.md) | [Navigating God’s Creation](../LessonPlans/Grades1-3/Navigating%20God's%20Creation.md) | [Navigating God’s Creation with Dash Robots](../LessonPlans/Grades4-6/Navigating%20God's%20Creation%20with%20Dash%20Robots.md) |
 | **Week 2**   | [Building Bridges and Connections](../LessonPlans/Kindergarten/Building%20Bridges%20and%20Connections.md) | [Building Bridges Like Engineers](../LessonPlans/Grades1-3/Building%20Bridges%20Like%20Engineers.md) | [Engineering Bridges for Communities](../LessonPlans/Grades4-6/Engineering%20Bridges%20for%20Communities.md) |
