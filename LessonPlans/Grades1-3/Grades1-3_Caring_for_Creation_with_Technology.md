@@ -66,7 +66,7 @@ _Suggested Prayer_:
 ---
 
 ## **For Parents**  
-[Caring for Creation with Technology](LessonPlans/Grades1-3/Parent%20Resources/Caring%20for%20Creation%20with%20Technology.md)
+[Caring for Creation with Technology](LessonPlans/Grades1-3/Parent_Resources/Grades1-3_Caring_for_Creation_with_Technology.md)
 
 ---
 

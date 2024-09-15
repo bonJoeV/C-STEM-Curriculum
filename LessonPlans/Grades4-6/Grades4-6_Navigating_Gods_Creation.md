@@ -66,7 +66,7 @@ _Suggested Prayer_:
 ---
 
 ## **For Parents**  
-[Navigating God’s Creation with Dash Robots](LessonPlans/Grades1-3/Parent%20Resources/Navigating%20God%27s%20Creation%20with%20Dash%20Robots.md)
+[Navigating God’s Creation with Dash Robots](LessonPlans/Grades4-6/Parent_Resources/Grades4-6_Navigating_Gods_Creation.md)
 
 ---
 

@@ -66,7 +66,7 @@ _Suggested Prayer_:
 ---
 
 ## **For Parents**  
-[Creating with Purpose](LessonPlans/Grades1-3/Parent%20Resources/Creating%20with%20Purpose.md)
+[Creating with Purpose](LessonPlans/Grades1-3/Parent_Resources/Grades1-3_Creating_with_Purpose.md)
 
 ---
 

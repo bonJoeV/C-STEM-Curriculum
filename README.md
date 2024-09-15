@@ -28,22 +28,22 @@ Each curriculum overview provides an outline of the topics covered and the Catho
 Our lesson plans are organized by grade group and provide detailed guidance for each class session, including objectives, materials, activities, and assessments. Each folder contains lesson plans for four weeks, integrating Catholic values into every aspect of the learning process:
 
 ### Kindergarten Lesson Plans
-- [Week 1: Navigating God’s Creation](./LessonPlans/Kindergarten/Navigating%20God's%20Creation.md)
-- [Week 2: Building Bridges and Connections](./LessonPlans/Kindergarten/Building%20Bridges%20and%20Connections.md)
-- [Week 3: Protecting God’s Creation](./LessonPlans/Kindergarten/Protecting%20God's%20Creation.md)
-- [Week 4: Creating with Purpose](./LessonPlans/Kindergarten/Creating%20with%20Purpose.md)
+- [Week 1: Navigating God’s Creation](./LessonPlans/Kindergarten/Navigating_God's_Creation.md)
+- [Week 2: Building Bridges and Connections](./LessonPlans/Kindergarten/Building_Bridges_and_Connections.md)
+- [Week 3: Protecting God’s Creation](./LessonPlans/Kindergarten/Protecting_God's_Creation.md)
+- [Week 4: Creating with Purpose](./LessonPlans/Kindergarten/Creating_with_Purpose.md)
 
 ### Grades 1-3 Lesson Plans
-- [Week 1: Navigating God’s Creation](./LessonPlans/Grades1-3/Navigating%20God's%20Creation.md)
-- [Week 2: Building Bridges Like Engineers](./LessonPlans/Grades1-3/Building%20Bridges%20Like%20Engineers.md)
-- [Week 3: Caring for Creation with Technology](./LessonPlans/Grades1-3/Caring%20for%20Creation%20with%20Technology.md)
-- [Week 4: Creating with Purpose](./LessonPlans/Grades1-3/Creating%20with%20Purpose.md)
+- [Week 1: Navigating God’s Creation](./LessonPlans/Grades1-3/Navigating_God's_Creation.md)
+- [Week 2: Building Bridges Like Engineers](./LessonPlans/Grades1-3/Building_Bridges_Like_Engineers.md)
+- [Week 3: Caring for Creation with Technology](./LessonPlans/Grades1-3/Caring_for_Creation_with_Technology.md)
+- [Week 4: Creating with Purpose](./LessonPlans/Grades1-3/Creating_with_Purpose.md)
 
 ### Grades 4-6 Lesson Plans
-- [Week 1: Navigating God’s Creation with Dash Robots](./LessonPlans/Grades4-6/Navigating%20God's%20Creation%20with%20Dash%20Robots.md)
-- [Week 2: Engineering Bridges for Communities](./LessonPlans/Grades4-6/Engineering%20Bridges%20for%20Communities.md)
-- [Week 3: Protecting God’s Creation with Engineering](./LessonPlans/Grades4-6/Protecting%20God's%20Creation%20with%20Engineering.md)
-- [Week 4: Innovating for Good](./LessonPlans/Grades4-6/Innovating%20for%20Good.md)
+- [Week 1: Navigating God’s Creation with Dash Robots](./LessonPlans/Grades4-6/Navigating_God's_Creation_with_Dash_Robots.md)
+- [Week 2: Engineering Bridges for Communities](./LessonPlans/Grades4-6/Engineering_Bridges_for_Communities.md)
+- [Week 3: Protecting God’s Creation with Engineering](./LessonPlans/Grades4-6/Protecting_God's_Creation_with_Engineering.md)
+- [Week 4: Innovating for Good](./LessonPlans/Grades4-6/Innovating_for_Good.md)
 
 ## Resources
 

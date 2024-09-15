@@ -11,22 +11,22 @@ Lesson plans are organized by grade level and week, each following a four-week s
 ## Lesson Plans by Grade
 
 ### Kindergarten
-- Week 1: [Navigating God’s Creation](Kindergarten/Navigating%20God's%20Creation.md)
-- Week 2: [Building Bridges and Connections](Kindergarten/Building%20Bridges%20and%20Connections.md)
-- Week 3: [Protecting God’s Creation](Kindergarten/Protecting%20God's%20Creation.md)
-- Week 4: [Creating with Purpose](Kindergarten/Creating%20with%20Purpose.md)
+- Week 1: [Navigating God’s Creation](Kindergarten/Navigating_God's_Creation.md)
+- Week 2: [Building Bridges and Connections](Kindergarten/Building_Bridges_and_Connections.md)
+- Week 3: [Protecting God’s Creation](Kindergarten/Protecting_God's_Creation.md)
+- Week 4: [Creating with Purpose](Kindergarten/Creating_with_Purpose.md)
 
 ### Grades 1-3
-- Week 1: [Navigating God’s Creation](Grades1-3/Navigating%20God's%20Creation.md)
-- Week 2: [Building Bridges Like Engineers](Grades1-3/Building%20Bridges%20Like%20Engineers.md)
-- Week 3: [Caring for Creation with Technology](Grades1-3/Caring%20for%20Creation%20with%20Technology.md)
-- Week 4: [Creating with Purpose](Grades1-3/Creating%20with%20Purpose.md)
+- Week 1: [Navigating God’s Creation](Grades1-3/Navigating_God's_Creation.md)
+- Week 2: [Building Bridges Like Engineers](Grades1-3/Building_Bridges_Like_Engineers.md)
+- Week 3: [Caring for Creation with Technology](Grades1-3/Caring_for_Creation_with_Technology.md)
+- Week 4: [Creating with Purpose](Grades1-3/Creating_with_Purpose.md)
 
 ### Grades 4-6
-- Week 1: [Navigating God’s Creation with Dash Robots](Grades4-6/Navigating%20God's%20Creation%20with%20Dash%20Robots.md)
-- Week 2: [Engineering Bridges for Communities](Grades4-6/Engineering%20Bridges%20for%20Communities.md)
-- Week 3: [Protecting God’s Creation with Engineering](Grades4-6/Protecting%20God's%20Creation%20with%20Engineering.md)
-- Week 4: [Innovating for Good](Grades4-6/Innovating%20for%20Good.md)
+- Week 1: [Navigating God’s Creation with Dash Robots](Grades4-6/Navigating_God's_Creation_with_Dash_Robots.md)
+- Week 2: [Engineering Bridges for Communities](Grades4-6/Engineering_Bridges_for_Communities.md)
+- Week 3: [Protecting God’s Creation with Engineering](Grades4-6/Protecting_God's_Creation_with_Engineering.md)
+- Week 4: [Innovating for Good](Grades4-6/Innovating_for_Good.md)
 
 ## Catholic Integration
 

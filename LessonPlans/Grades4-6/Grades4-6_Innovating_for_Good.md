@@ -66,7 +66,7 @@ _Suggested Prayer_:
 ---
 
 ## **For Parents**  
-[Innovating for Good](LessonPlans/Grades1-3/Parent%20Resources/Innovating%20for%20Good.md)
+[Innovating for Good](LessonPlans/Grades4-6/Parent_Resources/Grades4-6_Innovating_for_Good.md)
 
 ---
 

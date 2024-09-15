@@ -66,7 +66,7 @@ _Suggested Prayer_:
 ---
 
 ## **For Parents**  
-[Protecting God’s Creation with Engineering](LessonPlans/Grades1-3/Parent%20Resources/Protecting%20God%27s%20Creation%20with%20Engineering.md)
+[Protecting God’s Creation with Engineering](LessonPlans/Grades1-3/Parent_Resources/Grades4-6_Protecting_Gods_Creation_with_Engineering.md)
 
 ---
 
