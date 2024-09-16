@@ -57,7 +57,7 @@ def update_readme():
                 readme_content += f"- **Catholic Integration**: {lesson_info['catholic_integration']}\n"
                 readme_content += f"- **Assessment**: {lesson_info['assessment']}\n\n"
 
-    with open("README.md", "w") as readme_file:
+    with open("READMEd.md", "w") as readme_file:
         readme_file.write(readme_content)
 
 if __name__ == "__main__":
