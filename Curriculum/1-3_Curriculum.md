@@ -69,3 +69,4 @@ The Grades 1-3 C-STEM curriculum builds on foundational STEM concepts while inte
 
 ## Conclusion
 The Grades 1-3 C-STEM curriculum encourages students to explore STEM concepts through a faith-based lens, connecting their learning to Catholic teachings. Each week’s lesson helps develop their creativity, problem-solving skills, and understanding of God’s creation.
+
