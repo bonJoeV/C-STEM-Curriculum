@@ -15,6 +15,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: List repository files
+      run: ls -R
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -22,6 +25,3 @@ jobs:
 
     - name: Run script to update README2.md
       run: python update_readme.py
-      
-    - name: List repository files
-      run: ls -R
