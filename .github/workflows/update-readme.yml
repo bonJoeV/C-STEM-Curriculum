@@ -24,4 +24,4 @@ jobs:
       run: pip install pyyaml
 
     - name: Run script to update README.md
-      run: python update_readme.py
+      run: python /update_readme.py
