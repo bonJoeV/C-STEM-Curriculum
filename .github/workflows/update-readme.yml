@@ -1,4 +1,4 @@
-name: Update LessonPlans README2.md
+name: Update README
 
 on:
   push:
@@ -8,20 +8,20 @@ on:
       - LessonPlans/Grades1-3/**
 
 jobs:
-  update-readme2:
+  update-readme:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: List repository files
-      run: ls -R
-
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
 
-    - name: Run script to update README2.md
-      run: python update_readme.py
+    - name: Install dependencies
+      run: pip install pyyaml
+
+    - name: Run script to update README.md
+      run: python /home/runner/work/C-STEM-Curriculum/update_readme.py
