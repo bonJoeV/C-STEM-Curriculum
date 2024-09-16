@@ -24,4 +24,4 @@ jobs:
       run: pip install pyyaml
 
     - name: Run script to update README2.md
-      run: python /home/runner/work/C-STEM-Curriculum/update_readme.py
+      run: python update_readme.py
