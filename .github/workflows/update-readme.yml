@@ -5,7 +5,9 @@ on:
     branches:
       - main
     paths:
+      - LessonPlans/Kindergarten/**
       - LessonPlans/Grades1-3/**
+      - LessonPlans/Grades4-6/**
 
 jobs:
   update-readme2:
