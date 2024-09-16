@@ -37,7 +37,7 @@ def extract_lesson_info(filepath):
 
 def update_readme2():
     # Change the path to navigate to LessonPlans from the scripts/ directory
-    lessonplans_directory = '../LessonPlans/Grades1-3/'
+    lessonplans_directory = '/LessonPlans/Grades1-3/'
     
     # Files in the LessonPlans/Grades1-3/ directory
     files = os.listdir(lessonplans_directory)
