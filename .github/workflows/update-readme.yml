@@ -1,4 +1,4 @@
-name: Update README
+name: Update LessonPlans README2.md
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
       - LessonPlans/Grades1-3/**
 
 jobs:
-  update-readme:
+  update-readme2:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,8 +20,5 @@ jobs:
       with:
         python-version: '3.x'
 
-    - name: Install dependencies
-      run: pip install pyyaml
-
-    - name: Run script to update README.md
-      run: python /update_readme.py
+    - name: Run script to update README2.md
+      run: python update_readme.py
