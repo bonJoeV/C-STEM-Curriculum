@@ -36,7 +36,8 @@ def extract_lesson_info(filepath):
     return lesson_info
 
 def update_readme2():
-    lessonplans_directory = './LessonPlans/Grades1-3/'
+    # Change the path to navigate to LessonPlans from the scripts/ directory
+    lessonplans_directory = '../LessonPlans/Grades1-3/'
     
     # Files in the LessonPlans/Grades1-3/ directory
     files = os.listdir(lessonplans_directory)
@@ -50,7 +51,8 @@ def update_readme2():
             lesson_info = extract_lesson_info(filepath)
             
             if lesson_info["name"]:
-                readme2_content += f"### [{lesson_info['name']}]({lessonplans_directory}{file})\n"
+                # Adjust the link to the lesson plan so it works correctly in the README2.md file
+                readme2_content += f"### [{lesson_info['name']}]({file})\n"
                 readme2_content += f"- **Grade**: {lesson_info['grade']}\n"
                 readme2_content += f"- **Duration**: {lesson_info['duration']}\n"
                 readme2_content += f"- **Topic**: {lesson_info['topic']}\n"
@@ -60,7 +62,7 @@ def update_readme2():
                 readme2_content += f"- **Assessment**: {lesson_info['assessment']}\n\n"
 
     # Write the updated content to LessonPlans/README2.md
-    with open("./LessonPlans/README2.md", "w") as readme2_file:
+    with open("../LessonPlans/README2.md", "w") as readme2_file:
         readme2_file.write(readme2_content)
 
 if __name__ == "__main__":
