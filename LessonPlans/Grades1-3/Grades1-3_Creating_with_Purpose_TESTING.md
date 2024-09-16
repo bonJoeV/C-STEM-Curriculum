@@ -2,7 +2,7 @@
 
 ### **Grade**: 1-3  
 ### **Duration**: 50 minutes  
-### **Topic**: Exploring circuits and innovation
+### **Topic**: Exploring circuits and innovation again
 
 ---
 
