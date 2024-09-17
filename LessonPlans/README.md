@@ -11,22 +11,22 @@ Lesson plans are organized by grade level and week, each following a four-week s
 ## Lesson Plans by Grade
 
 ### Kindergarten
-- Week 1: [Navigating God’s Creation](../LessonPlans/Kindergarten/Kindergarten_Navigating_Gods_Creation.md)
-- Week 2: [Building Bridges and Connections](../LessonPlansKindergarten/Kindergarten_Building_Bridges_and_Connections.md)
-- Week 3: [Protecting God’s Creation](../LessonPlansKindergarten/Kindergarten_Protecting_Gods_Creation.md)
-- Week 4: [Creating with Purpose](../LessonPlansKindergarten/Kindergarten_Creating_with_Purpose.md)
+- Week 1: [Navigating God’s Creation](/LessonPlans/Kindergarten/Kindergarten_Navigating_Gods_Creation.md)
+- Week 2: [Building Bridges and Connections](/LessonPlansKindergarten/Kindergarten_Building_Bridges_and_Connections.md)
+- Week 3: [Protecting God’s Creation](/LessonPlansKindergarten/Kindergarten_Protecting_Gods_Creation.md)
+- Week 4: [Creating with Purpose](/LessonPlansKindergarten/Kindergarten_Creating_with_Purpose.md)
 
 ### Grades 1-3
-- Week 1: [Navigating God’s Creation](../LessonPlansGrades1-3/Grades1-3_Navigating_Gods_Creation.md)
-- Week 2: [Building Bridges Like Engineers](../LessonPlansGrades1-3/Grades1-3_Building_Bridges_Like_Engineers.md)
-- Week 3: [Caring for Creation with Technology](../LessonPlansGrades1-3/Grades1-3_Caring_for_Creation_with_Technology.md)
-- Week 4: [Creating with Purpose](../LessonPlansGrades1-3/Grades1-3_Creating_with_Purpose.md)
+- Week 1: [Navigating God’s Creation](/LessonPlansGrades1-3/Grades1-3_Navigating_Gods_Creation.md)
+- Week 2: [Building Bridges Like Engineers](/LessonPlansGrades1-3/Grades1-3_Building_Bridges_Like_Engineers.md)
+- Week 3: [Caring for Creation with Technology](/LessonPlansGrades1-3/Grades1-3_Caring_for_Creation_with_Technology.md)
+- Week 4: [Creating with Purpose](/LessonPlansGrades1-3/Grades1-3_Creating_with_Purpose.md)
 
 ### Grades 4-6
-- Week 1: [Navigating God’s Creation ](../LessonPlansGrades4-6/Grades4-6_Navigating_Gods_Creation.md)
-- Week 2: [Engineering Bridges for Communities](../LessonPlansGrades4-6/Grades4-6_Engineering_Bridges_for_Communities.md)
-- Week 3: [Protecting God’s Creation with Engineering](../LessonPlansGrades4-6/Grades4-6_Protecting_Gods_Creation.md)
-- Week 4: [Innovating for Good](../LessonPlansGrades4-6/Grades4-6_Innovating_for_Good.md)
+- Week 1: [Navigating God’s Creation ](/LessonPlansGrades4-6/Grades4-6_Navigating_Gods_Creation.md)
+- Week 2: [Engineering Bridges for Communities](/LessonPlansGrades4-6/Grades4-6_Engineering_Bridges_for_Communities.md)
+- Week 3: [Protecting God’s Creation with Engineering](/LessonPlansGrades4-6/Grades4-6_Protecting_Gods_Creation.md)
+- Week 4: [Innovating for Good](/LessonPlansGrades4-6/Grades4-6_Innovating_for_Good.md)
 
 ## Catholic Integration
 

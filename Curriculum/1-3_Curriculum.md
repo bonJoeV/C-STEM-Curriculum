@@ -7,7 +7,7 @@ The Grades 1-3 C-STEM curriculum builds on foundational STEM concepts while inte
 
 ### Week 1: Exploring God's Patterns and Design
 - **Tool to Check Out**: Bee Bots
-- **Lesson Name**: [Navigating God's Creation](../LessonPlans/Grades1-3/Grades1-3_Navigating_Gods_Creation.md)
+- **Lesson Name**: [Navigating God's Creation](/LessonPlans/Grades1-3/Grades1-3_Navigating_Gods_Creation.md)
 - **Topic**: Introduction to patterns and navigation in God’s world.
 
   **Activity**:  
@@ -18,7 +18,7 @@ The Grades 1-3 C-STEM curriculum builds on foundational STEM concepts while inte
 
 ### Week 2: Building Strong Foundations
 - **Tool to Check Out**: EiE: Designing Bridges Kit
-- **Lesson Name**: [Building Bridges Like Engineers](../LessonPlans/Grades1-3/Grades1-3_Building_Bridges_Like_Engineers.md)
+- **Lesson Name**: [Building Bridges Like Engineers](/LessonPlans/Grades1-3/Grades1-3_Building_Bridges_Like_Engineers.md)
 - **Topic**: Engineering strong and durable structures.
 
   **Activity**:  
@@ -29,7 +29,7 @@ The Grades 1-3 C-STEM curriculum builds on foundational STEM concepts while inte
 
 ### Week 3: Protecting God’s Creation
 - **Tool to Check Out**: EiE: Cleaning an Oil Spill Kit
-- **Lesson Name**: [Caring for Creation with Technology](../LessonPlans/Grades1-3/Grades1-3_Caring_for_Creation_with_Technology.md)
+- **Lesson Name**: [Caring for Creation with Technology](/LessonPlans/Grades1-3/Grades1-3_Caring_for_Creation_with_Technology.md)
 - **Topic**: Engineering solutions to environmental challenges.
 
   **Activity**:  
@@ -40,7 +40,7 @@ The Grades 1-3 C-STEM curriculum builds on foundational STEM concepts while inte
 
 ### Week 4: Innovating for Good
 - **Tool to Check Out**: Little Bits
-- **Lesson Name**: [Creating with Purpose](../LessonPlans/Grades1-3/Grades1-3_Creating_with_Purpose.md)
+- **Lesson Name**: [Creating with Purpose](/LessonPlans/Grades1-3/Grades1-3_Creating_with_Purpose.md)
 - **Topic**: Exploring circuits and technology to create solutions.
 
   **Activity**:  

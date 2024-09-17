@@ -70,7 +70,7 @@ For detailed lesson plans, visit:
 
 ---
 
-For more information about the C-STEM program and its faith-based approach to STEM education, visit the main [C-STEM README](../README.md).
+For more information about the C-STEM program and its faith-based approach to STEM education, visit the main [C-STEM README](/README.md).
 
 ---
 
