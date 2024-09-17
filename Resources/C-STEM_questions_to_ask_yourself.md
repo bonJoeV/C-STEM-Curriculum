@@ -1,3 +1,7 @@
+---
+layout: default
+title: "Questions to Help Find a Science Fair Project"
+---
 ## Questions to Help Find a Science Fair Project
 
 ### 1. **Interest-Based Questions**

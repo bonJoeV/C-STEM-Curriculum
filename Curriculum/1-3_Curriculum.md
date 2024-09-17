@@ -1,3 +1,8 @@
+---
+layout: default
+title: "1-3 C-STEM Curriculum"
+---
+
 # Grades 1-3 C-STEM Curriculum
 
 ## Overview

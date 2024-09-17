@@ -1,3 +1,8 @@
+---
+layout: default
+title: "COntributing to the C-STEM (Catholic STEM) Program"
+---
+
 # Contributing to the C-STEM (Catholic STEM) Program
 
 Thank you for your interest in contributing to the C-STEM Program at **Our Lady of the Prairie Catholic School**! We welcome your input, whether it’s submitting new lesson plans, improving existing resources, or helping us better integrate Catholic values into our STEM curriculum.

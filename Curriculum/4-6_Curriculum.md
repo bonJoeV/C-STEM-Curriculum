@@ -1,3 +1,8 @@
+---
+layout: default
+title: "4-6 C-STEM Curriculum"
+---
+
 # Grades 4-6 C-STEM Curriculum
 
 ## Overview

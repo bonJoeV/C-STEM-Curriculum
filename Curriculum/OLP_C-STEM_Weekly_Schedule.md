@@ -1,3 +1,8 @@
+---
+layout: default
+title: "OLP 2024-2025 Class Schedule"
+---
+
 ![OLP Logo](https://school.ourladyoftheprairie.com/wp-content/uploads/2017/07/logo.png)
 
 

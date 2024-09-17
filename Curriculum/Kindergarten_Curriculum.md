@@ -1,3 +1,7 @@
+---
+layout: default
+title: "Kindergarten C-STEM Curriculum"
+---
 # Kindergarten C-STEM Curriculum
 
 ## Overview

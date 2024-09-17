@@ -1,3 +1,7 @@
+---
+layout: default
+title: "Lesson Plans"
+---
 # LessonPlans
 
 Welcome to the **LessonPlans** folder! This repository contains detailed STEM lesson plans for **Kindergarten**, **Grades 1-3**, and **Grades 4-6**. These lessons integrate Catholic teachings with STEM education, fostering creativity, ethical decision-making, and problem-solving through hands-on technology and engineering activities.
