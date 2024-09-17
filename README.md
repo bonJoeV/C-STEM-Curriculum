@@ -10,7 +10,7 @@ Welcome to the repository for the C-STEM (Catholic STEM) program designed for Ou
 
 At **Our Lady of the Prairie Catholic School**, we follow a five-week rotation for our C-STEM program. Each grade group progresses through hands-on activities, exploring both STEM concepts and Catholic values. 
 
-[![OLP Logo](https://school.ourladyoftheprairie.com/wp-content/uploads/2017/07/logo.png)](./Curriculum/OLP_C-STEM_Weekly_Schedule.md)
+[![OLP Logo](https://school.ourladyoftheprairie.com/wp-content/uploads/2017/07/logo.png)](./Curriculum/OLP_C-STEM_Weekly_Schedule)
 
 ## Program Overview
 
@@ -27,7 +27,7 @@ The C-STEM program engages students in hands-on learning while fostering their f
 
 The C-STEM curriculum is organized into three grade groups, each with lesson plans tailored to the developmental stages of the students:
 
-- [Kindergarten Curriculum](./Curriculum/Kindergarten_Curriculum.md)
+- [Kindergarten Curriculum](./Curriculum/Kindergarten_Curriculum)
 - [1st to 3rd Grade Curriculum](./Curriculum/1-3_Curriculum.md)
 - [4th to 6th Grade Curriculum](./Curriculum/4-6_Curriculum.md)
 
