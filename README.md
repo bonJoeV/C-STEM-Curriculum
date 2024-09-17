@@ -27,7 +27,7 @@ The C-STEM program engages students in hands-on learning while fostering their f
 
 The C-STEM curriculum is organized into three grade groups, each with lesson plans tailored to the developmental stages of the students:
 
-- [Kindergarten Curriculum](./Curriculum/Kindergarten_Curriculum)
+- [Kindergarten Curriculum](./Curriculum/Kindergarten_Curriculum.md)
 - [1st to 3rd Grade Curriculum](./Curriculum/1-3_Curriculum.md)
 - [4th to 6th Grade Curriculum](./Curriculum/4-6_Curriculum.md)
 
