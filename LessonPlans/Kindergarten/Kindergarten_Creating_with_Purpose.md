@@ -66,7 +66,7 @@ _Suggested Prayer_:
 ---
 
 ## **For Parents**  
-[Creating with Purpose](/LessonPlans/Kindergarten/Parent_Resources/Kindergarten_Creating_with_Purpose.md)
+[Creating with Purpose](./Parent_Resources/Kindergarten_Creating_with_Purpose.md)
 
 ---
 

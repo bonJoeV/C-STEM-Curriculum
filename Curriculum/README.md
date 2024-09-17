@@ -15,7 +15,7 @@ At **Our Lady of the Prairie Catholic School**, we follow a five-week rotation f
 
 If you would like to create your own C-STEM schedule, the C-STEM curriculum is flexible and allows for customization. You can adjust the sequence of lessons or the schedule to suit the needs of your classroom. For those outside of OLP or adapting for a different class, feel free to modify the schedule as follows:
 
-1. **Choose the Weekly Lesson Plans**: Pick a lesson from the available [Lesson Plans](/LessonPlans/). You can follow our 6-week structure or create a custom timeline.
+1. **Choose the Weekly Lesson Plans**: Pick a lesson from the available [Lesson Plans](../LessonPlans/). You can follow our 6-week structure or create a custom timeline.
 2. **Set the Weekly Rotation**: Assign specific days for each grade group to have their C-STEM lessons. This can be adapted based on your school’s timetable.
 3. **Plan for Open Tech Time**: If desired, designate a week for Open Tech Time or independent STEM projects such as science fair preparations.
 
@@ -41,13 +41,13 @@ The Kindergarten curriculum introduces young students to basic concepts in techn
 
 ### 1st to 3rd Grade Curriculum
 
-- [1st to 3rd Grade Curriculum](./Grades1-3_Curriculum.md)
+- [1st to 3rd Grade Curriculum](1-3_Curriculum.md)
 
 The curriculum for Grades 1-3 builds on the foundational skills introduced in Kindergarten. It explores more complex concepts in technology and engineering, while continuing to emphasize **faith-based values** such as teamwork, ethical responsibility, and care for creation. Lessons are designed to engage students in hands-on activities, promoting **inquiry** and **collaboration**.
 
 ### 4th to 6th Grade Curriculum
 
-- [4th to 6th Grade Curriculum](./Grades4-6_Curriculum.md)
+- [4th to 6th Grade Curriculum](./4-6_Curriculum.md)
 
 For Grades 4-6, the curriculum introduces advanced concepts in STEM, focusing on **design thinking**, **innovation**, and **problem-solving**. Students are encouraged to reflect on the ethical implications of technology and how they can use their skills to serve others and care for God's creation. This curriculum prepares students for more challenging engineering and technology projects while maintaining a strong focus on **Catholic teachings**.
 
@@ -63,14 +63,14 @@ Each curriculum overview highlights how STEM topics are integrated with Catholic
 In addition to the curriculum, you can explore detailed lesson plans in the **LessonPlans** folder, where you will find weekly activities, assessments, and Catholic reflections tailored to each grade group.
 
 For detailed lesson plans, visit:
-- [All Lesson Plans](/LessonPlans/)
-- [Kindergarten Lesson Plans](/LessonPlans/Kindergarten/)
-- [1st to 3rd Grade Lesson Plans](/LessonPlans/Grades1-3/)
-- [4th to 6th Grade Lesson Plans](/LessonPlans/Grades4-6/)
+- [All Lesson Plans](../LessonPlans/)
+- [Kindergarten Lesson Plans](../LessonPlans/Kindergarten/)
+- [1st to 3rd Grade Lesson Plans](../LessonPlans/Grades1-3/)
+- [4th to 6th Grade Lesson Plans](../LessonPlans/Grades4-6/)
 
 ---
 
-For more information about the C-STEM program and its faith-based approach to STEM education, visit the main [C-STEM README](/README.md).
+For more information about the C-STEM program and its faith-based approach to STEM education, visit the main [C-STEM README](../README.md).
 
 ---
 

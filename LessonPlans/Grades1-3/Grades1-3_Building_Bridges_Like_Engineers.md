@@ -66,7 +66,7 @@ _Suggested Prayer_:
 
 ---
 ## **For Parents**  
-[Building Bridges Like Engineers](/LessonPlans/Grades1-3/Parent_Resources/Grades1-3_Building_Bridges_Like_Engineers.md)
+[Building Bridges Like Engineers](./Parent_Resources/Grades1-3_Building_Bridges_Like_Engineers.md)
 
 ---
 

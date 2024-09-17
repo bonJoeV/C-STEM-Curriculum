@@ -25,5 +25,5 @@ jobs:
     - name: Install dependencies
       run: pip install pyyaml
 
-    - name: Run script to update README2.md
+    - name: Run script to update README.md
       run: python scripts/update_readme.py

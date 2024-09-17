@@ -66,7 +66,7 @@ _Suggested Prayer_:
 ---
 
 ## **For Parents**  
-[Engineering Bridges for Communities](/LessonPlans/Grades4-6/Parent_Resources/Grades4-6_Engineering_Bridges_for_Communities.md)
+[Engineering Bridges for Communities](./Parent_Resources/Grades4-6_Engineering_Bridges_for_Communities.md)
 
 ---
 

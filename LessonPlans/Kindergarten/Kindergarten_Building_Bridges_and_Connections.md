@@ -70,7 +70,7 @@ _Suggested Prayer_:
 ---
 
 ## **For Parents**  
-[Building Bridges and Connections](/LessonPlans/Kindergarten/Parent_Resources/Kindergarten_Building_Bridges_and_Connections.md)
+[Building Bridges and Connections](./Parent_Resources/Kindergarten_Building_Bridges_and_Connections.md)
 
 ---
 
