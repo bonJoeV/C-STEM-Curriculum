@@ -1,3 +1,7 @@
+---
+layout: default
+title: "Curriculam"
+---
 # C-STEM Curriculum Overview
 
 Welcome to the **C-STEM Curriculum** for Our Lady of the Prairie Catholic School (OLP). This folder contains the curriculum overviews for Kindergarten through 6th grade. The C-STEM program is designed to integrate **Catholic teachings** with **Science, Technology, Engineering, and Mathematics (STEM)**, creating a learning environment that fosters creativity, ethical responsibility, and problem-solving skills, all grounded in faith.
