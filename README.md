@@ -37,7 +37,7 @@ Each curriculum overview provides an outline of the topics covered and the Catho
 
 Our lesson plans are organized by grade group and provide detailed guidance for each class session, including objectives, materials, activities, and assessments. Each folder contains lesson plans for four weeks, integrating Catholic values into every aspect of the learning process:
 
-- [All Lesson Plans](./LessonPlans/)
+- [All Lesson Plans](./LessonPlans/README.md)
 
 ## Big Bang Catholic STEM Fair
 
