@@ -54,6 +54,8 @@ This file outlines the weekly schedule for **Our Lady of the Prairie Catholic Sc
 | **Week 36** | 5/9/2025 | TBD| TBD | TBD |
 | **Week 37** | 5/16/2025| Last Class - Open| Last Class - Open| Last Class - Open|
 
+---
+
 ## OLP C-STEM Class Times
 
 Each class follows the same weekly structure, rotating through the lessons during the scheduled class time. 
@@ -63,6 +65,17 @@ Each class follows the same weekly structure, rotating through the lessons durin
 | **Friday**| Kindergarten| Weekly C-STEM Lesson| 8:20 AM - 9:10 AM |
 | **Friday** | Grades 1-3| Weekly C-STEM Lesson| 9:10 AM - 10:00 AM |
 | **Friday** | Grades 4-6 | Weekly C-STEM Lesson| 10:00 AM - 10:50 PM |
+
+---
+
+# Grading Breakdown
+
+| **Category**                       | **Percentage** | **Criteria**                                                                                       |
+|------------------------------------|----------------|----------------------------------------------------------------------------------------------------|
+| STEM Knowledge and Skills           | 40%            | Coding, robotics, engineering design cycle, creativity in problem-solving.                          |
+| Collaboration and Communication     | 20%            | Teamwork, ability to explain concepts and integrate Catholic values in discussions or presentations. |
+| Ethical Reasoning and Catholic Integration | 20%     | Understanding of stewardship, respect for life, ethical use of technology, connection of faith to STEM. |
+| Effort and Growth                   | 20%            | Persistence, growth in skills, ability to learn from mistakes.                                      |
 
 ---
 
