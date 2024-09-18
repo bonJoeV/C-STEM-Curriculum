@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "1-3 C-STEM Curriculum"
+description: "Curriculam for grade 1-3"
 ---
 
 # Grades 1-3 C-STEM Curriculum
