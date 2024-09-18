@@ -20,6 +20,7 @@ In this lesson, students will explore basic circuits using Little Bits to create
 - [Little Bits](https://cscoe.myturn.com/library/) (from CSCOE STEM Inventory)
 - iPads (optional for extended learning)
 - Drawing paper and crayons
+- [Instructor Presentation](./Presentations/Kindergarten_Creating_with_Purpose.pptx)
 
 ---
 

@@ -1,5 +1,6 @@
 ---
 layout: default
-title: "Reccommended Readings"
+title: "Recommended Readings"
+description: "Recommended Readings on C-STEM"
 ---
 TBD

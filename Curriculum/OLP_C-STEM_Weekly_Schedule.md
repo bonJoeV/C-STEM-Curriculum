@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "OLP 2024-2025 Class Schedule"
+description: "Links to lesson plans for each week"
 ---
 
 ![OLP Logo](https://school.ourladyoftheprairie.com/wp-content/uploads/2017/07/logo.png)

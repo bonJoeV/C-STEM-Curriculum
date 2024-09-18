@@ -20,6 +20,7 @@ In this lesson, students will design and build bridges using engineering princip
 - [EiE: Designing Bridges Kit](https://cscoe.myturn.com/library/) (from CSCOE STEM Inventory)
 - Chromebooks (optional for research)
 - Paper and pencils for planning
+- [Instructor Presentation](./Presentations/Grades4-6_Engineering_Bridges_for_Communities.pptx)
 
 ---
 

@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Parent Connection: Innovating for Good"
+description: "Connecting parents to student achievement"
+---
 ### Parent Connection: Innovating for Good
 
 #### What did we do today?

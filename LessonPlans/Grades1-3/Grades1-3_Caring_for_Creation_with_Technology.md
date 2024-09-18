@@ -20,6 +20,7 @@ In this lesson, students will simulate cleaning up an oil spill, exploring how e
 - [EiE: Cleaning an Oil Spill Kit](https://cscoe.myturn.com/library/) (from CSCOE STEM Inventory)
 - Water, sponges, and paper towels (for the oil spill simulation)
 - Drawing paper and crayons
+- [Instructor Presentation](./Presentations/Grades1-3_Caring_for_Creation_with_Technology.pptx)
 
 ---
 

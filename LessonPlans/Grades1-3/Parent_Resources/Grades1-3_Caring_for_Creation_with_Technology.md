@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Parent Connection: Caring for Creation with Technology"
+description: "Connecting parents to student achievement"
+---
 ### Parent Connection: Caring for Creation with Technology
 
 #### What did we do today?

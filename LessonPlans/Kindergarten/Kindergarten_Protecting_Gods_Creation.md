@@ -20,6 +20,7 @@ In this lesson, students will learn about how engineers help protect the environ
 - [EiE: Cleaning an Oil Spill Kit](https://cscoe.myturn.com/library/) (from CSCOE STEM Inventory)
 - Classroom materials for cleanup simulation (water, paper towels, sponges, oil)
 - Drawing paper and crayons
+- [Instructor Presentation](./Presentations/Kindergarten_Protecting_Gods_Creation.pptx)
 
 ---
 

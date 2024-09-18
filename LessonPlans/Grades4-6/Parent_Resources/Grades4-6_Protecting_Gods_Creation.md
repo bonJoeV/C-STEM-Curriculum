@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Parent Connection: Protecting God’s Creation with Engineering"
+description: "Connecting parents to student achievement"
+---
 ### Parent Connection: Protecting God’s Creation with Engineering
 
 #### What did we do today?

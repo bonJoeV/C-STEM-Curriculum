@@ -20,6 +20,7 @@ In this lesson, students will explore basic coding and navigation using Dash Rob
 - [Dash Robots](https://cscoe.myturn.com/library/) (from CSCOE STEM Inventory)
 - Chromebooks for block coding (optional)
 - Drawing paper and pencils
+- [Instructor Presentation](./Presentations/Grades4-6_Navigating_Gods_Creation.pptx)
 
 ---
 

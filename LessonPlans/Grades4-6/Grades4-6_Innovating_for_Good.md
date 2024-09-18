@@ -20,6 +20,7 @@ In this lesson, students will explore circuits using Little Bits. They will refl
 - [Little Bits](https://cscoe.myturn.com/library/) (from CSCOE STEM Inventory)
 - Chromebooks (optional for extended learning)
 - Drawing paper and pencils
+- [Instructor Presentation](./Presentations/Grades4-6_Innovating_for_Good.pptx)
 
 ---
 

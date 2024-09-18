@@ -21,6 +21,7 @@ In this lesson, students will explore building bridges using basic materials. Th
 - Lego Kit #1
 - iPads (optional for additional exploration)
 - Drawing paper and crayons
+- [Instructor Presentation](./Presentations/Kindergarten_Building_Bridges_and_Connections.pptx)
 
 ---
 

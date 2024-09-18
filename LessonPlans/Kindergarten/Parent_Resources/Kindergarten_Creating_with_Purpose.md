@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Parent Connection: Creating with Purpose"
+description: "Connecting parents to student achievement"
+---
 ### Parent Connection: Creating with Purpose
 
 #### What did we do today?

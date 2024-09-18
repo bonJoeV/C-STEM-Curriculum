@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Parent Connection: Engineering Bridges for Communities"
+description: "Connecting parents to student achievement"
+---
 ### Parent Connection: Engineering Bridges for Communities
 
 #### What did we do today?

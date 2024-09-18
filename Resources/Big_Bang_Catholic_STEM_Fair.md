@@ -1,10 +1,11 @@
 ---
 layout: default
-title: "Big Bang Catholic STEM Fair"
+title: "C-STEM Fair"
+description: "OLP & Big Bang Catholic C-STEM Fairs"
 ---
-# Big Bang Catholic STEM Fair
+## OLP C-STEM Fair
 
-**Note:** The OLP Science Fair will be held prior to the CSCOE-sponsored Big Bang Catholic STEM Fair. The date for the OLP Science Fair is **TBD**. Students in **Grades 3-6** are encouraged to participate and showcase their projects. This will be an excellent opportunity to prepare for the larger archdiocesan event.
+**Note:** The OLP Science Fair will be held prior to the CSCOE-sponsored Big Bang Catholic STEM Fair. The date for the OLP Science Fair is during Catholic schools week. Students in **Grades 3-6** are encouraged to participate and showcase their projects. This will be an excellent opportunity to prepare for the larger archdiocesan event.
 
 ## Big Bang Catholic STEM Fair
 

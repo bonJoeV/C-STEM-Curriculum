@@ -21,6 +21,7 @@ In this lesson, students will be introduced to basic coding and navigation conce
 - iPads (optional for extra activities)
 - Large maze mat with nature elements (trees, flowers, animals)
 - Markers and drawing paper
+- [Instructor Presentation](./Presentations/Kindergarten_Navigating_Gods_Creation.pptx)
 
 ---
 

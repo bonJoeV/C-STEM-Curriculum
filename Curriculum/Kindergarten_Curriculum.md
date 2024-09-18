@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Kindergarten C-STEM Curriculum"
+description: "Curriculam for Kindergarten"
 ---
 # Kindergarten C-STEM Curriculum
 

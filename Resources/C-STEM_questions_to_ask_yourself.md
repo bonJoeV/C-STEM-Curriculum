@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Questions to Help Find a Science Fair Project"
+description: "OLP & Big Bang Catholic C-STEM Fairs"
 ---
 ## Questions to Help Find a Science Fair Project
 

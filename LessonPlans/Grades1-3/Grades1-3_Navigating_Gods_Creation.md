@@ -22,6 +22,7 @@ In this lesson, students will explore basic coding and directional commands usin
 - iPads (optional for additional Bee Bot activities)
 - Large nature-themed maze mat
 - Drawing paper and crayons
+- [Instructor Presentation](./Presentations/Grades1-3_Navigating_Gods_Creation.pptx)
 
 ---
 

@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Parent Connection: Building Bridges and Connections"
+description: "Connecting parents to student achievement"
+---
 ### Parent Connection: Building Bridges and Connections
 
 #### What did we do today?

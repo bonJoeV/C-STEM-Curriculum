@@ -20,6 +20,7 @@ In this lesson, students will explore how circuits work using Little Bits. They 
 - [Little Bits](https://cscoe.myturn.com/library/) (from CSCOE STEM Inventory)
 - iPads (optional for extended learning)
 - Drawing paper and crayons
+- [Instructor Presentation](./Presentations/Grades1-3_Creating_with_Purpose.pptx)
 
 ---
 

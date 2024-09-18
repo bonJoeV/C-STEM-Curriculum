@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Parent Connection: Navigating God’s Creation"
+description: "Connecting parents to student achievement"
+---
 ### Parent Connection: Navigating God’s Creation
 
 #### What did we do today?

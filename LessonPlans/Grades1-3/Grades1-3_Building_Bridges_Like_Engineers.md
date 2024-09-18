@@ -21,6 +21,7 @@ In this lesson, students will work together to design and test simple bridges us
 - iPads (for research on bridge designs, optional)
 - Paper and pencils for planning
 - Lego Kit #1 (available in the classroom)
+- [Instructor Presentation](./Presentations/Grades1-3_Building_Bridges_Like_Engineers.pptx)
 
 ---
 
