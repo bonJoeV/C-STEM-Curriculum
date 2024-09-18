@@ -68,7 +68,7 @@ Each class follows the same weekly structure, rotating through the lessons durin
 
 ---
 
-# Grading Breakdown
+## Grading Breakdown
 
 | **Category**                       | **Percentage** | **Criteria**                                                                                       |
 |------------------------------------|----------------|----------------------------------------------------------------------------------------------------|
