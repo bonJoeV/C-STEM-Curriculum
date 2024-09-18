@@ -7,6 +7,7 @@ description: "Ideas for curriculam, plans, and project"
 
 - Dynamic list for lesson plans
 - Figure out what apps are needed on the iPad
+- Build teacher prep for each lesson
 
 ## C-STEM Planned Curriculum 
 
