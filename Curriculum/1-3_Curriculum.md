@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "1-3 C-STEM Curriculum"
-description: "Curriculam for grade 1-3"
+description: "Curriculum for Grades 1-3"
 ---
 
 # Grades 1-3 C-STEM Curriculum
@@ -11,68 +11,75 @@ The Grades 1-3 C-STEM curriculum builds on foundational STEM concepts while inte
 
 ## Weekly Lessons
 
-### Week 1: Exploring God's Patterns and Design
-- **Tool to Check Out**: Bee Bots
-- **Lesson Name**: [Navigating God's Creation](../LessonPlans/Grades1-3/Grades1-3_Navigating_Gods_Creation.md)
-- **Topic**: Introduction to patterns and navigation in God’s world.
+### Lesson: Exploring God's Patterns and Design
 
-  **Activity**:  
-  Students will use Bee Bots to follow a path resembling a story from the Bible, such as the journey of the Israelites. Basic coding concepts will be introduced, showing how programming allows us to follow steps, just as God guides us through life.
-  
-  **Catholic Integration**:  
-  Discuss how God guides us through our lives, just as we guide the Bee Bots through their paths.
+- **Topic:** Introduction to patterns and navigation in God’s world
+- **Tools:** Bee Bot 10 pack
+- **Activity:**
+  - Students will use Bee Bots to follow a path that represents a story from the Bible, such as the journey of the Israelites.
+  - Introduce basic coding concepts and demonstrate how programming helps follow steps, just as God guides us through life.
+- **Catholic Integration:**
+  - Discuss how God guides us through life, just as we guide the Bee Bots along their paths.
+  - Emphasize the importance of following God’s direction and listening to His guidance.
 
-### Week 2: Building Strong Foundations
-- **Tool to Check Out**: EiE: Designing Bridges Kit
-- **Lesson Name**: [Building Bridges Like Engineers](../LessonPlans/Grades1-3/Grades1-3_Building_Bridges_Like_Engineers.md)
-- **Topic**: Engineering strong and durable structures.
+---
 
-  **Activity**:  
-  In teams, students will design and build bridges using the EiE Designing Bridges Kit. They will test different materials to explore the concept of strength and durability, solving problems as they adjust their designs.
-  
-  **Catholic Integration**:  
-  Discuss how building bridges helps connect people, just as Jesus connects us to God.
+### Lesson: Building Strong Foundations
 
-### Week 3: Protecting God’s Creation
-- **Tool to Check Out**: EiE: Cleaning an Oil Spill Kit
-- **Lesson Name**: [Caring for Creation with Technology](../LessonPlans/Grades1-3/Grades1-3_Caring_for_Creation_with_Technology.md)
-- **Topic**: Engineering solutions to environmental challenges.
+- **Topic:** Engineering strong and durable structures
+- **Tools:** EiE: Designing Bridges Kit
+- **Activity:**
+  - In teams, students will design and build bridges using the EiE Designing Bridges Kit.
+  - They will test different materials to understand the concepts of strength and durability, solving problems as they modify their designs.
+- **Catholic Integration:**
+  - Discuss how bridges connect people, just as Jesus connects us to God and to each other.
+  - Emphasize teamwork and collaboration, reflecting how communities work together in faith.
 
-  **Activity**:  
-  Students will simulate cleaning an oil spill using the EiE kit. They will explore various methods for absorbing and containing the spill, discussing the environmental impacts of pollution.
-  
-  **Catholic Integration**:  
-  Reflect on the Catholic teaching of stewardship, emphasizing our responsibility to care for God’s creation.
+---
 
-### Week 4: Innovating for Good
-- **Tool to Check Out**: Little Bits
-- **Lesson Name**: [Creating with Purpose](../LessonPlans/Grades1-3/Grades1-3_Creating_with_Purpose.md)
-- **Topic**: Exploring circuits and technology to create solutions.
+### Lesson: Protecting God’s Creation
 
-  **Activity**:  
-  Students will design a small device using Little Bits that has a functional purpose, such as turning on a light when it’s dark. This introduces basic circuitry and problem-solving with technology.
-  
-  **Catholic Integration**:  
-  Discuss how technology can be used for good, and how innovation reflects God's creative spirit in us.
+- **Topic:** Engineering solutions to environmental challenges
+- **Tools:** EiE: Cleaning an Oil Spill Kit
+- **Activity:**
+  - Students will simulate cleaning an oil spill using the EiE kit.
+  - Explore various methods for absorbing and containing the spill, discussing the impact of pollution on God’s creation.
+- **Catholic Integration:**
+  - Reflect on the Catholic teaching of stewardship and our responsibility to care for God’s creation.
+  - Discuss the importance of protecting the Earth and using technology to solve environmental problems.
 
-## Catholic Integration Themes
-- **Week 1**: God’s guidance in our lives, reflected through coding and navigation.
-- **Week 2**: Building strong connections, both structurally and in our relationships with God and others.
-- **Week 3**: Stewardship of creation, taking responsibility for protecting the environment.
-- **Week 4**: Using our creative gifts and technology to serve others and honor God’s design.
+---
+
+### Lesson: Innovating for Good
+
+- **Topic:** Exploring circuits and technology to create solutions
+- **Tools:** Little Bits
+- **Activity:**
+  - Students will design a small device using Little Bits that has a functional purpose, such as turning on a light when it’s dark.
+  - This introduces basic circuitry and problem-solving with technology, fostering creativity.
+- **Catholic Integration:**
+  - Discuss how technology can be used for good and how innovation reflects God’s creative spirit in us.
+  - Emphasize how our gifts and talents can be used to serve others and make the world a better place.
+
+---
+
+### Lesson: Introduction to Robotics with EV3
+
+- **Topic:** Robotics fundamentals and programming
+- **Tools:** EV3 units
+- **Activity:**
+  - Introduce the EV3 robot and its components.
+  - Program the EV3 robot to move in a straight line and complete simple tasks.
+  - Challenge: Create an obstacle course representing parts of God’s creation for the robot to navigate.
+- **Catholic Integration:**
+  - Discuss our role as stewards of God’s gifts and how we can use technology ethically to care for creation.
+  - Emphasize responsibility and using technology to solve problems for the common good.
 
 ## Assessment
 - Participation in group activities and class discussions.
 - Ability to follow steps and complete coding or building tasks.
-- Understanding of the Catholic values and their integration into STEM concepts.
-- Problem-solving and teamwork displayed during engineering and design challenges.
-
-## Materials Needed
-- **Week 1**: Bee Bots, iPads (optional for additional guidance)
-- **Week 2**: EiE Designing Bridges Kit, iPads
-- **Week 3**: EiE Cleaning an Oil Spill Kit, iPads
-- **Week 4**: Little Bits, iPads
+- Understanding of Catholic values and how they are integrated into STEM concepts.
+- Problem-solving and teamwork skills displayed during engineering and design challenges.
 
 ## Conclusion
 The Grades 1-3 C-STEM curriculum encourages students to explore STEM concepts through a faith-based lens, connecting their learning to Catholic teachings. Each week’s lesson helps develop their creativity, problem-solving skills, and understanding of God’s creation.
-

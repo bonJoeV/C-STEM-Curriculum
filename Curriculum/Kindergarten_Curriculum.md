@@ -1,68 +1,89 @@
 ---
 layout: default
 title: "Kindergarten C-STEM Curriculum"
-description: "Curriculam for Kindergarten"
+description: "Curriculum for Kindergarten"
 ---
+
 # Kindergarten C-STEM Curriculum
 
 ## Overview
-The Kindergarten C-STEM curriculum introduces young students to basic STEM concepts through hands-on activities, storytelling, and exploration of God's creation. This curriculum encourages curiosity, creativity, and foundational problem-solving skills, while integrating Catholic values and teachings.
+The Kindergarten C-STEM curriculum introduces students to foundational STEM concepts through interactive activities that emphasize creativity, exploration, and faith. Each lesson encourages curiosity and problem-solving while integrating Catholic values and teachings about God’s creation.
 
 ### Learning Objectives
-- Develop a basic understanding of Science, Technology, Engineering, and Math.
-- Encourage curiosity about how the world works through the lens of God’s creation.
-- Foster creativity and teamwork through collaborative projects and activities.
-- Introduce simple problem-solving skills by engaging students in fun, interactive tasks.
+- Develop an introductory understanding of Science, Technology, Engineering, and Math.
+- Encourage curiosity and awe about how the world works, seeing it as a reflection of God’s creation.
+- Foster creativity, collaboration, and teamwork through hands-on projects.
+- Introduce simple problem-solving skills by engaging students in interactive tasks.
 
 ### Catholic Values Integration
-Each lesson incorporates Catholic teachings, emphasizing:
-- **Stewardship**: Understanding how we can take care of God’s creation through responsible use of technology and resources.
-- **Gratitude**: Learning to appreciate the wonders of the natural world as gifts from God.
-- **Community**: Encouraging students to work together and help each other in their STEM activities.
+Each lesson includes Catholic teachings such as:
+- **Stewardship**: Encouraging students to take care of God’s creation responsibly.
+- **Gratitude**: Recognizing and appreciating the beauty of the natural world as a gift from God.
+- **Community**: Promoting teamwork and helping each other during STEM activities.
 
 ## Topics and Activities
 
-### 1. Introduction to Technology and Engineering
-- **Lesson Name**: [Navigating God's Creation](../LessonPlans/Kindergarten/Kindergarten_Navigating_Gods_Creation.md)
-- **Objective**: To familiarize students with basic technology and simple engineering concepts.
-- **Activity**: Students will explore everyday technologies (e.g., household gadgets) and work together to build a simple structure using blocks or craft materials.
-- **Catholic Connection**: Discuss how technology helps us in our daily lives and how we can use it to care for others.
+### Lesson: God's Creation Through Movement and Technology
 
-### 2. Exploring Patterns in Nature
-- **Lesson Name**: [Building Bridges and Connections](../LessonPlans/Kindergarten/Kindergarten_Building_Bridges_and_Connections.md)
-- **Objective**: To observe and recognize patterns in the natural world, reflecting the order of God’s creation.
-- **Activity**: Students will go on a nature walk (or explore pictures of nature) and identify patterns in plants, animals, or weather.
-- **Catholic Connection**: Talk about how God created the world with patterns, and how these patterns help us understand His creation.
+- **Topic:** Introduction to Basic Robotics and Problem Solving
+- **Tools:** EV3 units, Bee Bot 10 pack, Duplos
+- **Activity:**
+  - Introduce students to robots and how they can help us understand and explore God’s creation.
+  - Use Bee Bots to navigate simple mazes, encouraging problem-solving and collaboration.
+  - Build simple structures with Duplos to represent animals or nature, reflecting on God’s perfect design.
+- **Catholic Integration:**
+  - Discuss how God has given humans intelligence to create tools like robots to care for His creation (Genesis 2:15).
+  - Emphasize teamwork, helping one another, and reflecting on the importance of community in our faith.
 
-### 3. Building Simple Machines
-- **Lesson Name**: [Protecting God's Creation](../LessonPlans/Kindergarten/Kindergarten_Protecting_Gods_Creation.md)
-- **Objective**: To introduce the concept of machines and how they make work easier.
-- **Activity**: Using toys or simple tools, students will explore how a lever or wheel and axle works. They will create their own simple machine with classroom materials.
-- **Catholic Connection**: Discuss how we can use machines to help each other and make the world a better place.
+### Lesson: Exploring Patterns in Nature
 
-### 4. Introduction to Coding and Sequencing
-- **Lesson Name**: [Creating with Purpose](../LessonPlans/Kindergarten/Kindergarten_Creating_with_Purpose.md)
-- **Objective**: To introduce basic coding concepts using sequencing and patterns.
-- **Activity**: Students will participate in an unplugged coding activity, using cards or games to practice sequencing steps.
-- **Catholic Connection**: Talk about how God has a plan for everything and how we can follow His steps just like in a sequence.
+- **Topic:** Recognizing Patterns in God's Creation
+- **Tools:** Nature photos, classroom materials
+- **Activity:**
+  - Students will go on a nature walk (or explore pictures of nature) to observe patterns in plants, animals, and weather.
+  - In the classroom, students will recreate patterns using simple craft materials or toys.
+- **Catholic Integration:**
+  - Discuss how God created the world with beautiful patterns and order, and how these patterns reflect His intelligent design.
+  - Highlight how we can see God's presence in the order and beauty of creation.
 
-### 5. Caring for God’s Creation
-- **Lesson Name**: [Caring for God’s Creation]  
-- **Objective**: To learn about environmental stewardship and how to protect the Earth.
-- **Activity**: Students will participate in a classroom recycling project or a "clean-up" activity, learning about taking care of their surroundings.
-- **Catholic Connection**: Emphasize the importance of taking care of God’s creation and being responsible stewards of the Earth.
+### Lesson: Building Simple Machines
+
+- **Topic:** Introduction to Simple Machines
+- **Tools:** Toy levers, wheels, and axles; classroom materials
+- **Activity:**
+  - Introduce students to simple machines and how they help us in daily life.
+  - Students will experiment with toys to understand how a lever and wheel and axle work.
+  - They will then build their own simple machines using classroom materials.
+- **Catholic Integration:**
+  - Discuss how simple machines can help us take care of God's creation and serve others.
+  - Reflect on how, just like these machines, we are called to help make the world a better place.
+
+### Lesson: Introduction to Coding and Sequencing
+
+- **Topic:** Basic Coding and Sequencing
+- **Tools:** Unplugged coding cards, games
+- **Activity:**
+  - Students will participate in an unplugged coding activity, using cards or games to practice sequencing steps.
+  - Students will take turns creating sequences for others to follow, encouraging problem-solving and logical thinking.
+- **Catholic Integration:**
+  - Talk about how God has a plan for each of us, and how following steps (just like in coding) helps us achieve our purpose.
+  - Emphasize the importance of listening to God’s guidance and following His plan.
+
+### Lesson: Caring for God’s Creation
+
+- **Topic:** Environmental Stewardship
+- **Tools:** Recycling bins, cleanup materials
+- **Activity:**
+  - Students will participate in a classroom recycling project, learning about sorting and reusing materials.
+  - Alternatively, students will engage in a "clean-up" activity, helping to tidy up the classroom or school grounds.
+- **Catholic Integration:**
+  - Emphasize the importance of taking care of God’s creation through recycling and cleaning.
+  - Discuss how being responsible stewards of the Earth is part of our faith and duty as Catholics.
 
 ## Assessment
-- Participation in hands-on activities and group discussions.
-- Observation of creativity, teamwork, and curiosity during lessons.
-- Teacher-led Q&A sessions to check for understanding of STEM concepts and Catholic values.
-
-## Materials Needed
-- Building blocks or craft materials for simple machines.
-- Nature pictures or outdoor access for pattern recognition.
-- Toy levers, wheels, or classroom items to demonstrate machines.
-- Coding cards or materials for sequencing games.
-- Recycling bins or materials for environmental stewardship activities.
+- Participation in hands-on activities and group collaboration.
+- Observation of creativity, teamwork, and engagement during lessons.
+- Teacher-led discussions to assess understanding of basic STEM concepts and Catholic teachings.
 
 ## Conclusion
-This Kindergarten curriculum encourages students to discover the beauty of STEM through exploration, creativity, and teamwork, all while reflecting on Catholic values and how we can honor God’s creation in the world around us.
+This Kindergarten curriculum encourages young learners to discover STEM through play, creativity, and teamwork, while reflecting on how we can honor God’s creation and practice stewardship in the world around us.

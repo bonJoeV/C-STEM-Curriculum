@@ -66,6 +66,7 @@ _Suggested Prayer_:
 > "Thank You, God, for helping us build strong friendships and for teaching us how to work together. Help us be kind and supportive, just like bridges that support us. Amen."
 
 ---
+
 ## **For Parents**  
 [Building Bridges Like Engineers](./Parent_Resources/Grades1-3_Building_Bridges_Like_Engineers.md)
 
