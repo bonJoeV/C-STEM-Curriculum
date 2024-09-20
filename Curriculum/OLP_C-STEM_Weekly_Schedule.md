@@ -55,6 +55,8 @@ This file outlines the weekly schedule for **Our Lady of the Prairie Catholic Sc
 | **Week 36** | 5/9/2025 | TBD| TBD | TBD |
 | **Week 37** | 5/16/2025| Last Class - Open| Last Class - Open| Last Class - Open|
 
+[Sphero Kindergarten](../LessonPlans/Kindergarten/Kindergarten_Exploring_Movement_and_Technology_with_Sphero.md)
+[Sphero Grades1-3](../LessonPlans/Grades1-3/Grades1-3_Exploring_Movement_and_Technology_with_Sphero.md)
 ---
 
 ## OLP C-STEM Class Times
