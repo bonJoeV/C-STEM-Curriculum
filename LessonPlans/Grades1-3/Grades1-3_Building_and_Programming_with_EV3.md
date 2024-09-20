@@ -24,7 +24,7 @@ In this lesson, students in Grades 1-3 will explore basic robotics concepts usin
 
 ## **Materials**
 - EV3 units
-- [Instructor Presentation](./Presentations/Grades1-3_Building_Programming_EV3.pptx)
+- [Instructor Presentation](./Presentations/Grades1_3_Building_Programming_EV3.pptx)
 
 ---
 

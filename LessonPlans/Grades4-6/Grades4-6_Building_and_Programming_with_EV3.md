@@ -24,7 +24,7 @@ In this lesson, students in Grades 4-6 will explore advanced robotics concepts u
 
 ## **Materials**
 - EV3 units
-- [Instructor Presentation](./Presentations/Grades4-6_Building_Programming_EV3.pptx)
+- [Instructor Presentation](./Presentations/Grades4_6_Building_Programming_EV3.pptx)
 
 ---
 
