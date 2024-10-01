@@ -16,17 +16,16 @@ This file outlines the weekly schedule for **Our Lady of the Prairie Catholic Sc
 
 | **School Week** | **Date** | **Kindergarten**| **Grades 1-3**| **Grades 4-6**|
 |-----------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Week 1**| 9/6/2024 | Not Started| Not Started | Not Started |
-| **Week 2**| 9/13/2024| Not Started| Not Started | Not Started |
-| **Week 3**| 9/20/2024| [Building and Programming with EV3](../LessonPlans/Kindergarten/Kindergarten_Building_and_Programming_with_EV3)| [Building and Programming with EV3](../LessonPlans/Grades1-3/Grades1-3_Building_and_Programming_with_EV3)| [Building and Programming with EV3](../LessonPlans/Grades4-6/Grades4-6_Building_and_Programming_with_EV3)|
-| **Deferred**| Deferred| [Navigating God’s Creation](../LessonPlans/Kindergarten/Kindergarten_Navigating_Gods_Creation)| [Navigating God’s Creation](../LessonPlans/Grades1-3/Grades1-3_Navigating_Gods_Creation)| [Navigating God’s Creation ](../LessonPlans/Grades4-6/Grades4-6_Navigating_Gods_Creation)|
-| **Week 4**| 9/27/2024| [Building Bridges and Connections](../LessonPlans/Kindergarten/Kindergarten_Building_Bridges_and_Connections) | [Building Bridges Like Engineers](../LessonPlans/Grades1-3/Grades1-3_Building_Bridges_Like_Engineers)| [Engineering Bridges for Communities](../LessonPlans/Grades4-6/Grades4-6_Engineering_Bridges_for_Communities)|
-| **Week 5**| 10/4/2024| [Protecting God’s Creation](../LessonPlans/Kindergarten/Kindergarten_Protecting_Gods_Creation)| [Caring for Creation with Technology](../LessonPlans/Grades1-3/Grades1-3_Caring_for_Creation_with_Technology) | [Protecting God’s Creation with Engineering](../LessonPlans/Grades4-6/Grades4-6_Protecting_Gods_Creation) |
-| **Week 6**| 10/11/2024 | Class Voting on Lesson Extension + Open Tech Time | Class Voting on Lesson Extension + Open Tech Time| [**Science Fair Project Work** ](../Resources/Big_Bang_Catholic_STEM_Fair) |
-| **Week 7**| 10/18/2024 | *No School*| *No School* | *No School* |
-| **Week 8**| 10/25/2024 | Continuation of Voted Lesson| Continuation of Voted Lesson | Continuation of Voted Lesson|
-| **Week 9**| 11/1/2024| [Creating with Purpose](../LessonPlans/Kindergarten/Kindergarten_Creating_with_Purpose)| [Creating with Purpose](../LessonPlans/Grades1-3/Grades1-3_Creating_with_Purpose) | [Innovating for Good](../LessonPlans/Grades4-6/Grades4-6_Innovating_for_Good) |
-| **Week 10** | 11/8/2024| TBD| TBD | TBD |
+| **Week 1** | 9/6/2024 | Not Started| Not Started | Not Started |
+| **Week 2** | 9/13/2024| Not Started| Not Started | Not Started |
+| **Week 3** | 9/20/2024| [Sphero Kindergarten](../LessonPlans/Kindergarten/Kindergarten_Exploring_Movement_and_Technology_with_Sphero.md) | [Sphero Grades1-3](../LessonPlans/Grades1-3/Grades1-3_Exploring_Movement_and_Technology_with_Sphero.md)| [Building and Programming with EV3](../LessonPlans/Grades4-6/Grades4-6_Building_and_Programming_with_EV3)|
+| **Week 4** | 9/27/2024| [Sphero Kindergarten](../LessonPlans/Kindergarten/Kindergarten_Exploring_Movement_and_Technology_with_Sphero.md) | [Sphero Grades1-3](../LessonPlans/Grades1-3/Grades1-3_Exploring_Movement_and_Technology_with_Sphero.md)| [Building and Programming with EV3](../LessonPlans/Grades4-6/Grades4-6_Building_and_Programming_with_EV3)|
+| **Week 5** | 10/4/2024| [Building Bridges and Connections](../LessonPlans/Kindergarten/Kindergarten_Building_Bridges_and_Connections) | [Building Bridges Like Engineers](../LessonPlans/Grades1-3/Grades1-3_Building_Bridges_Like_Engineers)| [Engineering Bridges for Communities](../LessonPlans/Grades4-6/Grades4-6_Engineering_Bridges_for_Communities)|
+| **Week 6** | 10/11/2024| [Protecting God’s Creation](../LessonPlans/Kindergarten/Kindergarten_Protecting_Gods_Creation)| [Caring for Creation with Technology](../LessonPlans/Grades1-3/Grades1-3_Caring_for_Creation_with_Technology) | [Protecting God’s Creation with Engineering](../LessonPlans/Grades4-6/Grades4-6_Protecting_Gods_Creation) |
+| **Week 7** | 10/18/2024 | *No School*| *No School* | *No School* |
+| **Week 8** | 10/25/2024 | [**Science Fair Project Work** ](../Resources/Big_Bang_Catholic_STEM_Fair) | [**Science Fair Project Work** ](../Resources/Big_Bang_Catholic_STEM_Fair) |[**Science Fair Project Work** ](../Resources/Big_Bang_Catholic_STEM_Fair) |
+| **Week 9** | 11/1/2024| [Creating with Purpose](../LessonPlans/Kindergarten/Kindergarten_Creating_with_Purpose)| [Creating with Purpose](../LessonPlans/Grades1-3/Grades1-3_Creating_with_Purpose) | [Innovating for Good](../LessonPlans/Grades4-6/Grades4-6_Innovating_for_Good) |
+| **Week 10**|  11/8/2024| [Navigating God’s Creation](../LessonPlans/Kindergarten/Kindergarten_Navigating_Gods_Creation)| [Navigating God’s Creation](../LessonPlans/Grades1-3/Grades1-3_Navigating_Gods_Creation)| [Navigating God’s Creation ](../LessonPlans/Grades4-6/Grades4-6_Navigating_Gods_Creation)|
 | **Week 11** | 11/15/2024 | TBD| TBD| TBD |
 | **Week 12** | 11/22/2024 | Class Voting on Lesson Extension + Open Tech Time | Class Voting on Lesson Extension + Open Tech Time| [**Science Fair Project Work** ](../Resources/Big_Bang_Catholic_STEM_Fair) |
 | **Week 13** | 11/29/2024 | *No School*| *No School* | *No School* |
@@ -55,8 +54,6 @@ This file outlines the weekly schedule for **Our Lady of the Prairie Catholic Sc
 | **Week 36** | 5/9/2025 | TBD| TBD | TBD |
 | **Week 37** | 5/16/2025| Last Class - Open| Last Class - Open| Last Class - Open|
 
-[Sphero Kindergarten](../LessonPlans/Kindergarten/Kindergarten_Exploring_Movement_and_Technology_with_Sphero.md)
-[Sphero Grades1-3](../LessonPlans/Grades1-3/Grades1-3_Exploring_Movement_and_Technology_with_Sphero.md)
 ---
 
 ## OLP C-STEM Class Times
