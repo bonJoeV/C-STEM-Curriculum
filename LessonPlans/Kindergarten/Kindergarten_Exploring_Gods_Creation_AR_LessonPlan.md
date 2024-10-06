@@ -3,9 +3,6 @@
 ## Topic:
 Exploring God's Creation using Augmented Reality (AR)
 
-## Opening Prayer:
-Heavenly Father, thank You for the beauty of Your creation. Help us use the tools of technology to explore and appreciate the world You have given us, and teach us how to care for it with love and responsibility. Amen.
-
 ## Tools:
 - Chromebook/iPad
 - AR App (e.g., Quiver, Merge Cube)
@@ -32,15 +29,6 @@ Look for examples of God's creation in your neighborhood (plants, animals, etc.)
 
 ## Catholic Quote:
 “God saw all that he had made, and it was very good.” (Genesis 1:31)
-
-## Assessment:
-Students will be assessed based on:
-1. Participation in the AR exploration.
-2. Understanding of how technology can help us appreciate and care for creation.
-3. Ability to reflect on how they can care for God's creation (via verbal discussion or short drawing activity).
-
-## Extension:
-Students can continue exploring AR at home with the guidance of parents, researching more about the animals or plants they discovered.
 
 ## Parent Resource:
 For more details and support at home, check out the [Parent Resource](Kindergarten_Exploring_Gods_Creation_AR_ParentResource.md).

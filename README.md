@@ -4,7 +4,16 @@ title: "C-STEM (Catholic STEM) Program"
 ---
 # C-STEM (Catholic STEM) Program
 
-Welcome to the repository for the C-STEM (Catholic STEM) program designed for Our Lady of the Prairie Catholic School. This repository contains the curriculum, lesson plans, and supporiting resources for Kindergarten through 6th grade. Our C-STEM curriculum, inspired by the Catholic Schools Center of Excellence (CSCOE), integrates Catholic values with Science, Technology, Engineering, and Mathematics (STEM) education.
+
+<div style="display: flex; align-items: flex-start;">
+  <img src="logo.jpg" alt="Faith and Technology" width="150" style="margin-right: 15px;">
+  <p style="max-width: 600px;">
+    Welcome to the repository for the C-STEM (Catholic STEM) program designed for Our Lady of the Prairie Catholic School. This repository contains the curriculum, lesson plans, and supporiting resources for Kindergarten through 6th grade. Our C-STEM curriculum, inspired by the Catholic Schools Center of Excellence (CSCOE), integrates Catholic values with Science, Technology, Engineering, and Mathematics (STEM) education.
+  </p>
+</div>
+
+
+
 
 ## OLP's C-STEM Schedule
 

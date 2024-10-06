@@ -2,6 +2,7 @@
 layout: default
 title: "Curriculam Backlog"
 description: "Ideas for curriculam, plans, and project"
+sitemap: false
 ---
 ## C-STEM Curriculum Backlog
 
