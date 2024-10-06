@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://bonjoev.github.io/C-STEM-Curriculum/sitemap.xml
