@@ -7,6 +7,22 @@
 
 ---
 
+## Available Resources:
+
+1. [Rockets and Rovers Educator Guide](./Grades4-6_Engineering_Robots_and_Rovers/Rockets%20and%20Rovers%20Educator%20Guide.pdf)  
+   A comprehensive guide for educators detailing lesson plans, activities, and instructional support for the Rockets and Rovers unit.
+
+2. [Rockets and Rovers Video and Resource Links](./Grades4-6_Engineering_Robots_and_Rovers/Rockets%20and%20Rovers%20Video%20and%20Resource%20Links.pdf)  
+   A collection of video links and additional resources to support the concepts and activities introduced in the unit.
+
+3. [Rockets and Rovers Engineering Journal (English)](./Grades4-6_Engineering_Robots_and_Rovers/Rockets_and_Rovers_Engineering_Journal_English.pdf)  
+   An engineering journal template for students to document their experiments, observations, and reflections throughout the unit.
+
+4. [Rockets and Rovers Family Letter (English)](./Grades4-6_Engineering_Robots_and_Rovers/Rockets_and_Rovers_Family_Letter_English.pdf)  
+   A letter designed for families, providing an overview of the Rockets and Rovers unit and encouraging family engagement in the learning process.
+
+---
+
 ## Week 1: Prep Adventure 1 - What is Engineering? (Tower Power)
 
 - **Objective:** Introduce students to the concept of engineering and the Engineering Design Process (EDP).
@@ -14,7 +30,7 @@
 - **Catholic Connection:** Discuss how engineers are stewards of God’s creation, solving problems for the common good. Emphasize the importance of building with purpose, inspired by the parable of the wise and foolish builders (Matthew 7:24-27).
 - **Homework:** Research and find examples of structures in communities, like bridges or shelters, and their impact.
 
-[Lesson Plan Week 1](/LessonPlans/Grades4-6/Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_week1.md) | [Parent Resources Week 1](/LessonPlans/Grades4-6/Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_Parent_Resource_week1.md)
+[Lesson Plan Week 1](./Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_week1.md) | [Parent Resources Week 1](./Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_Parent_Resource_week1.md)
 
 ---
 
@@ -25,7 +41,7 @@
 - **Catholic Connection:** Reflect on our responsibility to use talents in creating technology that benefits others, connecting to stewardship principles.
 - **Homework:** Identify a daily technology that positively impacts their family or community, and reflect on its benefits.
 
-[Lesson Plan Week 2](/LessonPlans/Grades4-6/Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_week2.md) | [Parent Resources Week 2](/LessonPlans/Grades4-6/Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_Parent_Resource_week2.md)
+[Lesson Plan Week 2](./Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_week2.md) | [Parent Resources Week 2](./Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_Parent_Resource_week2.md)
 
 ---
 
@@ -36,7 +52,7 @@
 - **Catholic Connection:** Discuss marveling at God’s creation through space exploration, reflecting on Psalm 8:3-4.
 - **Homework:** Research a NASA mission exploring a planet or moon and its benefits to humanity.
 
-[Lesson Plan Week 3](/LessonPlans/Grades4-6/Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_week3.md) | [Parent Resources Week 3](/LessonPlans/Grades4-6/Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_Parent_Resource_week3.md)
+[Lesson Plan Week 3](./Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_week3.md) | [Parent Resources Week 3](./Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_Parent_Resource_week3.md)
 
 ---
 
@@ -47,7 +63,7 @@
 - **Catholic Connection:** Emphasize the Catholic value of collaboration and the importance of sharing knowledge for the common good, inspired by St. Paul’s teachings on unity.
 - **Homework:** Reflect on how trade-offs are necessary in life and engineering, linking to biblical examples.
 
-[Lesson Plan Week 4](/LessonPlans/Grades4-6/Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_week4.md) | [Parent Resources Week 4](/LessonPlans/Grades4-6/Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_Parent_Resource_week4.md)
+[Lesson Plan Week 4](./Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_week4.md) | [Parent Resources Week 4](./Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_Parent_Resource_week4.md)
 
 ---
 
@@ -58,7 +74,7 @@
 - **Catholic Connection:** Relate the trade-offs and decisions to the concept of discernment in Catholic teaching, discussing how we balance resources and needs wisely.
 - **Homework:** Write a short reflection on how the EDP helps make improvements in life and engineering.
 
-[Lesson Plan Week 5](/LessonPlans/Grades4-6/Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_week5.md) | [Parent Resources Week 5](/LessonPlans/Grades4-6/Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_Parent_Resource_week5.md)
+[Lesson Plan Week 5](./Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_week5.md) | [Parent Resources Week 5](./Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_Parent_Resource_week5.md)
 
 ---
 
@@ -69,7 +85,7 @@
 - **Catholic Connection:** Discuss perseverance, inspired by Philippians 4:13, and the value of continually improving one’s work.
 - **Homework:** Document improvements made to their rockets and reflect on a personal area where they can apply perseverance.
 
-[Lesson Plan Week 6](/LessonPlans/Grades4-6/Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_week6.md) | [Parent Resources Week 6](/LessonPlans/Grades4-6/Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_Parent_Resource_week6.md)
+[Lesson Plan Week 6](./Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_week6.md) | [Parent Resources Week 6](./Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_Parent_Resource_week6.md)
 
 ---
 
@@ -80,7 +96,7 @@
 - **Catholic Connection:** Highlight the importance of humility and openness to feedback, linking to Proverbs 27:17: “As iron sharpens iron, so one person sharpens another.”
 - **Homework:** Write about a time when receiving advice led to a positive change.
 
-[Lesson Plan Week 7](/LessonPlans/Grades4-6/Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_week7.md) | [Parent Resources Week 7](/LessonPlans/Grades4-6/Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_Parent_Resource_week7.md)
+[Lesson Plan Week 7](./Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_week7.md) | [Parent Resources Week 7](./Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_Parent_Resource_week7.md)
 
 ---
 
@@ -91,4 +107,4 @@
 - **Catholic Connection:** Celebrate students’ achievements as gifts from God, reflecting on how using our talents serves others and builds community.
 - **Homework:** Final reflection on what they learned about stewardship and engineering, focusing on how they can continue being stewards of God’s creation.
 
-[Lesson Plan Week 8](/LessonPlans/Grades4-6/Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_week8.md) | [Parent Resources Week 8](/LessonPlans/Grades4-6/Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_Parent_Resource_week8.md)
+[Lesson Plan Week 8](./Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_week8.md) | [Parent Resources Week 8](./Grades4-6_Engineering_Robots_and_Rovers/Grades4-6_Engineering_Robots_and_Rovers_Parent_Resource_week8.md)
