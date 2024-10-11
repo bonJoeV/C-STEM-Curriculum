@@ -11,6 +11,7 @@ description: "Links to lesson plans for each week"
 
 This file outlines the weekly schedule for **Our Lady of the Prairie Catholic School's C-STEM Program**, organized by grade groups. Each class follows a five-week rotation, blending hands-on STEM activities with Catholic values. Weeks 1-3 feature structured lesson plans. Week 4 is reserved for class voting on which lesson to extend into Week 5, as well as Open Tech sessions or Science Fair preparations. Week 5 is dedicated to revisiting and further exploring the lesson chosen by the class.
 
+[Very Likely Grades 3-6 lesson](/LessonPlans/Grades4-6/Grades4-6_Engineering_Robots_and_Rovers.md)
 
 ## Weekly Schedule Overview
 
