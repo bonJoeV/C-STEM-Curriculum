@@ -12,9 +12,6 @@ title: "C-STEM (Catholic STEM) Program"
   </p>
 </div>
 
-
-
-
 ## OLP's C-STEM Schedule
 
 At **Our Lady of the Prairie Catholic School**, we follow a five-week rotation for our C-STEM program. Each grade group progresses through hands-on activities, exploring both STEM concepts and Catholic values. 
