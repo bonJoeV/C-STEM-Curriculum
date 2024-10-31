@@ -3,6 +3,8 @@ layout: default
 title: "Advanced Coding with Scratch"
 description: "Exploring Coding Concepts Using Scratch"
 classroom: [grades4_6]
+lesson: [Exploring_Gods_Creation_Scratch]
+curriculam: "no"
 author: "Joe Vandermark"
 published: "31 Oct 2024"
 ---

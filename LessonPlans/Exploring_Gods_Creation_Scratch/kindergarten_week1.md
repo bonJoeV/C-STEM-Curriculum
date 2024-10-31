@@ -1,11 +1,14 @@
 ---
 layout: default
 title: "Introduction to Coding with Scratch Jr"
-description: "Using Scratch Jr to Learn Basic Coding Concepts"
+description: "Introduction to Coding with Scratch Jr"
 classroom: [kindergarten]
+lesson: [Exploring_Gods_Creation_Scratch]
+curriculam: "no"
 author: "Joe Vandermark"
 published: "31 Oct 2024"
 ---
+
 
 # Kindergarten: Introduction to Coding - Week 1
 

@@ -1,9 +1,11 @@
 ---
 layout: default
 title: "Introduction to Coding with Scratch Jr & Scratch"
+classroom: []
+lesson: []
+curriculam: "yes"
 author: "Joe Vandermark"
 published: "31 Oct 2024"
-curriculam: "yes"
 ---
 
 
@@ -13,9 +15,12 @@ Welcome to the collection of STEM lesson plans integrating **Scratch Jr** for va
 
 ## Lesson Plans
 
-- [Kindergarten: Introduction to Coding with Scratch Jr](kindergarten.md)
-- [Grades 1-3: Exploring Coding with Scratch Jr](grades1_3.md)
-- [Grades 4-6: Creative Coding with Scratch](grades4_6.md)
+{% assign lesson_pages = site.pages | where: "lesson", "Exploring_Gods_Creation_Scratch" %}
+
+{% for page in lesson_pages %}
+- [{{ page.title }}]({{ page.url  | absolute_url }}) - {{page.description }}
+{% endfor %}
+
 
 ---
 
