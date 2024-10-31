@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Page List"
+---
+
 {% for page in site.pages %}
   {% if page.categories contains 'grades4_6' %}
     <div class="item">
@@ -7,7 +12,7 @@
   {% endif %}
 {% endfor %}
 
-
+---
 
 {% for p in site.pages %}
    {% if p.categories contains 'grades4_6' %}
