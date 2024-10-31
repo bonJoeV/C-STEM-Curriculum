@@ -18,21 +18,24 @@ Welcome to the collection of STEM lesson plans integrating **Scratch Jr** for va
 ### Kindergarten
 {% assign lesson_kindergarten_pages = site.pages | where: "lesson", "Exploring_Gods_Creation_Scratch" | where_exp: "item", "item.classroom contains 'kindergarten'" %}
 {% for page in lesson_kindergarten_pages %}
-- [{{ page.title }}]({{ page.url  | absolute_url }}) - {{page.description }}
+- [{{ page.title }}]({{ page.url  | absolute_url }})
+{{page.description }}
 {% endfor %}
 
 
 ### Grades 1-3
 {% assign lesson_grades1_3_pages = site.pages | where: "lesson", "Exploring_Gods_Creation_Scratch" | where_exp: "item", "item.classroom contains 'grades1_3'" %}
-{% for page in lesson_grades1_4_pages %}
-- [{{ page.title }}]({{ page.url  | absolute_url }}) - {{page.description }}
+{% for page in lesson_grades1_3_pages %}
+- [{{ page.title }}]({{ page.url  | absolute_url }})
+{{page.description }}
 {% endfor %}
 
 
 ### Grades 4-6
 {% assign lesson_grades4_6_pages = site.pages | where: "lesson", "Exploring_Gods_Creation_Scratch" | where_exp: "item", "item.classroom contains 'grades4_6'" %}
 {% for page in lesson_grades4_6_pages %}
-- [{{ page.title }}]({{ page.url  | absolute_url }}) - {{page.description }}
+- [{{ page.title }}]({{ page.url  | absolute_url }})
+{{page.description }}
 {% endfor %}
 
 ---
