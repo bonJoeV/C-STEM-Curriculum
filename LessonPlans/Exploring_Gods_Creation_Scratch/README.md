@@ -3,7 +3,7 @@ layout: default
 title: "Introduction to Coding with Scratch Jr & Scratch"
 author: "Joe Vandermark"
 published: "31 Oct 2024"
-curriculam: yes
+curriculam: "yes"
 ---
 
 
@@ -34,13 +34,6 @@ These lesson plans aim to:
 1. **Navigate to the Lesson Plan**: Click on the link for the desired grade level to access the lesson plan.
 2. **Review Materials**: Each lesson plan includes an overview, objectives, materials needed, lesson steps, Catholic integration, assessment methods, and closing prayer.
 3. **Engage with Parent Resources**: At the end of each lesson, there are resources for parents to support their child's learning at home.
-
----
-
-### Author
-
-**Your Name**  
-**Published:** 31 Oct 2024
 
 ---
 

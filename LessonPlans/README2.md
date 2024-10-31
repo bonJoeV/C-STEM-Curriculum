@@ -25,8 +25,11 @@ title: "Page List"
 {% endfor %}
 
 
-{% assign curriculam_pages = site.pages | where: "curriculam", "Yes" %}
+### All Curriculam
 
-{% for page in grades4_6_pages %}
+{% assign curriculam_pages = site.pages | where: "curriculam", "yes" %}
+
+{% for page in curriculam_pages %}
 - [{{ page.title }}]({{ page.url  | absolute_url }}) - {{page.description }}
 {% endfor %}
+

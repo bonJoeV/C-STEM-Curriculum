@@ -3,7 +3,7 @@ layout: default
 title: "Exploring Coding with Scratch Jr"
 description: "Learning Basic Coding Concepts through Scratch Jr"
 classroom: [grades1_3]
-author: "Your Name"
+author: "Joe Vandermark"
 published: "31 Oct 2024"
 ---
 
