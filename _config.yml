@@ -33,12 +33,12 @@ exclude:
 
 # Enable Incremental Build (optional for local builds)
 # Enable faster builds by only rebuilding changed pages
-incremental: true
+incremental: false
 
 # GitHub Metadata (recommended if using GitHub Metadata Plugin)
 # Only needed if running locally for testing GitHub Pages features
 github:
-  is_project_page: true
+  is_project_page: false
 
 # Permalinks (optional)
 # Defines URL structure for pages
