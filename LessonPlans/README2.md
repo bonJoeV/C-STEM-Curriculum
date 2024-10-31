@@ -3,41 +3,30 @@ layout: default
 title: "Page List"
 ---
 
-{% for page in site.pages %}
-  {% if page.categories contains 'grades4_6' %}
-    <div class="item">
-      <h3>{{page.title}}</h3>
-      <p>{{page.description}}</p>
-    </div>
-  {% endif %}
+## Curriculum Kindergarten
+{% assign kindergarten_pages = site.pages | where: "classroom", "kindergarten" %}
+
+{% for page in kindergarten_pages %}
+- [{{ page.title }}]({{ page.url  | absolute_url }}) - {{page.description }}
 {% endfor %}
 
----
+## Curriculum Grades 1-3
+{% assign grades1_3_pages = site.pages | where: "classroom", "grades1_3" %}
 
-{% for p in site.pages %}
-   {% if p.categories contains 'grades4_6' %}
-     * [{{ p.title }}]({{ p.url | absolute_url }})
-        <small>{{ p.excerpt }}</small>
-   {% endif %}
+{% for page in grades1_3_pages %}
+- [{{ page.title }}]({{ page.url  | absolute_url }}) - {{page.description }}
 {% endfor %}
-
-
-{% for page in site.pages %}
-  {% if page.classrooms contains 'grades4-6' %}
-    <div class="item">
-      <h3>{{ page.title | escape: false }}</h3>
-      <p>{{ page.description | escape: false }}</p>
-    </div>
-  {% endif %}
-{% endfor %}
-
----
-
-
-{% assign grades4_6_pages = site.pages | where: "classroom", "grades4_6" %}
 
 ## Curriculum Grades 4-6
+{% assign grades4_6_pages = site.pages | where: "classroom", "grades4_6" %}
 
 {% for page in grades4_6_pages %}
-- [{{ page.title }}]({{ page.url }}) - {{page.description }}
+- [{{ page.title }}]({{ page.url  | absolute_url }}) - {{page.description }}
+{% endfor %}
+
+
+{% assign curriculam_pages = site.pages | where: "curriculam", "Yes" %}
+
+{% for page in grades4_6_pages %}
+- [{{ page.title }}]({{ page.url  | absolute_url }}) - {{page.description }}
 {% endfor %}
