@@ -1,45 +1,10 @@
-# Basic Site Settings
+# _config.yml
 title: "C-STEM Curriculum"
 description: "A curriculum repository for C-STEM education."
-url: "https://bonJoeV.github.io"
-baseurl: "/C-STEM-Curriculum" # Note: this should match the GitHub repository name
 markdown: kramdown
-
-# GitHub Pages Theme
-remote_theme: "pages-themes/leap-day@v0.2.0" # Ensures GitHub Pages uses the specified theme version
-
-# Optional Custom Variables
-classrooms: ["kindergarten", "grades1-3", "grades4-6"] # Define classrooms for use in filters
-
-# Plugins
+remote_theme: pages-themes/leap-day@v0.2.0
+url: "https://bonJoeV.github.io"
+baseurl: "/C-STEM-Curriculum"
 plugins:
-  - jekyll-remote-theme # Allows using remote themes
-  - jekyll-sitemap      # Generates a sitemap.xml
-  # Other GitHub-supported plugins can be added if needed
-  
-# Kramdown Markdown Configuration
-kramdown:
-  input: GFM # GitHub Flavored Markdown for compatibility
-  hard_wrap: false
-  parse_block_html: true
-
-# Exclude and Include (Optional)
-# Exclude unnecessary files and folders that don't need to be built
-exclude:
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "node_modules"
-  - "vendor"
-
-# Enable Incremental Build (optional for local builds)
-# Enable faster builds by only rebuilding changed pages
-incremental: false
-
-# GitHub Metadata (recommended if using GitHub Metadata Plugin)
-# Only needed if running locally for testing GitHub Pages features
-github:
-  is_project_page: false
-
-# Permalinks (optional)
-# Defines URL structure for pages
-permalink: pretty
+- jekyll-remote-theme
+- jekyll-sitemap
