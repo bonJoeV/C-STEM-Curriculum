@@ -2,7 +2,7 @@
 layout: default
 title: "Advanced Coding with Scratch"
 description: "Using Scratch to Learn Advanced Coding"
-categories: [grades4_6]
+category: [grades4_6]
 author: "Joe Vandermark"
 published: "31 Oct 2024"
 ---
