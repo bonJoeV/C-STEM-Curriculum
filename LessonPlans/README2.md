@@ -36,7 +36,7 @@ title: "Page List"
 
 {% assign grades4_6_pages = site.pages | where: "classroom", "grades4_6" %}
 
-## grades4_6 Pages
+## Curriculum Grades 4-6
 
 {% for page in grades4_6_pages %}
 - [{{ page.title }}]({{ page.url }}) - {{page.description }}
