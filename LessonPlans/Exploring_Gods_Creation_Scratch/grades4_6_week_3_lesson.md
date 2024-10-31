@@ -9,7 +9,7 @@ author: "Joe Vandermark"
 published: "31 Oct 2024"
 ---
 
-# Grades 4-6: Engineering with Purpose - Week 3
+# Exploring God's Creation - Week 3
 
 ### **Grade**: 4-6  
 ### **Duration**: 50 minutes  

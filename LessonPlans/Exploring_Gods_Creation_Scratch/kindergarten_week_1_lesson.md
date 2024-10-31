@@ -10,7 +10,7 @@ published: "31 Oct 2024"
 ---
 
 
-# Kindergarten: Introduction to Coding - Week 1
+# Exploring God's Creation - Week 1
 
 ### **Grade**: Kindergarten  
 ### **Duration**: 30 minutes  

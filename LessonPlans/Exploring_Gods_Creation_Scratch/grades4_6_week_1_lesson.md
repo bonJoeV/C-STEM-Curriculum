@@ -9,7 +9,7 @@ author: "Joe Vandermark"
 published: "31 Oct 2024"
 ---
 
-# Grades 4-6: Advanced Coding with Scratch - Week 1
+# Exploring God's Creation - Week 1
 
 ### **Grade**: 4-6  
 ### **Duration**: 45 minutes  

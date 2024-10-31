@@ -9,7 +9,7 @@ author: "Joe Vandermark"
 published: "31 Oct 2024"
 ---
 
-# Kindergarten: Navigating God’s Creation - Week 4
+# Exploring God's Creation - Week 4
 
 ### **Grade**: Kindergarten  
 ### **Duration**: 40 minutes  

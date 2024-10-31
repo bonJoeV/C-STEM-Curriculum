@@ -9,7 +9,7 @@ author: "Joe Vandermark"
 published: "31 Oct 2024"
 ---
 
-# Grades 1-3: Coding Adventures - Week 1
+# Exploring God's Creation - Week 1
 
 ### **Grade**: 1-3  
 ### **Duration**: 40 minutes  

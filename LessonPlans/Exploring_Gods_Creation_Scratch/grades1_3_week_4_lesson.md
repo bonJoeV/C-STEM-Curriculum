@@ -9,7 +9,7 @@ author: "Joe Vandermark"
 published: "31 Oct 2024"
 ---
 
-# Grades 1-3: Exploring God's Design - Week 4
+# Exploring God's Creation - Week 4
 
 ### **Grade**: 1-3  
 ### **Duration**: 40 minutes  
