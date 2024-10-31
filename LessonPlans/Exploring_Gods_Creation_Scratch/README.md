@@ -9,9 +9,9 @@ published: "31 Oct 2024"
 ---
 
 
-# STEM Lesson Plans with Scratch Jr
+# C-STEM Lesson Plans with Scratch Jr
 
-Welcome to the collection of STEM lesson plans integrating **Scratch Jr** for various grade levels. Each lesson is designed to combine coding education with faith-based learning, encouraging students to explore technology responsibly and creatively.
+Welcome to the collection of C-STEM lesson plans integrating **Scratch Jr** and **Scratch** for various grade levels. Each lesson is designed to combine coding education with faith-based learning, encouraging students to explore technology responsibly and creatively.
 
 ## Lesson Plans
 
@@ -55,6 +55,10 @@ These lesson plans aim to:
 1. **Navigate to the Lesson Plan**: Click on the link for the desired grade level to access the lesson plan.
 2. **Review Materials**: Each lesson plan includes an overview, objectives, materials needed, lesson steps, Catholic integration, assessment methods, and closing prayer.
 3. **Engage with Parent Resources**: At the end of each lesson, there are resources for parents to support their child's learning at home.
+
+---
+
+For an introduction to coding with **Scratch Jr** and **Scratch**, explore our [Overview of Scratch Jr and Scratch](./about_scratch.md). This guide covers their unique features, educational benefits, and classroom applications, offering a foundation for engaging students in coding through storytelling, games, and animations.
 
 ---
 
