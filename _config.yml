@@ -2,6 +2,7 @@
 title: "C-STEM Curriculum"
 description: "A curriculum repository for C-STEM education."
 markdown: kramdown
+classrooms: [kindergarten, grades1-3, grades4-6]
 remote_theme: pages-themes/leap-day@v0.2.0
 url: "https://bonJoeV.github.io"
 baseurl: "/C-STEM-Curriculum"
