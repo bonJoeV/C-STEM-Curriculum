@@ -1,9 +1,9 @@
 ---
 layout: default
 title: "Advanced Coding with Scratch"
-description: "Exploring Coding Concepts Using Scratch"
+description: "Week 1 - Students dive into advanced coding concepts by creating interactive stories and simple games using **Scratch**."
 classroom: [grades4_6]
-lesson: [Exploring_Gods_Creation_Scratch]
+lesson: "Exploring_Gods_Creation_Scratch"
 curriculam: "no"
 author: "Joe Vandermark"
 published: "31 Oct 2024"

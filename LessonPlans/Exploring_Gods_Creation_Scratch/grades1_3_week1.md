@@ -1,9 +1,9 @@
 ---
 layout: default
 title: "Exploring Coding with Scratch Jr"
-description: "Learning Basic Coding Concepts through Scratch Jr"
+description: "Week 1 - Students use Scratch Jr to create simple stories and animations, learning basic coding principles."
 classroom: [grades1_3]
-lesson: [Exploring_Gods_Creation_Scratch]
+lesson: "Exploring_Gods_Creation_Scratch"
 curriculam: "no"
 author: "Joe Vandermark"
 published: "31 Oct 2024"
