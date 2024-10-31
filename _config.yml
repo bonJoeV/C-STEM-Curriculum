@@ -5,6 +5,7 @@ markdown: kramdown
 remote_theme: pages-themes/leap-day@v0.2.0
 url: "https://bonJoeV.github.io"
 baseurl: "/C-STEM-Curriculum"
+categories: [kindergarten, grades1_3, grades4_6]
 plugins:
 - jekyll-remote-theme
 - jekyll-sitemap

@@ -1,8 +1,8 @@
 {% for page in site.pages %}
-  {% if page.classrooms contains 'grades4_6' %}
+  {% if page.categories contains 'fruit' %}
     <div class="item">
-      <h3>{{ page.title | escape: false }}</h3>
-      <p>{{ page.description | escape: false }}</p>
+      <h3>{{page.title}}</h3>
+      <p>{{page.description}}</p>
     </div>
   {% endif %}
 {% endfor %}
