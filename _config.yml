@@ -1,10 +1,22 @@
 # _config.yml
+
 title: "C-STEM Curriculum"
 description: "A curriculum repository for C-STEM education."
 markdown: kramdown
+
+# Specify Kramdown settings for Markdown processing
+kramdown:
+  input: GFM # Use GitHub Flavored Markdown (GFM) for compatibility
+  auto_ids: true # Automatically generate IDs for headers
+
+# GitHub Pages Theme
 remote_theme: pages-themes/leap-day@v0.2.0
+
+# Site URL
 url: "https://bonJoeV.github.io"
 baseurl: "/C-STEM-Curriculum"
+
+# Plugins
 plugins:
-- jekyll-remote-theme
-- jekyll-sitemap
+  - jekyll-remote-theme
+  - jekyll-sitemap
