@@ -76,7 +76,7 @@ _Suggested Prayer_:
 
 # Parent Resources
 
-### **Overview**
+
 Students explored building foundations, learning stability and balance.
 
 ### **Discussion Points**

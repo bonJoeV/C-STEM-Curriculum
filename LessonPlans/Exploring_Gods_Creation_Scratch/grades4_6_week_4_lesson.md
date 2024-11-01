@@ -75,7 +75,7 @@ _Suggested Prayer_:
 
 # Parent Resources
 
-### **Overview**
+
 Students practiced mapping skills, reflecting on the importance of guidance.
 
 ### **Discussion Points**

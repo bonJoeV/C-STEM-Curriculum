@@ -76,7 +76,7 @@ _Suggested Prayer_:
 
 # Parent Resources
 
-### **Overview**
+
 Students were introduced to coding using Scratch Jr, creating simple animations.
 
 ### **Discussion Points**

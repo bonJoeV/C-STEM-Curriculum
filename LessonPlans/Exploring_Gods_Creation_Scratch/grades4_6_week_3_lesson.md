@@ -75,7 +75,7 @@ _Suggested Prayer_:
 
 # Parent Resources
 
-### **Overview**
+
 Students explored bridge-building, understanding the importance of connection.
 
 ### **Discussion Points**

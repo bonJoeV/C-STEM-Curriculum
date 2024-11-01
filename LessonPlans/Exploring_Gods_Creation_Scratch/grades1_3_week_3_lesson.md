@@ -75,7 +75,7 @@ _Suggested Prayer_:
 
 # Parent Resources
 
-### **Overview**
+
 Students explored building bridges to understand strength and stability.
 
 ### **Discussion Points**

@@ -75,7 +75,7 @@ _Suggested Prayer_:
 
 # Parent Resources
 
-### **Overview**
+
 Students explored coding by creating stories in Scratch Jr, learning sequencing and basic coding concepts.
 
 ### **Discussion Points**

@@ -75,7 +75,7 @@ _Suggested Prayer_:
 
 # Parent Resources
 
-### **Overview**
+
 Students explored mapping and directions, focusing on guidance.
 
 ### **Discussion Points**

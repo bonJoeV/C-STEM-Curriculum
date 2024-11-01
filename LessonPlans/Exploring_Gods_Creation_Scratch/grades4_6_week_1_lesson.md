@@ -86,7 +86,7 @@ _Suggested Prayer_:
 
 # Parent Resources
 
-### **Overview**
+
 Students explored advanced coding concepts using Scratch, focusing on creating projects that reflect positive values.
 
 ### **Discussion Points**

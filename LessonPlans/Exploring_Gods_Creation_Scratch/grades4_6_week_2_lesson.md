@@ -75,7 +75,7 @@ _Suggested Prayer_:
 
 # Parent Resources
 
-### **Overview**
+
 Students explored engineering foundations, learning about stability in life and faith.
 
 ### **Discussion Points**

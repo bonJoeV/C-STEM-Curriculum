@@ -76,7 +76,7 @@ _Suggested Prayer_:
 
 # Parent Resources
 
-### **Overview**
+
 Students learned about building and testing bridges, focusing on strength and connection.
 
 ### **Discussion Points**
