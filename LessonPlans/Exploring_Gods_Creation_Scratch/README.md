@@ -19,7 +19,7 @@ For an introduction to coding with **Scratch Jr** and **Scratch**, explore our [
 ## Lesson Plans
 
 ### Kindergarten
-{% assign lesson_kindergarten_pages = site.pages | where: "lesson", { page.lesson } | where_exp: "item", "item.classroom contains 'kindergarten'" %}
+{% assign lesson_kindergarten_pages = site.pages | where: "lesson", page.lesson | where_exp: "item", "item.classroom contains 'kindergarten'" %}
 {% for page in lesson_kindergarten_pages %}
 - [{{ page.title }}]({{ page.url  | absolute_url }})
 {{page.description }}
@@ -27,7 +27,7 @@ For an introduction to coding with **Scratch Jr** and **Scratch**, explore our [
 
 
 ### Grades 1-3
-{% assign lesson_grades1_3_pages = site.pages | where: "lesson",  { page.lesson } | where_exp: "item", "item.classroom contains 'grades1_3'" %}
+{% assign lesson_grades1_3_pages = site.pages | where: "lesson",  page.lesson | where_exp: "item", "item.classroom contains 'grades1_3'" %}
 {% for page in lesson_grades1_3_pages %}
 - [{{ page.title }}]({{ page.url  | absolute_url }})
 {{page.description }}
@@ -35,7 +35,7 @@ For an introduction to coding with **Scratch Jr** and **Scratch**, explore our [
 
 
 ### Grades 4-6
-{% assign lesson_grades4_6_pages = site.pages | where: "lesson", { page.lesson } | where_exp: "item", "item.classroom contains 'grades4_6'" %}
+{% assign lesson_grades4_6_pages = site.pages | where: "lesson", page.lesson | where_exp: "item", "item.classroom contains 'grades4_6'" %}
 {% for page in lesson_grades4_6_pages %}
 - [{{ page.title }}]({{ page.url  | absolute_url }})
 {{page.description }}
