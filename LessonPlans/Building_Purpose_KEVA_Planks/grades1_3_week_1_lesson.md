@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Engineering Basics with Bridges"
-description: "Week 1 - Grades 1-3 students explore bridge structures and basic engineering concepts."
+description: "Week 1 - Students explore bridge structures and basic engineering concepts."
 classroom: [grades1_3]
 lesson: "Building_Purpose_KEVA_Planks"
 curriculam: "no"

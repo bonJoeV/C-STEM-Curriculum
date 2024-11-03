@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "Building Basic Bridges with Keva Planks"
-description: "Week 1 - Kindergarten students explore basic bridge structures using Keva Planks."
-classroom: [Kindergarten]
+description: "Week 1 - Students explore basic bridge structures using Keva Planks."
+classroom: [kindergarten]
 lesson: "Building_Purpose_KEVA_Planks"
 curriculam: "no"
 author: "Joe Vandermark"

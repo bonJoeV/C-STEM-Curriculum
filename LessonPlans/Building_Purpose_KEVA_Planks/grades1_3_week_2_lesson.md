@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Testing and Redesigning Bridges"
-description: "Week 2 - Students in Grades 1-3 test and redesign their bridge structures."
+description: "Week 2 - Students test and redesign their bridge structures."
 classroom: [grades1_3]
 lesson: "Building_Purpose_KEVA_Planks"
 curriculam: "no"

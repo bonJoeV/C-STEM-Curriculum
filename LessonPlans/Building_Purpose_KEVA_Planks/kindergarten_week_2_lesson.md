@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "Improving Bridge Designs"
-description: "Week 2 - Kindergarten students review and improve bridge structures."
-classroom: [Kindergarten]
+description: "Week 2 - Students review and improve bridge structures."
+classroom: [kindergarten]
 lesson: "Building_Purpose_KEVA_Planks"
 curriculam: "no"
 author: "Joe Vandermark"

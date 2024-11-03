@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Structural Integrity and Bridge Design"
-description: "Week 1 - Grades 4-6 students explore structural integrity in bridge building."
+description: "Week 1 - Students explore structural integrity in bridge building."
 classroom: [grades4_6]
 lesson: "Building_Purpose_KEVA_Planks"
 curriculam: "no"

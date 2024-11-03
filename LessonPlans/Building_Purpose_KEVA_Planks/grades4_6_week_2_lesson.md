@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Load-Bearing Testing and Structural Improvement"
-description: "Week 2 - Students in Grades 4-6 test the load-bearing capacity of their bridge structures and make structural improvements."
+description: "Week 2 - Students test the load-bearing capacity of their bridge structures and make structural improvements."
 classroom: [grades4_6]
 lesson: "Building_Purpose_KEVA_Planks"
 curriculam: "no"
