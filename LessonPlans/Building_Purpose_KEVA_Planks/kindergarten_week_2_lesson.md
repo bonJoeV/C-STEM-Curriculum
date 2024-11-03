@@ -7,8 +7,6 @@ lesson: "Building_Purpose_KEVA_Planks"
 curriculam: "no"
 author: "Joe Vandermark"
 published: "3 Oct 2024"
-
-
 ---
 
 # Improving Bridge Designs - Week 2

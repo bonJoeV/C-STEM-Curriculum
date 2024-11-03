@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Introduction to Coding with Scratch Jr & Scratch"
+title: "Building Bridges About tools"
 classroom: []
 lesson: "Building_Purpose_KEVA_Planks"
 curriculam: "yes"

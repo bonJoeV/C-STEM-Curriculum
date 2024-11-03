@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Introduction to Scratch Jr and Scratch"
-description: "Overview of Scratch Jr and Scratch for elementary coding education, highlighting their features, uses, and educational benefits."
-lesson: "Exploring_Gods_Creation_Scratch"
+title: "Building Bridges About tools"
+description: "A Faith-Integrated Engineering Curriculum for Elementary Students."
+lesson: "Building_Purpose_KEVA_Planks"
 curriculam: "no"
 author: "Joe Vandermark"
 published: "31 Oct 2024"
