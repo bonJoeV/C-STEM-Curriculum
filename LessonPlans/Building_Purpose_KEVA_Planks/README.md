@@ -1,12 +1,12 @@
----
-layout: default
-title: "Building Bridges About tools"
-classroom: []
-lesson: "Building_Purpose_KEVA_Planks"
-curriculam: "yes"
-author: "Joe Vandermark"
-published: "10 Oct 2024"
----
+    ---
+    layout: default
+    title: "Building Bridges About tools"
+    classroom: []
+    lesson: "Building_Purpose_KEVA_Planks"
+    curriculam: "yes"
+    author: "Joe Vandermark"
+    published: "10 Oct 2024"
+    ---
 
 ### C-STEM Coding Curriculum Overview
 
@@ -22,23 +22,27 @@ For an introduction to our engineering tools and their classroom applications, e
 ## Lesson Plans
 
 ### Kindergarten
-{% assign lesson_kindergarten_pages = site.pages | where: "lesson", { page.lesson } | where_exp: "item", "item.classroom contains 'kindergarten'" %}
+{% assign lesson_kindergarten_pages = site.pages 
+   | where: "lesson", page.lesson 
+   | where_exp: "item", "item.classroom contains 'kindergarten'" %}
 {% for page in lesson_kindergarten_pages %}
 - [{{ page.title }}]({{ page.url  | absolute_url }})
 {{page.description }}
 {% endfor %}
 
-
 ### Grades 1-3
-{% assign lesson_grades1_3_pages = site.pages | where: "lesson",  { page.lesson } | where_exp: "item", "item.classroom contains 'grades1_3'" %}
+{% assign lesson_grades1_3_pages = site.pages 
+   | where: "lesson", page.lesson 
+   | where_exp: "item", "item.classroom contains 'grades1_3'" %}
 {% for page in lesson_grades1_3_pages %}
 - [{{ page.title }}]({{ page.url  | absolute_url }})
 {{page.description }}
 {% endfor %}
 
-
 ### Grades 4-6
-{% assign lesson_grades4_6_pages = site.pages | where: "lesson", { page.lesson } | where_exp: "item", "item.classroom contains 'grades4_6'" %}
+{% assign lesson_grades4_6_pages = site.pages 
+   | where: "lesson", page.lesson 
+   | where_exp: "item", "item.classroom contains 'grades4_6'" %}
 {% for page in lesson_grades4_6_pages %}
 - [{{ page.title }}]({{ page.url  | absolute_url }})
 {{page.description }}
