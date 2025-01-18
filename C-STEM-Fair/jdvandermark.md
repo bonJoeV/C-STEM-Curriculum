@@ -147,6 +147,7 @@ except KeyboardInterrupt:
     print("Exiting...")
     GPIO.cleanup()
     generate_graph()
+```
 ## How It Works
 1. The **MPU-6050 accelerometer** measures acceleration forces and sends data to the Raspberry Pi.
 2. If the measured force exceeds the **IMPACT_THRESHOLD**, the buzzer is triggered to alert coaches or staff.
