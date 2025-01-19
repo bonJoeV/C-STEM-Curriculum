@@ -66,6 +66,76 @@ Design and demonstrate a concussion detection sensor prototype that can monitor 
 
 ---
 
+
+# Raspberry Pi <-> MPU-6050 Connections
+
+This document outlines how to wire the MPU-6050 sensor to a Raspberry Pi for I2C communication, as well as how to connect a buzzer for impact alerts.
+
+## Pinout Table
+
+| **Raspberry Pi Pin (Physical #)** | **BCM GPIO** | **MPU-6050 Pin** | **Description**                           |
+|:---------------------------------:|:-----------:|:---------------:|-------------------------------------------|
+| **Pin 1**                         | 3V3 Power   | **VCC**          | Power to the MPU-6050 (3.3V)<br>*Check if your module can accept 5V* |
+| **Pin 3**                         | GPIO2 (SDA) | **SDA**          | I2C Data Line                             |
+| **Pin 5**                         | GPIO3 (SCL) | **SCL**          | I2C Clock Line                            |
+| **Pin 6**                         | GND         | **GND**          | Ground reference                          |
+
+> **Note**: Some MPU-6050 boards have onboard voltage regulators, allowing 5V input on VCC.  
+> Always confirm the acceptable voltage input for your specific module.
+
+## Optional Pins
+
+- **INT (Interrupt)** on the MPU-6050 can be connected to any free GPIO pin on the Raspberry Pi if you want to use interrupt-driven events (e.g., GPIO4, GPIO17, etc.). This is not required for basic polling or simple I2C reads.
+
+## Buzzer Pin (from Example Script)
+
+If you are using a buzzer for impact alerts as in the provided script:
+
+| **Raspberry Pi Pin (Physical #)** | **BCM GPIO** | **Buzzer Pin** | **Description**              |
+|:---------------------------------:|:-----------:|:--------------:|------------------------------|
+| **Pin 11**                        | GPIO17       | **+** (Buzzer) | Positive leg of the buzzer   |
+| **Any GND** pin (e.g. Pin 6)      | GND         | **-** (Buzzer) | Ground leg of the buzzer     |
+
+> **Note**: If your buzzer requires more current than the GPIO pin can safely supply, you should use a transistor driver circuit with an appropriate resistor rather than driving the buzzer directly from the GPIO.
+
+## Quick Wiring Overview
+
+1. **MPU-6050 VCC** → **3.3V** on Raspberry Pi (Physical Pin 1).  
+   *Check whether your MPU-6050 board supports 5V if you plan to use that.*
+2. **MPU-6050 GND** → **GND** on Raspberry Pi (Physical Pin 6 or any other GND).
+3. **MPU-6050 SCL** → **BCM GPIO3** (Physical Pin 5).
+4. **MPU-6050 SDA** → **BCM GPIO2** (Physical Pin 3).
+5. **Buzzer +** → **BCM GPIO17** (Physical Pin 11).
+6. **Buzzer -** → **GND** on the Raspberry Pi (Physical Pin 6 or any other GND).
+
+## Additional Notes
+
+- **I2C Interface**: Make sure I2C is enabled on the Raspberry Pi. You can enable this via:
+  - `sudo raspi-config` → **Interfacing Options** → **I2C** → **Enable**
+  - Or the Raspberry Pi configuration tool in the desktop environment.
+- **Pull-Up Resistors**: Many MPU-6050 breakout boards include pull-up resistors on SDA and SCL. If yours does not, you may need to add external pull-up resistors (typically 4.7kΩ) to 3.3V.
+- **Voltage Levels**: If the MPU-6050 board lacks level shifting or regulators, ensure you use 3.3V to avoid damaging the sensor.
+- **Buzzer Requirements**: If you have a passive buzzer or one that draws more current than the GPIO can supply, use a transistor or MOSFET driver circuit and an appropriate flyback diode, if needed.
+
+With these connections and considerations, your MPU-6050 should be able to communicate with the Raspberry Pi over I2C, and the buzzer can be activated under your impact threshold logic.
+
+
+> **Explanation**  
+> - **Raspberry Pi 3.3V (Pin 1)** connects to **MPU-6050 VCC**.  
+> - **Raspberry Pi GPIO2 (SDA, Pin 3)** connects to **MPU-6050 SDA**.  
+> - **Raspberry Pi GPIO3 (SCL, Pin 5)** connects to **MPU-6050 SCL**.  
+> - **Raspberry Pi GND** goes to **MPU-6050 GND** and **Buzzer negative pin**.  
+> - **Raspberry Pi GPIO17 (Pin 11)** goes to **Buzzer positive pin**.
+
+---
+
+### Additional Wiring Tips
+
+- Ensure I2C is enabled in your Pi configuration (`sudo raspi-config`).
+- Check whether your MPU-6050 supports 3.3V **or** 5V on VCC.  
+- If your module doesn’t have onboard pull-up resistors for SDA/SCL, you may need 4.7 kΩ pull-ups to 3.3V.  
+- For the buzzer, if it’s a high-current or high-voltage buzzer, use a transistor (NPN or MOSFET) with an appropriate current-limiting resistor and a diode if needed.
+
 ## Python Code
 
 Below is the Python code for the concussion detection sensor. Copy and paste it into your Raspberry Pi Python environment.
@@ -208,11 +278,11 @@ sudo apt-get upgrade -y
 Install the required Python libraries and tools:
 ```bash
 sudo apt-get install -y python3-pip python3-dev
-pip3 install smbus2  # For I2C communication with MPU-6050
-pip3 install RPi.GPIO  # For Raspberry Pi GPIO control
-pip3 install pandas  # For handling and saving data
-pip3 install matplotlib  # For graph generation
-pip3 install numpy  # Optional: For advanced data processing
+sudo apt-get install -y python3-smbus2  # For I2C communication with MPU-6050
+sudo apt-get install -y python3-RPi.GPIO  # For Raspberry Pi GPIO control
+sudo apt-get install -y python3-pandas  # For handling and saving data
+sudo apt-get install -y python3-matplotlib  # For graph generation
+sudo apt-get install -y python3-numpy  # Optional: For advanced data processing
 ```
 
 ### Install I2C Tools
