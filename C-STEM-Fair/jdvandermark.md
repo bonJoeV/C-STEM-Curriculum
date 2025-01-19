@@ -107,6 +107,9 @@ If you are using a buzzer for impact alerts as in the provided script:
 4. **MPU-6050 SDA** → **BCM GPIO2** (Physical Pin 3).
 5. **Buzzer +** → **BCM GPIO17** (Physical Pin 11).
 6. **Buzzer -** → **GND** on the Raspberry Pi (Physical Pin 6 or any other GND).
+<p>
+  <img src="rPi400Pinout-3a.png" alt="Pi 400 Pinout" width="800" style="margin-right: 15px;">
+</p>
 
 ## Additional Notes
 
