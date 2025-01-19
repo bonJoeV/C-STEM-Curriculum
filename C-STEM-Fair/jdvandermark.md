@@ -346,65 +346,68 @@ if __name__ == "__main__":
 ``` python
 #!/usr/bin/env python3
 """
-This script continuously reads acceleration data from the MPU-6050 sensor on a Raspberry Pi
-and shows a live graph of the readings as they happen in real-time.
+This program measures impacts on a football helmet to see if a hit might be hard enough 
+to check for a concussion. It uses a special sensor called the MPU-6050 to measure 
+both how much the helmet moves (acceleration) and how much it spins (rotation).
 
-What It Does (Explained Simply):
-1. Wakes up the MPU-6050 sensor (it starts asleep by default).
-2. Reads the X-axis acceleration data (the sensor can measure movement in 3 directions, but
-   we're focusing on just the 'X direction' to keep it simple).
-3. Checks if the absolute acceleration is above a "threshold" we set. If it is, we beep a buzzer
-   (only if we say 'USE_BUZZER = True').
-4. Logs each reading into a CSV file so we can look at it later.
-5. Shows a graph that updates every fraction of a second so we can see live changes.
-6. (Optional) Displays a background image in the plot if we have one.
+What It Does:
+1. Wakes up the sensor (it sleeps by default).
+2. Measures how fast the helmet moves (in g-forces).
+3. Measures how fast the helmet spins (in degrees per second).
+4. Beeps a buzzer if the hit is above a dangerous level.
+5. Logs all the data into a file.
+6. Shows live graphs of movement and spin to see the impacts in real time.
 
-Stop the script by closing the plotting window or pressing Ctrl+C in the terminal.
+You can stop the program by closing the graph window or pressing Ctrl+C.
 """
 
-import smbus                     # Lets us talk to devices on the I2C bus, like the MPU-6050
-import time                      # Helps us control timing (delays, etc.)
-import RPi.GPIO as GPIO          # Lets us use the Raspberry Pi's General Purpose Input/Output pins
-import pandas as pd              # For writing data to a CSV file and possibly reading it
-import matplotlib.pyplot as plt  # To draw our live graph
-import matplotlib.animation as animation  # The part of matplotlib that updates the graph
-from datetime import datetime    # So we can record the time that each reading happens
-import matplotlib.image as mpimg # Allows us to load an image file to display
+import smbus                     # Helps us talk to the sensor
+import time                      # Helps us keep track of time
+import RPi.GPIO as GPIO          # Lets us control the buzzer
+import pandas as pd              # Saves data to a file
+import matplotlib.pyplot as plt  # Draws the live graph
+import matplotlib.animation as animation  # Updates the graph
+from datetime import datetime    # Keeps track of the current time
 
 # -------------------------------------------------------------------------
-#                PART 1: USER SETTINGS (Change these if you want)
+#                1. USER SETTINGS: Things You Can Change
 # -------------------------------------------------------------------------
-USE_BUZZER = False               # Change to True if you have a buzzer connected
-BUZZER_PIN = 17                  # Only relevant if USE_BUZZER = True
-MPU_ADDRESS = 0x68               # The I2C address of the MPU-6050
-IMPACT_THRESHOLD = 15000         # The 'big bump' number. Over this => beep the buzzer
+USE_BUZZER = True                # Turn this to False if you don't have a buzzer
+BUZZER_PIN = 17                  # The pin where the buzzer is connected
+MPU_ADDRESS = 0x68               # The sensor's I2C address
+IMPACT_THRESHOLD_G = 60          # Dangerous g-force level (concussion threshold)
 
-# Set logfile name to include the current date and time.
+# Name the file where the data will be saved
 current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
-LOG_FILE = f"{current_time}_impact_data.csv"
+LOG_FILE = f"{current_time}_helmet_impact_data.csv"
 
-# --- Color & Style Options ---
-LINE_COLOR = "blue"              # Color of the line that shows acceleration data
-THRESHOLD_LINE_COLOR = "red"     # Color of the threshold line
-
-# --- Background Image Option ---
-USE_BACKGROUND_IMAGE = False     # Set to True if you want to display a background image
-BACKGROUND_IMAGE_FILE = "my_background.png"  # Make sure this file exists in the same folder
+# Colors for the graph lines
+LINE_COLOR_ACCEL = "blue"        # Acceleration data
+LINE_COLOR_GYRO = "orange"       # Rotational data
 
 # -------------------------------------------------------------------------
-#                PART 2: SETTING UP RASPBERRY PI AND SENSOR
+#                2. SETTING UP THE SENSOR AND BUZZER
 # -------------------------------------------------------------------------
+# Set up the buzzer (if we're using it)
 if USE_BUZZER:
-    GPIO.setmode(GPIO.BCM)               # Use the BCM numbering for the Pi's pins
-    GPIO.setup(BUZZER_PIN, GPIO.OUT)     # Set our buzzer pin to be an output
+    GPIO.setmode(GPIO.BCM)       # Use Broadcom pin numbering
+    GPIO.setup(BUZZER_PIN, GPIO.OUT)  # Set the buzzer pin to output
 
+# Create an SMBus object to talk to the sensor
 bus = smbus.SMBus(1)
-bus.write_byte_data(MPU_ADDRESS, 0x6B, 0)  # Wake up the MPU-6050
+
+# Wake up the sensor (it starts asleep)
+bus.write_byte_data(MPU_ADDRESS, 0x6B, 0)
 
 # -------------------------------------------------------------------------
-#                PART 3: FUNCTIONS TO READ DATA AND CHECK IMPACT
+#                3. FUNCTIONS TO READ DATA
 # -------------------------------------------------------------------------
 def read_raw_data(register_address):
+    """
+    Reads data from the sensor.
+    - High byte and low byte combine to give the full number.
+    - If the number is too big, it means it's negative, so we fix that.
+    """
     high_byte = bus.read_byte_data(MPU_ADDRESS, register_address)
     low_byte = bus.read_byte_data(MPU_ADDRESS, register_address + 1)
     value = (high_byte << 8) | low_byte
@@ -412,64 +415,115 @@ def read_raw_data(register_address):
         value -= 65536
     return value
 
-def check_impact(threshold):
+def check_impact(threshold_g):
+    """
+    Measures acceleration and rotation from the sensor, converts them to real units, 
+    and checks if the impact is dangerous.
+    - Acceleration is converted to g-forces.
+    - Rotation is converted to degrees per second.
+    - If the values are too high, it triggers the buzzer.
+    """
+    # Read acceleration data
     raw_x = read_raw_data(0x3B)
-    acc_x = abs(raw_x)
+    raw_y = read_raw_data(0x3D)
+    raw_z = read_raw_data(0x3F)
+
+    # Read gyroscope data
+    gyro_x = read_raw_data(0x43)
+    gyro_y = read_raw_data(0x45)
+    gyro_z = read_raw_data(0x47)
+
+    # Convert raw acceleration to g-forces
+    acc_x_g = raw_x / 16384.0
+    acc_y_g = raw_y / 16384.0
+    acc_z_g = raw_z / 16384.0
+
+    # Convert raw gyroscope data to degrees per second
+    gyro_x_dps = gyro_x / 131.0
+    gyro_y_dps = gyro_y / 131.0
+    gyro_z_dps = gyro_z / 131.0
+
+    # Get the current time
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    # Save the data to the file
     with open(LOG_FILE, "a") as f:
-        f.write(f"{timestamp},{acc_x}\n")
-    if USE_BUZZER and acc_x > threshold:
-        GPIO.output(BUZZER_PIN, GPIO.HIGH)
-        print(f"[{timestamp}] Impact detected! Value: {acc_x}")
-        time.sleep(1)
-        GPIO.output(BUZZER_PIN, GPIO.LOW)
-    return acc_x
+        f.write(f"{timestamp},{acc_x_g},{acc_y_g},{acc_z_g},{gyro_x_dps},{gyro_y_dps},{gyro_z_dps}\n")
+
+    # Check if the g-force is too high
+    if abs(acc_x_g) > threshold_g or abs(acc_y_g) > threshold_g or abs(acc_z_g) > threshold_g:
+        print(f"[{timestamp}] DANGER! Impact detected!")
+        print(f"G-Forces: X={acc_x_g:.2f}, Y={acc_y_g:.2f}, Z={acc_z_g:.2f}")
+        print(f"Rotation: X={gyro_x_dps:.2f}, Y={gyro_y_dps:.2f}, Z={gyro_z_dps:.2f}")
+        if USE_BUZZER:
+            GPIO.output(BUZZER_PIN, GPIO.HIGH)  # Turn on buzzer
+            time.sleep(1)                      # Wait 1 second
+            GPIO.output(BUZZER_PIN, GPIO.LOW)  # Turn off buzzer
+
+    return acc_x_g, acc_y_g, acc_z_g, gyro_x_dps, gyro_y_dps, gyro_z_dps
 
 # -------------------------------------------------------------------------
-#                PART 4: LIVE PLOTTING SETUP
+#                4. SETTING UP THE LIVE GRAPH
 # -------------------------------------------------------------------------
+# Create the graph figure and its axis
 fig, ax = plt.subplots()
-x_vals, y_vals = [], []
-(line,) = ax.plot([], [], label="Acceleration X", color=LINE_COLOR)
-threshold_line = ax.axhline(IMPACT_THRESHOLD, color=THRESHOLD_LINE_COLOR, linestyle="--", label="Impact Threshold")
-ax.set_title("Live Impact Data")
-ax.set_xlabel("Time (seconds since start)")
-ax.set_ylabel("Acceleration (X)")
+x_vals = []  # Time values
+acc_x_vals, acc_y_vals, acc_z_vals = [], [], []  # Acceleration
+gyro_x_vals, gyro_y_vals, gyro_z_vals = [], [], []  # Gyroscope
+
+# Create lines for acceleration and rotation
+(line_acc_x,) = ax.plot([], [], label="Accel X (g)", color=LINE_COLOR_ACCEL)
+(line_gyro_x,) = ax.plot([], [], label="Gyro X (dps)", color=LINE_COLOR_GYRO)
+
+# Add labels and a legend
+ax.set_title("Helmet Impact Data")
+ax.set_xlabel("Time (s)")
+ax.set_ylabel("Value")
 ax.legend()
 ax.grid(True)
+
+# Start time for the graph
 start_time = time.time()
 
-if USE_BACKGROUND_IMAGE:
-    try:
-        img = mpimg.imread(BACKGROUND_IMAGE_FILE)
-        ax.imshow(img, extent=[0, 10, 0, 10], aspect='auto', zorder=-1)
-    except FileNotFoundError:
-        print(f"Background image '{BACKGROUND_IMAGE_FILE}' not found. Continuing without it.")
-
 def init():
-    line.set_data([], [])
-    return (line,)
+    """Initialize the graph with empty data."""
+    line_acc_x.set_data([], [])
+    line_gyro_x.set_data([], [])
+    return (line_acc_x, line_gyro_x)
 
 def update(frame):
-    acc_x = check_impact(IMPACT_THRESHOLD)
+    """
+    Update the graph with new data from the sensor.
+    """
+    acc_x_g, acc_y_g, acc_z_g, gyro_x_dps, gyro_y_dps, gyro_z_dps = check_impact(IMPACT_THRESHOLD_G)
     elapsed_time = time.time() - start_time
     x_vals.append(elapsed_time)
-    y_vals.append(acc_x)
-    line.set_data(x_vals, y_vals)
+
+    # Update acceleration and gyroscope data
+    acc_x_vals.append(acc_x_g)
+    gyro_x_vals.append(gyro_x_dps)
+
+    # Update the lines on the graph
+    line_acc_x.set_data(x_vals, acc_x_vals)
+    line_gyro_x.set_data(x_vals, gyro_x_vals)
+
+    # Adjust the graph limits
     ax.relim()
     ax.autoscale_view()
-    return (line,)
 
+    return (line_acc_x, line_gyro_x)
+
+# Create an animation for the live graph
 ani = animation.FuncAnimation(fig, update, init_func=init, interval=200, blit=True)
 
 # -------------------------------------------------------------------------
-#                PART 5: START EVERYTHING!
+#                5. START MONITORING
 # -------------------------------------------------------------------------
 try:
-    print("Monitoring impacts... Close the plot window or press Ctrl+C to stop.")
+    print("Monitoring helmet impacts... Press Ctrl+C to stop.")
     plt.show()
 except KeyboardInterrupt:
-    print("\nProgram interrupted by user. Exiting gracefully...")
+    print("\nProgram stopped by user. Exiting...")
 finally:
     if USE_BUZZER:
         GPIO.cleanup()
