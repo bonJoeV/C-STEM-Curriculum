@@ -15,14 +15,15 @@
    - [Additional Wiring Tips](#additional-wiring-tips)  
    - [Device Pinouts](#device-pinouts)  
 4. [Software Installation](#software-installation)  
-5. [Python Code](#python-code)  
-6. [How It Works](#how-it-works)  
-7. [Catholic Values Integration](#catholic-values-integration)  
-8. [Display Board and Presentation Script](#display-board-and-presentation-script)  
+5. [Python Code for Delayed Logger](#python-code-for-delayed-logger)  
+6. [Python Code for Live Logger](#python-code-for-live-logger)  
+7. [How It Works](#how-it-works)  
+8. [Catholic Values Integration](#catholic-values-integration)  
+9. [Display Board and Presentation Script](#display-board-and-presentation-script)  
    - [Display Board Layout](#display-board-layout)  
    - [Presentation Script for JD](#presentation-script-for-jd)  
-9. [Additional Resources](#additional-resources)  
-10. [License](#license)
+10. [Additional Resources](#additional-resources)  
+11. [License](#license)
 
 ---
 
@@ -334,6 +335,133 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
+
+
+## Python Code for Live Logger
+``` python
+
+import smbus
+import time
+import RPi.GPIO as GPIO
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.animation as animation
+from datetime import datetime
+
+# -----------------------------------------------------------------------
+#               USER-MANIPULATED VARIABLES
+# -----------------------------------------------------------------------
+BUZZER_PIN = 17
+MPU_ADDRESS = 0x68
+IMPACT_THRESHOLD = 15000
+LOG_FILE = "impact_data.csv"
+SAMPLING_INTERVAL = 0.1  # Time (seconds) between each reading
+# -----------------------------------------------------------------------
+
+ACCEL_XOUT_H = 0x3B
+PWR_MGMT_1   = 0x6B
+
+# Initialize GPIO
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(BUZZER_PIN, GPIO.OUT)
+
+# Initialize I2C
+bus = smbus.SMBus(1)
+bus.write_byte_data(MPU_ADDRESS, PWR_MGMT_1, 0)  # Wake up MPU-6050
+
+# Prepare the CSV file (optional: if you want to overwrite each run)
+# with open(LOG_FILE, "w") as f:
+#     f.write("Timestamp,Acceleration_X\n")
+
+def read_raw_data(addr):
+    high = bus.read_byte_data(MPU_ADDRESS, addr)
+    low  = bus.read_byte_data(MPU_ADDRESS, addr + 1)
+    value = (high << 8) | low
+    if value > 32768:
+        value -= 65536
+    return value
+
+def check_impact(threshold):
+    acc_x = abs(read_raw_data(ACCEL_XOUT_H))
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    
+    # Log to CSV
+    with open(LOG_FILE, "a") as f:
+        f.write(f"{timestamp},{acc_x}\n")
+    
+    # Check if above threshold => beep
+    if acc_x > threshold:
+        GPIO.output(BUZZER_PIN, GPIO.HIGH)
+        print(f"[{timestamp}] Impact detected! Value: {acc_x}")
+        time.sleep(1)
+        GPIO.output(BUZZER_PIN, GPIO.LOW)
+
+    return acc_x
+
+# ------------------------ Live Plot Setup -----------------------------
+fig, ax = plt.subplots()
+x_vals = []
+y_vals = []
+
+# Initialize an empty line on the plot that we’ll update live
+(line,) = ax.plot([], [], label="Acceleration X")
+threshold_line = ax.axhline(IMPACT_THRESHOLD, color="r", ls="--", label="Impact Threshold")
+
+ax.set_title("Live Impact Data")
+ax.set_xlabel("Time (s)")
+ax.set_ylabel("Acceleration (X)")
+
+ax.legend()
+ax.grid(True)
+
+start_time = time.time()
+
+def init():
+    """Initialize the background of the animation."""
+    line.set_data([], [])
+    return (line,)
+
+def update(frame):
+    """
+    This function gets called repeatedly by FuncAnimation.
+    We'll read a new sensor value and update the line’s data.
+    """
+    # Read the sensor and log it
+    acc_x = check_impact(IMPACT_THRESHOLD)
+    
+    # Time elapsed since start (for plotting X-axis in seconds)
+    elapsed = time.time() - start_time
+    
+    # Append new data
+    x_vals.append(elapsed)
+    y_vals.append(acc_x)
+    
+    # Update the line on the plot
+    line.set_data(x_vals, y_vals)
+    
+    # Adjust plot view if needed (e.g., auto-rescale)
+    ax.relim()
+    ax.autoscale_view()
+
+    return (line,)
+
+ani = animation.FuncAnimation(
+    fig,         # figure object
+    update,      # update function
+    init_func=init,
+    interval=100,  # update interval in ms (100 ms = 0.1 sec)
+    blit=True
+)
+
+print("Monitoring impacts... Press Ctrl+C to stop.")
+
+try:
+    plt.show()  # This will display the live plot
+except KeyboardInterrupt:
+    print("Plot window closed by user.")
+finally:
+    GPIO.cleanup()
 ```
 
 ---
