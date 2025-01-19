@@ -344,7 +344,6 @@ if __name__ == "__main__":
 
 ## Python Code for Live Logger
 ``` python
-
 #!/usr/bin/env python3
 """
 This script continuously reads acceleration data from the MPU-6050 sensor on a Raspberry Pi
@@ -370,10 +369,7 @@ import pandas as pd              # For writing data to a CSV file and possibly r
 import matplotlib.pyplot as plt  # To draw our live graph
 import matplotlib.animation as animation  # The part of matplotlib that updates the graph
 from datetime import datetime    # So we can record the time that each reading happens
-
-# If you want to try the background image part:
 import matplotlib.image as mpimg # Allows us to load an image file to display
-# Make sure to have an image file in the same folder, e.g. "my_background.png"
 
 # -------------------------------------------------------------------------
 #                PART 1: USER SETTINGS (Change these if you want)
@@ -384,197 +380,97 @@ MPU_ADDRESS = 0x68               # The I2C address of the MPU-6050
 IMPACT_THRESHOLD = 15000         # The 'big bump' number. Over this => beep the buzzer
 
 # Set logfile name to include the current date and time.
-# Format: YYYYMMDD_HHMMSS_impact_data.csv
 current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
 LOG_FILE = f"{current_time}_impact_data.csv"
 
 # --- Color & Style Options ---
 LINE_COLOR = "blue"              # Color of the line that shows acceleration data
 THRESHOLD_LINE_COLOR = "red"     # Color of the threshold line
-# For more colors, you can use standard names like "green", "magenta", "orange", etc.
 
 # --- Background Image Option ---
 USE_BACKGROUND_IMAGE = False     # Set to True if you want to display a background image
 BACKGROUND_IMAGE_FILE = "my_background.png"  # Make sure this file exists in the same folder
-# -------------------------------------------------------------------------
-
-# These are specific addresses inside the MPU-6050 sensor that we read from or write to.
-ACCEL_XOUT_H = 0x3B  # Tells the sensor we want the "X-axis acceleration" data
-PWR_MGMT_1   = 0x6B  # The "power management" register. We'll use it to wake up the sensor
 
 # -------------------------------------------------------------------------
 #                PART 2: SETTING UP RASPBERRY PI AND SENSOR
 # -------------------------------------------------------------------------
-# If we use the buzzer, we need to set up the GPIO pins. If not, we skip it.
 if USE_BUZZER:
     GPIO.setmode(GPIO.BCM)               # Use the BCM numbering for the Pi's pins
     GPIO.setup(BUZZER_PIN, GPIO.OUT)     # Set our buzzer pin to be an output
 
-# We create an SMBus object to talk to devices on bus #1 (the usual bus on Raspberry Pi).
 bus = smbus.SMBus(1)
-
-# The MPU-6050 starts off 'asleep'. Writing a 0 to its power management register (PWR_MGMT_1)
-# will wake it up so it can give us data.
-bus.write_byte_data(MPU_ADDRESS, PWR_MGMT_1, 0)
+bus.write_byte_data(MPU_ADDRESS, 0x6B, 0)  # Wake up the MPU-6050
 
 # -------------------------------------------------------------------------
 #                PART 3: FUNCTIONS TO READ DATA AND CHECK IMPACT
 # -------------------------------------------------------------------------
-
 def read_raw_data(register_address):
-    """
-    Reads 2 bytes of data (high and low) from the given register address on the MPU-6050.
-    The sensor data is in 'two's complement' format, so we convert it to a signed 16-bit number.
-
-    If you think of the data as a big box, the high byte is the top half,
-    and the low byte is the bottom half. We put them together to form the full data.
-    """
-    # Read the top part ("high byte")
     high_byte = bus.read_byte_data(MPU_ADDRESS, register_address)
-    # Read the bottom part ("low byte")
-    low_byte  = bus.read_byte_data(MPU_ADDRESS, register_address + 1)
-
-    # Combine them into a 16-bit number
+    low_byte = bus.read_byte_data(MPU_ADDRESS, register_address + 1)
     value = (high_byte << 8) | low_byte
-
-    # If the value is above 32768, it actually means it's negative in two's complement.
-    # Subtracting 65536 re-maps it to the negative range.
     if value > 32768:
         value -= 65536
-
     return value
 
 def check_impact(threshold):
-    """
-    Reads the X-axis acceleration from the sensor (as a number),
-    logs the data to a CSV file, and beeps if the number is above the threshold.
-    Returns the absolute X-axis acceleration so we can plot it.
-    """
-    # 1. Read the raw X-axis acceleration from the sensor
-    raw_x = read_raw_data(ACCEL_XOUT_H)
-
-    # 2. We look at the absolute value because a big negative acceleration is also a big bump.
+    raw_x = read_raw_data(0x3B)
     acc_x = abs(raw_x)
-
-    # 3. Create a time stamp (like '2025-01-19 10:30:12') so we know when the reading happened
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-    # 4. Write this reading to a CSV file so we can look at it later if we want
     with open(LOG_FILE, "a") as f:
         f.write(f"{timestamp},{acc_x}\n")
-
-    # 5. If the reading is bigger than our threshold, beep the buzzer (only if we use a buzzer)
     if USE_BUZZER and acc_x > threshold:
-        GPIO.output(BUZZER_PIN, GPIO.HIGH)  # Turn on the buzzer
+        GPIO.output(BUZZER_PIN, GPIO.HIGH)
         print(f"[{timestamp}] Impact detected! Value: {acc_x}")
-        time.sleep(1)                      # Buzzer stays on for 1 second
-        GPIO.output(BUZZER_PIN, GPIO.LOW)  # Turn off the buzzer
-
+        time.sleep(1)
+        GPIO.output(BUZZER_PIN, GPIO.LOW)
     return acc_x
 
 # -------------------------------------------------------------------------
 #                PART 4: LIVE PLOTTING SETUP
 # -------------------------------------------------------------------------
-# We'll create a graph that updates every little bit of time, so we can see changes 'live'.
-
-# First, create a figure (the window) and an axis (the area inside the window).
 fig, ax = plt.subplots()
-
-# x_vals will store the elapsed time in seconds since we started plotting.
-x_vals = []
-# y_vals will store the acceleration values we read each time.
-y_vals = []
-
-# Create a line on the plot that starts empty. We'll update this line with our data later.
+x_vals, y_vals = [], []
 (line,) = ax.plot([], [], label="Acceleration X", color=LINE_COLOR)
-
-# Draw a horizontal line for our threshold. So we can see visually where 15,000 is.
-threshold_line = ax.axhline(IMPACT_THRESHOLD, color=THRESHOLD_LINE_COLOR,
-                            linestyle="--", label="Impact Threshold")
-
-# Give the plot a title and labels for the X and Y axes.
+threshold_line = ax.axhline(IMPACT_THRESHOLD, color=THRESHOLD_LINE_COLOR, linestyle="--", label="Impact Threshold")
 ax.set_title("Live Impact Data")
 ax.set_xlabel("Time (seconds since start)")
 ax.set_ylabel("Acceleration (X)")
-
-# Add a legend, so we know which line is which.
 ax.legend()
-
-# Turn on a grid in the background of the plot.
 ax.grid(True)
-
-# We'll note the time the script starts. Then we can measure how many seconds pass as we go along.
 start_time = time.time()
 
-# -------------------- (Optional) Background Image Setup --------------------
 if USE_BACKGROUND_IMAGE:
     try:
-        # Load the image from file
         img = mpimg.imread(BACKGROUND_IMAGE_FILE)
-        # Show the image behind our data in the plot
-        # The 'extent' can be used to position the image in the coordinate space.
-        # Here, we pick a "guess" of [0, 10, 0, 10], but you can adjust as needed.
         ax.imshow(img, extent=[0, 10, 0, 10], aspect='auto', zorder=-1)
     except FileNotFoundError:
         print(f"Background image '{BACKGROUND_IMAGE_FILE}' not found. Continuing without it.")
-# -------------------------------------------------------------------------
 
 def init():
-    """
-    This function is called once at the start of the animation to set everything up
-    before the main updating begins.
-    """
-    line.set_data([], [])  # Start our line with no data
+    line.set_data([], [])
     return (line,)
 
 def update(frame):
-    """
-    This function is called over and over (like ~5 times per second if interval=200ms).
-    1. Read the sensor data (and beep if needed).
-    2. Add the new reading to our lists (x_vals, y_vals).
-    3. Update the plot with the new data so it redraws.
-    """
-    # Read the sensor and handle beeping
     acc_x = check_impact(IMPACT_THRESHOLD)
-
-    # Find out how many seconds have passed since we started
     elapsed_time = time.time() - start_time
-
-    # Store that time in x_vals and the sensor reading in y_vals
     x_vals.append(elapsed_time)
     y_vals.append(acc_x)
-
-    # Update our line with this new data
     line.set_data(x_vals, y_vals)
-
-    # Adjust the plot if the new data goes out of the current view range
     ax.relim()
     ax.autoscale_view()
-
     return (line,)
 
-# FuncAnimation repeatedly calls 'update' on the 'fig' at intervals (milliseconds).
-ani = animation.FuncAnimation(
-    fig,            # Which figure to animate
-    update,         # The function that updates the data/plot
-    init_func=init, # Initialize the animation
-    interval=200,   # Every 200 ms (0.2 seconds) we call 'update'
-    blit=True       # Sometimes improves performance. If you see issues, set to False.
-)
+ani = animation.FuncAnimation(fig, update, init_func=init, interval=200, blit=True)
 
 # -------------------------------------------------------------------------
 #                PART 5: START EVERYTHING!
 # -------------------------------------------------------------------------
-print("Monitoring impacts... Close the plot window or press Ctrl+C to stop.")
-
 try:
-    # This will open the plot window and start the live updating.
-    # The script will keep running until you close the window or press Ctrl+C.
+    print("Monitoring impacts... Close the plot window or press Ctrl+C to stop.")
     plt.show()
 except KeyboardInterrupt:
-    print("You pressed Ctrl+C. Exiting program...")
+    print("\nProgram interrupted by user. Exiting gracefully...")
 finally:
-    # When we quit, let's clean up the GPIO pins (only if we set them up for the buzzer).
     if USE_BUZZER:
         GPIO.cleanup()
 ```
