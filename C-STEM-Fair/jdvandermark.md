@@ -4,24 +4,47 @@
 
 ---
 
-## Objective
+## Table of Contents
+1. [Introduction and Objective](#introduction-and-objective)  
+2. [Materials](#materials)  
+   - [Hardware](#hardware)  
+   - [Software](#software)  
+3. [Setup and Connections](#setup-and-connections)  
+   - [Raspberry Pi <-> MPU-6050 Pinout](#raspberry-pi---mpu-6050-pinout)  
+   - [Buzzer Pin Setup](#buzzer-pin-setup)  
+   - [Additional Wiring Tips](#additional-wiring-tips)  
+   - [Device Pinouts](#device-pinouts)  
+4. [Software Installation](#software-installation)  
+5. [Python Code](#python-code)  
+6. [How It Works](#how-it-works)  
+7. [Catholic Values Integration](#catholic-values-integration)  
+8. [Display Board and Presentation Script](#display-board-and-presentation-script)  
+   - [Display Board Layout](#display-board-layout)  
+   - [Presentation Script for JD](#presentation-script-for-jd)  
+9. [Additional Resources](#additional-resources)  
+10. [License](#license)
 
-Design and demonstrate a concussion detection sensor prototype that can monitor impacts in sports and alert coaches to potential concussions. Use historical data to analyze trends and integrate Catholic values of compassion, stewardship, and human dignity.
+---
+
+## Introduction and Objective
+Concussions are a serious concern in sports. This project aims to design a **concussion detection sensor** prototype that can monitor impacts in sports and alert coaches to potential concussions. By using **historical data** to analyze trends, we can better understand when and how concussions occur and protect athletes more effectively.
+
+This project integrates **Catholic values** of compassion, stewardship, and human dignity by emphasizing the responsibility to care for athletes’ well-being and by leveraging technology to safeguard the life that God has given.
 
 ---
 
 ## Materials
 
 ### Hardware
-- Raspberry Pi 400 (or another Raspberry Pi model).
-- MPU-6050 Accelerometer/Gyroscope Module.
-- Buzzer (for audible alerts).
-- Breadboard and jumper wires.
-- MicroSD card with Raspberry Pi OS.
-- Helmet (for mounting the sensor).
-- Portable battery pack (to power the Raspberry Pi for portability).
-- Velcro or glue (for attaching the sensor to the helmet).
-- USB flash drive or cloud setup (to save historical data).
+- Raspberry Pi 400 (or any compatible Raspberry Pi model)  
+- MPU-6050 Accelerometer/Gyroscope Module  
+- Buzzer (for audible alerts)  
+- Breadboard and jumper wires  
+- MicroSD card with Raspberry Pi OS  
+- Helmet (for mounting the sensor)  
+- Portable battery pack (to power the Raspberry Pi for portability)  
+- Velcro or glue (for attaching the sensor to the helmet)  
+- USB flash drive or cloud setup (to save historical data)
 
 ### Software
 - Python libraries:
@@ -33,117 +56,165 @@ Design and demonstrate a concussion detection sensor prototype that can monitor 
 
 ---
 
-## Display Board and Presentation Script
+## Setup and Connections
 
-### Display Board Layout
-1. **Title Section**
-   - Title: "Concussion Detection Sensor for Athlete Safety"
-   - Tagline: *Using Technology and Faith to Protect God's Gift of Life*
+### Raspberry Pi <-> MPU-6050 Pinout
 
-2. **Left Panel**
-   - Describe the problem of concussions in sports and the project objective.
-
-3. **Center Panel**
-   - Include a visual diagram of the setup, flowchart of how the system works, and graphs of impact data.
-
-4. **Right Panel**
-   - Integrate Catholic values with quotes and broader implications of the project.
-
-5. **Interactive Section**
-   - Include a live demonstration or a QR code linking to a video of the project.
-
----
-
-### Presentation Script for JD
-1. **Introduction**
-   - Explain the purpose of the project and its connection to Catholic values.
-   
-2. **Demonstration**
-   - Show how the prototype works by detecting impacts and triggering the alert system.
-
-3. **Discussion**
-   - Discuss how historical data graphs can help identify patterns and prevent injuries.
-
----
-
-
-# Raspberry Pi <-> MPU-6050 Connections
-
-This document outlines how to wire the MPU-6050 sensor to a Raspberry Pi for I2C communication, as well as how to connect a buzzer for impact alerts.
-
-## Pinout Table
-
-| **Raspberry Pi Pin (Physical #)** | **BCM GPIO** | **MPU-6050 Pin** | **Description**                           |
-|:---------------------------------:|:-----------:|:---------------:|-------------------------------------------|
-| **Pin 1**                         | 3V3 Power   | **VCC**          | Power to the MPU-6050 (3.3V)<br>*Check if your module can accept 5V* |
-| **Pin 3**                         | GPIO2 (SDA) | **SDA**          | I2C Data Line                             |
-| **Pin 5**                         | GPIO3 (SCL) | **SCL**          | I2C Clock Line                            |
-| **Pin 6**                         | GND         | **GND**          | Ground reference                          |
+| **Raspberry Pi Pin (Physical #)** | **BCM GPIO** | **MPU-6050 Pin** | **Description**                                                     |
+|:---------------------------------:|:-----------:|:---------------:|---------------------------------------------------------------------|
+| **Pin 1**                         | 3V3 Power   | **VCC**          | Power to the MPU-6050 (3.3V) <br> *Check if your module can accept 5V*  |
+| **Pin 3**                         | GPIO2 (SDA) | **SDA**          | I2C Data Line                                                        |
+| **Pin 5**                         | GPIO3 (SCL) | **SCL**          | I2C Clock Line                                                       |
+| **Pin 6**                         | GND         | **GND**          | Ground reference                                                     |
 
 > **Note**: Some MPU-6050 boards have onboard voltage regulators, allowing 5V input on VCC.  
 > Always confirm the acceptable voltage input for your specific module.
 
-## Optional Pins
+#### Optional Pins
+- **INT (Interrupt)** on the MPU-6050 can be connected to any free GPIO pin on the Raspberry Pi if you want to use interrupt-driven events (e.g., GPIO4, GPIO17). This is not required for basic polling or simple I2C reads.
 
-- **INT (Interrupt)** on the MPU-6050 can be connected to any free GPIO pin on the Raspberry Pi if you want to use interrupt-driven events (e.g., GPIO4, GPIO17, etc.). This is not required for basic polling or simple I2C reads.
-
-## Buzzer Pin (from Example Script)
-
-If you are using a buzzer for impact alerts as in the provided script:
+### Buzzer Pin Setup
+If you are using a buzzer for impact alerts, wire it as follows:
 
 | **Raspberry Pi Pin (Physical #)** | **BCM GPIO** | **Buzzer Pin** | **Description**              |
 |:---------------------------------:|:-----------:|:--------------:|------------------------------|
 | **Pin 11**                        | GPIO17       | **+** (Buzzer) | Positive leg of the buzzer   |
-| **Any GND** pin (e.g. Pin 6)      | GND         | **-** (Buzzer) | Ground leg of the buzzer     |
+| **Any GND** pin (e.g. Pin 6)      | GND          | **-** (Buzzer) | Ground leg of the buzzer     |
 
-> **Note**: If your buzzer requires more current than the GPIO pin can safely supply, you should use a transistor driver circuit with an appropriate resistor rather than driving the buzzer directly from the GPIO.
+> **Note**: If your buzzer requires more current than the GPIO pin can safely supply, use a transistor driver circuit with an appropriate resistor rather than driving the buzzer directly from the GPIO.
 
-## Quick Wiring Overview
-
-1. **MPU-6050 VCC** → **3.3V** on Raspberry Pi (Physical Pin 1).  
-   *Check whether your MPU-6050 board supports 5V if you plan to use that.*
-2. **MPU-6050 GND** → **GND** on Raspberry Pi (Physical Pin 6 or any other GND).
-3. **MPU-6050 SCL** → **BCM GPIO3** (Physical Pin 5).
-4. **MPU-6050 SDA** → **BCM GPIO2** (Physical Pin 3).
-5. **Buzzer +** → **BCM GPIO17** (Physical Pin 11).
-6. **Buzzer -** → **GND** on the Raspberry Pi (Physical Pin 6 or any other GND).
-<p>
-  <img src="rPi400Pinout-3a.png" alt="Pi 400 Pinout" width="800" style="margin-right: 15px;">
-</p>
-
-## Additional Notes
-
-- **I2C Interface**: Make sure I2C is enabled on the Raspberry Pi. You can enable this via:
-  - `sudo raspi-config` → **Interfacing Options** → **I2C** → **Enable**
-  - Or the Raspberry Pi configuration tool in the desktop environment.
-- **Pull-Up Resistors**: Many MPU-6050 breakout boards include pull-up resistors on SDA and SCL. If yours does not, you may need to add external pull-up resistors (typically 4.7kΩ) to 3.3V.
-- **Voltage Levels**: If the MPU-6050 board lacks level shifting or regulators, ensure you use 3.3V to avoid damaging the sensor.
-- **Buzzer Requirements**: If you have a passive buzzer or one that draws more current than the GPIO can supply, use a transistor or MOSFET driver circuit and an appropriate flyback diode, if needed.
-
-With these connections and considerations, your MPU-6050 should be able to communicate with the Raspberry Pi over I2C, and the buzzer can be activated under your impact threshold logic.
+### Additional Wiring Tips
+1. **I2C Interface**: Make sure I2C is enabled on the Raspberry Pi (via `sudo raspi-config` -> *Interfacing Options* -> *I2C* -> *Enable*).  
+2. **Pull-Up Resistors**: Many MPU-6050 breakout boards include pull-up resistors on SDA and SCL. If yours does not, you may need to add external pull-up resistors (typically 4.7kΩ) to 3.3V.  
+3. **Voltage Levels**: If the MPU-6050 board lacks level shifting or regulators, use only 3.3V to avoid damaging the sensor.  
+4. **Buzzer Requirements**: If you have a passive buzzer or one that draws more current than the GPIO can provide, use a transistor or MOSFET with a diode and appropriate resistor.
 
 
-> **Explanation**  
-> - **Raspberry Pi 3.3V (Pin 1)** connects to **MPU-6050 VCC**.  
-> - **Raspberry Pi GPIO2 (SDA, Pin 3)** connects to **MPU-6050 SDA**.  
-> - **Raspberry Pi GPIO3 (SCL, Pin 5)** connects to **MPU-6050 SCL**.  
-> - **Raspberry Pi GND** goes to **MPU-6050 GND** and **Buzzer negative pin**.  
-> - **Raspberry Pi GPIO17 (Pin 11)** goes to **Buzzer positive pin**.
+## Device Pinouts
+
+| [<img src="rPi400Pinout-3a.png" alt="Pi 400 Pinout" title="Pi 400 Pinout" width="820px">](rPi400Pinout-3a.png) |
+|:--------------------------------------------------------------------------------------------------------------:|
+| **Pi 400 Pinout**                                                                                             |
+
+#### Pi 400 Full 40-Pin GPIO Header
+
+Below is the complete 40-pin layout for the Pi 400 (which matches the Raspberry Pi 4 pinout).  
+Columns include **Physical Pin #**, **BCM GPIO** numbering, **Name/Function**, and a brief **Description**.
+
+| **Physical Pin #** | **BCM GPIO** | **Name / Function** | **Description**                                                                       |
+|:------------------:|:-----------:|:-------------------:|:--------------------------------------------------------------------------------------|
+| 1                  | 3V3 Power   | 3.3V               | **3.3V Power Supply** for low-voltage components.                                    |
+| 2                  | 5V          | 5V                 | **5V Power Supply** (direct from USB-C power in).                                    |
+| 3                  | GPIO2       | SDA                | **I2C Data Line** (default).                                                         |
+| 4                  | 5V          | 5V                 | **5V Power Supply** (direct from USB-C power in).                                    |
+| 5                  | GPIO3       | SCL                | **I2C Clock Line** (default).                                                        |
+| 6                  | GND         | Ground             | **Common Ground Reference**.                                                         |
+| 7                  | GPIO4       | GPCLK0             | General-purpose clock pin (also used for 1-Wire with config changes).               |
+| 8                  | GPIO14      | TXD                | **UART TX** pin (transmit).                                                          |
+| 9                  | GND         | Ground             | **Common Ground Reference**.                                                         |
+| 10                 | GPIO15      | RXD                | **UART RX** pin (receive).                                                           |
+| 11                 | GPIO17      | GPIO17             | General-purpose I/O. Often used for LED or buzzer.                                   |
+| 12                 | GPIO18      | PCM_CLK            | PCM/I2S clock or general-purpose I/O.                                                |
+| 13                 | GPIO27      | GPIO27             | General-purpose I/O.                                                                 |
+| 14                 | GND         | Ground             | **Common Ground Reference**.                                                         |
+| 15                 | GPIO22      | GPIO22             | General-purpose I/O.                                                                 |
+| 16                 | GPIO23      | GPIO23             | General-purpose I/O.                                                                 |
+| 17                 | 3V3 Power   | 3.3V               | **3.3V Power Supply** (another 3.3V rail).                                           |
+| 18                 | GPIO24      | GPIO24             | General-purpose I/O.                                                                 |
+| 19                 | GPIO10      | MOSI               | **SPI MOSI** (Master Out, Slave In).                                                 |
+| 20                 | GND         | Ground             | **Common Ground Reference**.                                                         |
+| 21                 | GPIO9       | MISO               | **SPI MISO** (Master In, Slave Out).                                                 |
+| 22                 | GPIO25      | GPIO25             | General-purpose I/O.                                                                 |
+| 23                 | GPIO11      | SCLK               | **SPI Serial Clock**.                                                                |
+| 24                 | GPIO8       | CE0                | **SPI Chip Enable 0**.                                                               |
+| 25                 | GND         | Ground             | **Common Ground Reference**.                                                         |
+| 26                 | GPIO7       | CE1                | **SPI Chip Enable 1**.                                                               |
+| 27                 | GPIO0       | ID_SD              | **ID EEPROM Data** (used internally for HAT identification).                         |
+| 28                 | GPIO1       | ID_SC              | **ID EEPROM Clock** (used internally for HAT identification).                        |
+| 29                 | GPIO5       | GPIO5              | General-purpose I/O.                                                                 |
+| 30                 | GND         | Ground             | **Common Ground Reference**.                                                         |
+| 31                 | GPIO6       | GPIO6              | General-purpose I/O.                                                                 |
+| 32                 | GPIO12      | GPIO12             | General-purpose I/O, also PWM channel 0, etc.                                        |
+| 33                 | GPIO13      | GPIO13             | General-purpose I/O, also PWM channel 1, etc.                                        |
+| 34                 | GND         | Ground             | **Common Ground Reference**.                                                         |
+| 35                 | GPIO19      | GPIO19             | General-purpose I/O, I2S word select (PCM_FS), etc.                                  |
+| 36                 | GPIO16      | GPIO16             | General-purpose I/O.                                                                 |
+| 37                 | GPIO26      | GPIO26             | General-purpose I/O.                                                                 |
+| 38                 | GPIO20      | GPIO20             | General-purpose I/O.                                                                 |
+| 39                 | GND         | Ground             | **Common Ground Reference**.                                                         |
+| 40                 | GPIO21      | GPIO21             | General-purpose I/O.                                                                 |
+
+> **Notes**:  
+> - The BCM GPIO numbers (e.g., GPIO2, GPIO3, etc.) are commonly used in Python with libraries like `RPi.GPIO`.  
+> - Pins 27 (ID_SD) and 28 (ID_SC) are reserved for HAT identification and should generally be left unused unless you’re designing a custom HAT with its own ID EEPROM.  
+> - Always verify power pins (3.3V and 5V) before making connections to ensure proper voltage levels for your devices.  
+> - For more detailed information, consult the [official Raspberry Pi documentation](https://www.raspberrypi.com/documentation/).
+
+
+| [<img src="MPU6050-Module.jpg" alt="MPU6050 Module" title="MPU6050 Module" width="400px">](MPU6050-Module.jpg) | [<img src="MPU6050-Pinout.png" alt="MPU6050 Pinout" title="MPU6050 Pinout" width="400px">](MPU6050-Pinout.png) |
+|:--------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------:|
+| **MPU6050 Module**                                                                                            | **MPU6050 Pinout**                                                                                             |
+
+#### MPU6050 Pinout Configuration
+| Pin Number | Pin Name              | Description                                                                  |
+|------------|-----------------------|------------------------------------------------------------------------------|
+| 1          | Vcc                   | Provides power to the module (3V-5V). Typically +5V is used.                 |
+| 2          | Ground                | Connected to system ground                                                   |
+| 3          | Serial Clock (SCL)    | Provides clock pulses for I2C communication                                  |
+| 4          | Serial Data (SDA)     | Transfers data via I2C                                                       |
+| 5          | Aux Serial Data (XDA) | Can interface additional I2C modules (optional)                              |
+| 6          | Aux Serial Clock (XCL)| Can interface additional I2C modules (optional)                              |
+| 7          | AD0                   | Used to vary the address if multiple MPU6050s share the same I2C bus         |
+| 8          | Interrupt (INT)       | Signals when data is ready for the MCU to read                               |
 
 ---
 
-### Additional Wiring Tips
+## Software Installation
 
-- Ensure I2C is enabled in your Pi configuration (`sudo raspi-config`).
-- Check whether your MPU-6050 supports 3.3V **or** 5V on VCC.  
-- If your module doesn’t have onboard pull-up resistors for SDA/SCL, you may need 4.7 kΩ pull-ups to 3.3V.  
-- For the buzzer, if it’s a high-current or high-voltage buzzer, use a transistor (NPN or MOSFET) with an appropriate current-limiting resistor and a diode if needed.
+1. **Update and Upgrade the System**  
+   ``` bash
+   sudo apt-get update
+   sudo apt-get upgrade -y
+   ```
+
+2. **Install Python and Libraries**  
+   ``` bash
+   sudo apt-get install -y python3-pip python3-dev
+   sudo apt-get install -y python3-smbus2  # For I2C communication with MPU-6050
+   sudo apt-get install -y python3-RPi.GPIO
+   sudo apt-get install -y python3-pandas
+   sudo apt-get install -y python3-matplotlib
+   sudo apt-get install -y python3-numpy    # Optional for advanced data processing
+   ```
+
+3. **Install I2C Tools**  
+   ``` bash
+   sudo apt-get install -y i2c-tools
+   ```
+
+4. **Enable the I2C Interface**  
+   - Run the configuration tool:  
+     ``` bash
+     sudo raspi-config
+     ```  
+   - Go to **Interface Options** -> **I2C** -> **Enable**.  
+   - Reboot the Pi:  
+     ``` bash
+     sudo reboot
+     ```  
+
+5. **Verify the Installation**  
+   ``` bash
+   ls /dev/i2c*
+   sudo i2cdetect -y 1
+   ```
+
+   The MPU-6050 sensor should appear at address `0x68`.
+
+---
 
 ## Python Code
-
-Below is the Python code for the concussion detection sensor. Copy and paste it into your Raspberry Pi Python environment.
-
-```python
+``` python
 #!/usr/bin/env python3
 """
 Script to monitor impacts using an MPU-6050 accelerometer on a Raspberry Pi.
@@ -175,7 +246,7 @@ ACCEL_XOUT_H = 0x3B  # Address to read X-axis acceleration (high byte)
 PWR_MGMT_1 = 0x6B    # Address used to wake the MPU-6050
 
 # Initialize GPIO
-GPIO.setmode(GPIO.BCM)          # Use Broadcom GPIO numbering
+GPIO.setmode(GPIO.BCM)           # Use Broadcom GPIO numbering
 GPIO.setup(BUZZER_PIN, GPIO.OUT) # Set the buzzer pin as output
 
 # Initialize I2C (MPU-6050)
@@ -264,81 +335,69 @@ def main():
 if __name__ == "__main__":
     main()
 ```
----
-
-## Software Installation Instructions
-
-Follow these steps to install all the necessary software and libraries on your Raspberry Pi for the project:
-
-### Update and Upgrade the System
-Run these commands to ensure your Raspberry Pi has the latest updates:
-```bash
-sudo apt-get update
-sudo apt-get upgrade -y
-```
-
-### Install Python and Libraries
-Install the required Python libraries and tools:
-```bash
-sudo apt-get install -y python3-pip python3-dev
-sudo apt-get install -y python3-smbus2  # For I2C communication with MPU-6050
-sudo apt-get install -y python3-RPi.GPIO  # For Raspberry Pi GPIO control
-sudo apt-get install -y python3-pandas  # For handling and saving data
-sudo apt-get install -y python3-matplotlib  # For graph generation
-sudo apt-get install -y python3-numpy  # Optional: For advanced data processing
-```
-
-### Install I2C Tools
-Install tools to debug and manage I2C communication:
-```bash
-sudo apt-get install -y i2c-tools
-```
-
-### Enable the I2C Interface
-Enable the I2C interface on your Raspberry Pi:
-1. Run the Raspberry Pi configuration tool:
-   ```bash
-   sudo raspi-config
-   ```
-2. Navigate to **Interface Options** -> **I2C** -> **Enable**.
-3. Reboot the Raspberry Pi for the changes to take effect:
-   ```bash
-   sudo reboot
-   ```
-
-### Verify Installation
-After installation, verify that the I2C interface and the MPU-6050 sensor are working:
-```bash
-# Check if I2C is enabled
-ls /dev/i2c*
-
-# Detect the MPU-6050 sensor
-sudo i2cdetect -y 1
-```
-
-The MPU-6050 sensor should appear at address `0x68`.
 
 ---
 
 ## How It Works
-1. The **MPU-6050 accelerometer** measures acceleration forces and sends data to the Raspberry Pi.
-2. If the measured force exceeds the **IMPACT_THRESHOLD**, the buzzer is triggered to alert coaches or staff.
-3. Data is logged into a CSV file for later analysis, and graphs are generated to visualize impact trends over time.
+1. The **MPU-6050 accelerometer** measures acceleration forces and sends data to the Raspberry Pi over the I2C bus.  
+2. If the measured force exceeds the defined **IMPACT_THRESHOLD**, the buzzer is triggered to alert coaches and staff.  
+3. Data is logged into a CSV file (`impact_data.csv`), and a graph is generated upon exit to visualize impact trends over time.
 
 ---
 
 ## Catholic Values Integration
-- **Care for Others:** This project reflects compassion for athletes by prioritizing their safety and well-being.
-- **Stewardship:** Demonstrates the responsible use of technology, a gift from God, to serve others.
-- **Quote from 1 Corinthians 6:19:** *"Do you not know that your body is a temple of the Holy Spirit within you?"*
+- **Care for Others:** Reflects compassion for athletes by prioritizing their safety and well-being.  
+- **Stewardship:** Demonstrates the responsible use of technology, a gift from God, to serve others.  
+- **Human Dignity:** Emphasizes protecting the athlete’s body, honoring the belief that our bodies are temples of the Holy Spirit.
+
+> *"Do you not know that your body is a temple of the Holy Spirit within you?"*  
+> — 1 Corinthians 6:19
+
+---
+
+## Display Board and Presentation Script
+
+### Display Board Layout
+1. **Title Section**  
+   - Title: “Concussion Detection Sensor for Athlete Safety”  
+   - Tagline: *Using Technology and Faith to Protect God’s Gift of Life*
+
+2. **Left Panel**  
+   - Describe the problem of concussions in sports and the project’s objective.
+
+3. **Center Panel**  
+   - Show a visual diagram of the setup (Raspberry Pi, accelerometer, buzzer).  
+   - Add a flowchart to explain how the system monitors impacts.  
+   - Insert graphs displaying sample impact data.
+
+4. **Right Panel**  
+   - Highlight Catholic values with relevant quotes.  
+   - Discuss broader implications and future improvements.
+
+5. **Interactive Section**  
+   - Live demonstration (if possible) or a QR code linking to a video demonstration.
+
+### Presentation Script for JD
+1. **Introduction**  
+   - Briefly explain the problem of concussions in sports and why this project is important.  
+   - Connect the project to Catholic values (care for others, stewardship, and human dignity).
+
+2. **Demonstration**  
+   - Show the prototype in action. Simulate an impact to trigger the buzzer alert.
+
+3. **Discussion**  
+   - Present how the collected data (from `impact_data.csv`) is visualized.  
+   - Emphasize patterns or trends in the data that can help prevent future injuries.
 
 ---
 
 ## Additional Resources
-- Refer to the [Raspberry Pi Documentation](https://www.raspberrypi.com/documentation/) for help setting up your device.
-- Learn more about the [MPU-6050 Accelerometer](https://www.invensense.com/products/motion-tracking/6-axis/mpu-6050/).
+- [Raspberry Pi Official Documentation](https://www.raspberrypi.com/documentation/)  
+- [MPU-6050 Product Page](https://www.invensense.com/products/motion-tracking/6-axis/mpu-6050/)  
+- [Pandas Documentation](https://pandas.pydata.org/docs/)  
+- [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
 
 ---
 
-### License
-This project is open-source and available under the MIT License.
+## License
+This project is open-source and available under the **MIT License**. Feel free to modify and distribute for educational or personal use.

@@ -1,0 +1,93 @@
+.node-detail ul{
+   padding-left: 20px;
+}
+.node-detail ul li{
+   list-style: disc;
+}
+
+figure[role="group"]{
+      display:inline-block;
+    }
+	
+figcaption {background-color: #EDEEE9; text-align: center; padding: 5px;}
+
+.block-view .item-columns figcaption, .block-content .item-columns figcaption,  .block-content .item figcaption{display:none;}
+
+.field--name-field-blog-image {margin-bottom: 20px;}
+
+.gva-navigation .gva_menu_main li{margin-top: 0px !important;}
+header .site-branding { padding: 16px 0 10px !important;; }
+.gva-navigation > .gva_menu_main > li > a{padding: 20px 9px 11px!important;}
+/* .gva-navigation .gva_menu_main li a{padding: 19px 11px !important;} */
+/* header.header-v3 .area-main-menu .area-inner.menu-hover .navigation .gva_menu > li > a{padding: 19px 11px!important;} */
+
+.utsource{ background:#dfdfdf;}
+.utsource:hover{ background:#e43f3f; color:#c62020!important;}
+.utsource > a:hover{color:#c62020!important;}
+.utsource > .sub-menu > li > a{text-transform: capitalize!important; font-size: 13px!important; font-family: "Open Sans",serif!important;}
+
+.gva_menu_main .menu-columns-4  { background:#dfdfdf; border-bottom: 3px red solid;}
+.menu-hover .navigation .gva_menu .menu-columns-4 > .sub-menu > li{padding: 0 5px !important;}
+.gva_menu_main .menu-columns-4 a{padding: 15px 15px 11px !important;}
+.button__badge {
+  background-color: #fa3e3e;
+  border-radius: 2px;
+  color: white;
+ 
+  padding: 0px 2px;
+  font-size: 8px;
+  
+  position: absolute; /* Position the badge within the relatively positioned button */
+  top: 8px;
+  right: 0;
+}
+
+.block-views-block-re-sidebar-widgets-block-on-sidebar-fashion-news .post-image{width:60px; float:left; margin-right: 10px;}
+.block-views-block-re-sidebar-widgets-block-on-sidebar-fashion-news .post-meta{height:0px;}
+.block-views-block-re-sidebar-widgets-block-on-sidebar-fashion-news .post-content{padding-top: 0px!important;}
+.block-views-block-re-sidebar-widgets-block-on-sidebar-fashion-news .post-body{margin-top: 0px!important;}
+.block-views-block-re-sidebar-widgets-block-on-sidebar-fashion-news .post-block {margin-bottom:5px; background: #f8f9fa;padding: 8px 0;}
+.block-views-block-re-sidebar-widgets-block-on-sidebar-fashion-news .block-title{display:none;}
+.block-views-block-re-sidebar-widgets-block-on-sidebar-fashion-news header img{margin-bottom:-20px;}
+
+.digi-home .post-image{width:60px; float:left; margin-right: 10px;}
+.digi-home .post-meta{height:0px;}
+.digi-home .post-content{padding-top: 0px!important;}
+/*add css*/
+.digi-home .post-body{margin-top: 0px!important; font-size: 13px}
+.digi-home .post-block {margin-bottom:5px; background: #f9f7f7;     padding: 10px 8px 5px 8px;}
+.digi-home .block-title{display:none;}
+.digi-home header img{margin-bottom:-20px;}
+
+@media only screen and (max-width:992px){ /* mobile for billboard */
+  /* .ad970-wrapper{display:none;} */   /* commented as only adsense is running, activate again to run different ads on mobile and desktop*/
+  .ad970-wrapper{overflow:scroll; overflow-x:scroll; -webkit-overflow-scrolling: touch;}
+  /* partstack flating ad using tracking pixex in part/main.html.twig */
+  #div-gpt-ad-1704784866813-0 .partstack{display:none;}
+}
+@media only screen and (min-width:992px){ /* desktop */
+   .adresponsive-wrapper{display:none;}
+}
+@media only screen and (min-width:768px){ /* desktop */
+	.ad300-wrapper{display:none;}
+}
+@media only screen and (max-width:768px){ /* mobile for billboard*/
+    .ad728-wrapper {display:none;}
+	.c101-video{width:90%;}
+	#div-gpt-ad-1508834807558-1 {display:none;} /* welcome ad 2 */
+	#div-gpt-ad-1632744355244-0{display:none;} /* welcomead3 in between content */
+}
+.ad970-wrapper-middle{overflow:scroll; overflow-x:scroll; -webkit-overflow-scrolling: touch;}
+
+.jlc{background-repeat:no-repeat; width:112px; background-image: url("https://lh3.googleusercontent.com/-KCqJMeK2LoE/Xp6kcbMNhAI/AAAAAAAABU8/9lrs4gjLWVkvQdniiOLsjLesahVmRUVOQCK8BGAsYHg/s0/unnamed%2B%25281%2529.png");}
+/*add css*/
+.views-view-grid .views-col {
+    float: left;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue"!important;
+    line-height: 20px;
+}
+
+.return-top.default { right: 100px; bottom: 13px; }
+#pe-widget-bell.pe-bottom-right {right: 35px; bottom: 10px;}
+.header-v3{z-index: 99;}
+

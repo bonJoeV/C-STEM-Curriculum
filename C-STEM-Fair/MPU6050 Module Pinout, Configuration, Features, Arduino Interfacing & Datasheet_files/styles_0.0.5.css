@@ -1,0 +1,284 @@
+.di {
+	margin: 3rem 0rem;
+}
+
+.di h3 {
+	font-size: 22px;
+    color: #c62020;
+    font-weight: 700;
+}
+
+.di h4 {
+	margin-bottom: .5rem;
+	font-size: 1.1rem;
+	font-weight: 700;
+}
+
+.di a {
+	color: #343a40;
+	font-weight: 500;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.di a.buy-now {
+	font-weight: 700;
+    white-space: nowrap;
+    color: #ffffff !important;
+    background: #c61f21;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 .3rem;
+}
+
+.group-header {
+	padding-bottom: 1rem;
+}
+
+.di div {
+	font-size: 16px;
+    line-height: 28px;
+}
+
+.di [data-di-group-index],
+.di section.search,
+.di section.featured {
+	margin-top: 1rem;
+}
+
+.di section.search {
+	margin-top: 75px;
+}
+
+.di table tr td,
+.di table tr th {
+	font-size: 14px;
+	padding: .5rem 0.5rem;
+}
+
+.di .part-number{
+	word-break: break-all;
+}
+
+.di table tr {
+	border-top: 1px solid #dee2e6;
+}
+
+.di table {
+	width: 100%;
+}
+
+.di button {
+	padding: .5rem .5rem;
+}
+
+
+.di .button {
+	background: #C61F20;
+	display: inline-block;
+	white-space: nowrap;
+	color: #ffffff;
+	border-radius: .25rem;
+	padding: .3rem 1rem;
+}
+
+.di button:hover {
+	background: #C61F20 !important;
+}
+
+.di .bom-upload {
+	display: flex;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+.di .bom-upload div {
+	margin-left: 1rem;
+}
+
+.di td.distributor-logo {
+	text-align: center;
+}
+
+.di td.distributor-logo img{
+	width: 50px;
+	min-width: 50px;
+}
+
+.di .odd {
+	background: #f5f5f5;
+}
+
+.di .di-input {
+	font-size: 14px;
+}
+
+.di #searchForm {
+	padding-top: 1rem;
+}
+
+.di section.featured {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 10px 10px 15px;
+	margin-top: 75px;
+}
+
+.di section.featured h2 {
+	border-bottom: 1px solid #ebebeb;
+    background: none;
+    margin-top: 0;
+}
+
+.di section.featured h2 span {
+	background: none;
+	position: static;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #212529;
+	font-size: 16px;
+	padding: 0 0 8px;
+	font-weight: 500;
+	letter-spacing: 0;	
+	text-transform:  uppercase;
+	line-height: 20px;
+}
+
+.di .di-search-wrapper {
+	display: flex;
+}
+
+.di .di-search-wrapper .di-input {
+	border: 1px solid #ABB0B2;
+	border-top-right-radius: 0rem;
+	border-bottom-right-radius: 0rem;
+	border-right: 0;
+	height: 100%;
+}
+
+.di .di-search-wrapper button {
+	background: #C61F20;
+	white-space: nowrap;
+	color: #ffffff;
+	border-top-right-radius: .25rem;
+	border-bottom-right-radius: .25rem;
+	min-height: 31px;
+	padding: .5rem 1rem;
+}
+
+.di .featured .content {
+	display: flex;
+	align-items: start;
+	flex-wrap: wrap;
+}
+
+.di .featured .content img{
+	min-width: 100px;
+	max-width: 100px;
+	margin-right: 1rem;
+}
+
+.di .featured .content section {
+	padding-top: 1rem;
+}
+
+.di .search-bar {
+	flex-grow: 1;
+	position: relative;
+}
+
+.di .buy-now-url {
+	text-align: center;
+}
+
+.di ul.autocomplete {
+	position: absolute;
+    background: white;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid #abb0b2;
+    border-right: 1px solid #abb0b2;
+}
+
+.di .autocomplete li {
+	padding: .5rem;
+	list-style: none;
+	border-bottom: 1px solid #dee2e6;
+	border-left: 3px solid #ffffff;
+	cursor: pointer;
+}
+
+.di .autocomplete li a{
+	display: block;
+	color: initial;
+}
+
+.di .autocomplete li:hover {
+	background: #f5f5f5;
+	border-left: 3px solid #c61f21 !important;
+}
+
+.di .autocomplete li:last-child {
+	border-bottom: 1px solid #abb0b2;
+}
+
+.di .active {
+	background: #f5f5f5;
+	border-left: 3px solid #c61f21 !important;
+}
+
+.di .section-label {
+	font-weight: 700;
+}
+
+.di .featured-column-blocks {
+	display: flex;
+}
+
+.di .featured-image-block {
+	width: 400px; 
+	min-width: 400px; 
+	max-width: 400px;
+}
+
+@media screen and (max-width:  821px) {
+	.di .featured-column-blocks {
+		display: block;
+	}
+
+	.di .featured-image-block {
+		width: 100%; 
+		min-width: 100%; 
+		max-width: 100%;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width:  500px) {
+	.di .featured-image-block img {
+		width: 100% !important;
+	}
+}
+
+@media screen and (max-width: 656px){
+	.di .distributor-name {
+		display: none;
+	}
+	.di section.featured {
+		padding: 1rem;
+	}
+}
+
+@media screen and (max-width: 376px){
+	.di-icon-sort {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 321px){
+	.di a.buy-now {
+		font-weight: 700;
+		text-align: center;
+	}
+
+}
