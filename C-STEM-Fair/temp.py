@@ -208,7 +208,7 @@ def init_graph():
     top_hits_text.set_text("")  # Clear the top hits text box
     return line_x, line_y, line_z, top_hits_text
 
-# Limit the x-axis to the last 10 seconds
+# Update graph with new data and show top hits
 def update_graph(frame):
     """Update the graph with new filtered data and show top hits."""
     detect_tap()
