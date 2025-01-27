@@ -21,18 +21,31 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
 # -------------------------------------------------------------------------
-#                1. USER SETTINGS
+#                1. CONSTANTS AND SETTINGS
 # -------------------------------------------------------------------------
-USE_BUZZER = False                # Set to False if no buzzer is connected
-DEBUG = False                     # Set to True for detailed debug output
-BUZZER_PIN = 17                  # GPIO pin for buzzer
-MPU_ADDRESS = 0x68               # I2C address of the MPU6050 sensor
-TAP_THRESHOLD_G = 2.0            # Threshold in g-forces for a tap
-COOLDOWN_SECONDS = 0.5           # Cooldown period after a tap detection
-SAMPLE_RATE_HZ = 100             # Data sampling rate in Hz
-HIGH_PASS_ALPHA = 0.85           # High-pass filter coefficient (0.8–0.99)
-WINDOW_SIZE = 50                 # Number of data points shown in the graph
-GRAPH_Y_LIMITS = (-20, 20)       # Fixed y-axis scale for the graph
+# Constants for Titles and Labels
+GRAPH_MAIN_TITLE = "Concussion Detection Sensor for Athlete Safety"
+GRAPH_SUBTITLE = "Using Technology and Faith to Protect God's Gift of Life"
+X_AXIS_LABEL = "Time (s)"
+Y_AXIS_LABEL = "Acceleration (g)"
+LEGEND_TITLE = "Legend"
+TOP_HITS_LABEL = "Top Hits:\n"
+TOP_HITS_HEADER = "{:<20} {}".format("Timestamp", "Magnitude (g)")
+TOP_HITS_FORMAT = "{timestamp:<20} {magnitude:.2f}"
+
+# Numerical Constants
+USE_BUZZER = False
+DEBUG = False
+BUZZER_PIN = 17  # GPIO pin for buzzer
+MPU_ADDRESS = 0x68  # I2C address of the MPU6050 sensor
+TAP_THRESHOLD_G = 2.0  # Threshold in g-forces for a tap
+COOLDOWN_SECONDS = 0.5  # Cooldown period after a tap detection
+SAMPLE_RATE_HZ = 100  # Data sampling rate in Hz
+HIGH_PASS_ALPHA = 0.85  # High-pass filter coefficient (0.8–0.99)
+WINDOW_SIZE = 50  # Number of data points shown in the graph
+GRAPH_Y_LIMITS = (-20, 20)  # Fixed y-axis scale for the graph
+CALIBRATION_SAMPLES = 100  # Number of samples for sensor calibration
+BEEP_DURATION = 0.2  # Duration of buzzer beep in seconds
 
 # -------------------------------------------------------------------------
 #                2. INITIALIZATION
@@ -57,7 +70,7 @@ def read_raw_data(register_address):
     return value
 
 # Wake up the sensor and configure sensitivity
-bus.write_byte_data(MPU_ADDRESS, 0x6B, 0)   # Wake up the MPU6050
+bus.write_byte_data(MPU_ADDRESS, 0x6B, 0)  # Wake up the MPU6050
 bus.write_byte_data(MPU_ADDRESS, 0x1C, 0x18)  # Set accelerometer range to ±16g
 
 # Calibration offsets
@@ -68,18 +81,17 @@ acc_offset_z = 0
 def calibrate_sensor():
     """Calibrates the MPU6050 to determine acceleration offsets."""
     global acc_offset_x, acc_offset_y, acc_offset_z
-    samples = 100
     if DEBUG:
         print("Calibrating sensor...")
     acc_x, acc_y, acc_z = 0, 0, 0
-    for _ in range(samples):
+    for _ in range(CALIBRATION_SAMPLES):
         acc_x += read_raw_data(0x3B)
         acc_y += read_raw_data(0x3D)
         acc_z += read_raw_data(0x3F)
         time.sleep(1 / SAMPLE_RATE_HZ)
-    acc_offset_x = acc_x / samples
-    acc_offset_y = acc_y / samples
-    acc_offset_z = acc_z / samples
+    acc_offset_x = acc_x / CALIBRATION_SAMPLES
+    acc_offset_y = acc_y / CALIBRATION_SAMPLES
+    acc_offset_z = acc_z / CALIBRATION_SAMPLES
     if DEBUG:
         print(f"Calibration complete: Offsets -> X: {acc_offset_x}, Y: {acc_offset_y}, Z: {acc_offset_z}")
 
@@ -161,7 +173,7 @@ def detect_tap():
         max_hits.append((timestamp, acc_magnitude))
         if USE_BUZZER:
             GPIO.output(BUZZER_PIN, GPIO.HIGH)
-            time.sleep(0.2)  # Short beep for tap
+            time.sleep(BEEP_DURATION)
             GPIO.output(BUZZER_PIN, GPIO.LOW)
 
     # Debug output
@@ -174,36 +186,24 @@ def detect_tap():
 # -------------------------------------------------------------------------
 fig, ax = plt.subplots()
 
-# Define the graph lines with updated legend labels
+# Define the graph lines
 line_x, = ax.plot([], [], label="G-force X", color="blue")
 line_y, = ax.plot([], [], label="G-force Y", color="green")
 line_z, = ax.plot([], [], label="G-force Z", color="red")
 
-# Set the main title for the axes
-ax.set_title("Concussion Detection Sensor for Athlete Safety")
-
-# Set a subtitle for the figure
-fig.suptitle("Using Technology and Faith to Protect God's Gift of Life", fontsize=10)
-
-# Add axis labels
-ax.set_xlabel("Time (s)")
-ax.set_ylabel("Acceleration (g)")
-
-# Add legend with a title
-ax.legend(title="Legend", loc="upper right")
-
-# Set grid and fixed y-axis range
+# Set titles and labels
+ax.set_title(GRAPH_MAIN_TITLE)
+fig.suptitle(GRAPH_SUBTITLE, fontsize=10)
+ax.set_xlabel(X_AXIS_LABEL)
+ax.set_ylabel(Y_AXIS_LABEL)
+ax.legend(title=LEGEND_TITLE, loc="upper right")
 ax.grid(True)
 ax.set_ylim(GRAPH_Y_LIMITS)
 
-# Adjust the legend to be outside the graph, on the left
-ax.legend(title="Legend", loc="center left", bbox_to_anchor=(-0.2, 0.5))
-
-# Text box for displaying top hits below the x-axis
+# Text box for displaying top hits
 top_hits_text = ax.text(0.5, -0.2, "", transform=ax.transAxes, fontsize=10,
                         verticalalignment="top", horizontalalignment="center")
 
-# Initialize the graph with empty data
 def init_graph():
     """Initialize the graph with empty data."""
     line_x.set_data([], [])
@@ -212,7 +212,6 @@ def init_graph():
     top_hits_text.set_text("")  # Clear the top hits text box
     return line_x, line_y, line_z, top_hits_text
 
-# Update graph with new data and show top hits
 def update_graph(frame):
     """Update the graph with new filtered data and show top hits."""
     detect_tap()
@@ -228,10 +227,11 @@ def update_graph(frame):
 
     # Update the top hits text box
     max_hits.sort(key=lambda x: x[1], reverse=True)  # Sort by magnitude, descending
-    top_hits_display = "\n".join([f"{t[0]}: {t[1]:.2f}g" for t in max_hits[:5]])  # Top 5 hits
-    top_hits_text.set_text(f"Top Hits:\n{top_hits_display}")
+    top_hits_display = "\n".join([f"{t[0]}: {t[1]:.2f}g" for t in max_hits[:5]])
+    top_hits_text.set_text(f"{TOP_HITS_LABEL}{top_hits_display}")
 
     return line_x, line_y, line_z, top_hits_text
+
 ani = animation.FuncAnimation(fig, update_graph, init_func=init_graph, interval=1000 / SAMPLE_RATE_HZ, blit=True)
 
 # -------------------------------------------------------------------------
@@ -245,9 +245,8 @@ except KeyboardInterrupt:
 finally:
     if USE_BUZZER:
         GPIO.cleanup()
-    # Sort and print the top 10 maximum hits
-    max_hits.sort(key=lambda x: x[1], reverse=True)  # Sort by magnitude, descending
+    max_hits.sort(key=lambda x: x[1], reverse=True)
     print("\nTop 10 Maximum Hits:")
-    print("{:<20} {}".format("Timestamp", "Magnitude (g)"))
+    print(TOP_HITS_HEADER)
     for timestamp, magnitude in max_hits[:10]:
-        print(f"{timestamp:<20} {magnitude:.2f}")
+        print(TOP_HITS_FORMAT.format(timestamp=timestamp, magnitude=magnitude))
