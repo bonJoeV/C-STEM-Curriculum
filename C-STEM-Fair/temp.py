@@ -173,10 +173,14 @@ def detect_tap():
 #                3. LIVE GRAPHING
 # -------------------------------------------------------------------------
 fig, ax = plt.subplots()
-line_x, = ax.plot([], [], label="Filtered Accel X", color="blue")
-line_y, = ax.plot([], [], label="Filtered Accel Y", color="green")
-line_z, = ax.plot([], [], label="Filtered Accel Z", color="red")
-ax.set_title("High-Pass Filtered Acceleration")
+line_x, = ax.plot([], [], label="Accel X", color="blue")
+line_y, = ax.plot([], [], label="Accel Y", color="green")
+line_z, = ax.plot([], [], label="Accel Z", color="red")
+
+# Add main title for the graph
+ax.set_title("Concussion Detection Sensor for Athlete Safety")
+# Add subtitle for the figure
+fig.suptitle("Using Technology and Faith to Protect God's Gift of Life", fontsize=10)
 ax.set_xlabel("Time (s)")
 ax.set_ylabel("Acceleration (g)")
 ax.legend()
