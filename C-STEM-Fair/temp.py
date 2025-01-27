@@ -46,6 +46,7 @@ WINDOW_SIZE = 50  # Number of data points shown in the graph
 GRAPH_Y_LIMITS = (-20, 20)  # Fixed y-axis scale for the graph
 CALIBRATION_SAMPLES = 100  # Number of samples for sensor calibration
 BEEP_DURATION = 0.2  # Duration of buzzer beep in seconds
+NUM_TOP_HITS = 5  # Number of top hits to display in the graph
 
 # -------------------------------------------------------------------------
 #                2. INITIALIZATION
@@ -227,8 +228,11 @@ def update_graph(frame):
 
     # Update the top hits text box
     max_hits.sort(key=lambda x: x[1], reverse=True)  # Sort by magnitude, descending
-    top_hits_display = "\n".join([f"{t[0]}: {t[1]:.2f}g" for t in max_hits[:5]])
+    top_hits_display = "\n".join([f"{t[0]}: {t[1]:.2f}g" for t in max_hits[:NUM_TOP_HITS]])
     top_hits_text.set_text(f"{TOP_HITS_LABEL}{top_hits_display}")
+
+    # Position the text box inside the graph, aligned with the axes
+    top_hits_text.set_position((0.02, 0.95))  # Position relative to axes (x, y in normalized [0,1])
 
     return line_x, line_y, line_z, top_hits_text
 
