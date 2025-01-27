@@ -197,7 +197,10 @@ ax.grid(True)
 ax.set_ylim(GRAPH_Y_LIMITS)
 
 # Text box for displaying top hits
-top_hits_text = ax.text(0.02, -0.15, "", transform=ax.transAxes, fontsize=10, verticalalignment="top")
+# Text box for displaying top hits
+top_hits_text = ax.text(0.02, 0.95, "", transform=ax.transAxes, fontsize=10,
+                        verticalalignment="top", horizontalalignment="left",
+                        bbox=dict(facecolor="white", alpha=0.5))
 
 # Initialize the graph with empty data
 def init_graph():
@@ -227,11 +230,7 @@ def update_graph(frame):
     top_hits_display = "\n".join([f"{t[0]}: {t[1]:.2f}g" for t in max_hits[:5]])  # Top 5 hits
     top_hits_text.set_text(f"Top Hits:\n{top_hits_display}")
 
-    # Auto-adjust limits
-    ax.relim()
-    ax.autoscale_view()
     return line_x, line_y, line_z, top_hits_text
-
 ani = animation.FuncAnimation(fig, update_graph, init_func=init_graph, interval=1000 / SAMPLE_RATE_HZ, blit=True)
 
 # -------------------------------------------------------------------------
