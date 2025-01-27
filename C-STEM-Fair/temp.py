@@ -196,11 +196,12 @@ ax.legend(title="Legend", loc="upper right")
 ax.grid(True)
 ax.set_ylim(GRAPH_Y_LIMITS)
 
-# Text box for displaying top hits
-# Text box for displaying top hits
-top_hits_text = ax.text(0.02, 0.95, "", transform=ax.transAxes, fontsize=10,
-                        verticalalignment="top", horizontalalignment="left",
-                        bbox=dict(facecolor="white", alpha=0.5))
+# Adjust the legend to be outside the graph, on the left
+ax.legend(title="Legend", loc="center left", bbox_to_anchor=(-0.2, 0.5))
+
+# Text box for displaying top hits below the x-axis
+top_hits_text = ax.text(0.5, -0.2, "", transform=ax.transAxes, fontsize=10,
+                        verticalalignment="top", horizontalalignment="center")
 
 # Initialize the graph with empty data
 def init_graph():
