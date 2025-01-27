@@ -24,8 +24,8 @@ import matplotlib.animation as animation
 #                1. CONSTANTS AND SETTINGS
 # -------------------------------------------------------------------------
 # Constants for Titles and Labels
-GRAPH_MAIN_TITLE = "Concussion Detection Sensor for Athlete Safety"
-GRAPH_SUBTITLE = "Using Technology and Faith to Protect God's Gift of Life"
+GRAPH_MAIN_TITLE = "Athlete Helmet Safety Sensor"
+GRAPH_SUBTITLE = "Real-Time Concussion Detection with Technology and Faith"
 X_AXIS_LABEL = "Time (s)"
 Y_AXIS_LABEL = "Acceleration (g)"
 LEGEND_TITLE = "Legend"
@@ -42,7 +42,7 @@ TAP_THRESHOLD_G = 2.0  # Threshold in g-forces for a tap
 COOLDOWN_SECONDS = 0.5  # Cooldown period after a tap detection
 SAMPLE_RATE_HZ = 100  # Data sampling rate in Hz
 HIGH_PASS_ALPHA = 0.85  # High-pass filter coefficient (0.8–0.99)
-WINDOW_SIZE = 50  # Number of data points shown in the graph
+WINDOW_SIZE = 100  # Number of data points shown in the graph
 GRAPH_Y_LIMITS = (-20, 20)  # Fixed y-axis scale for the graph
 CALIBRATION_SAMPLES = 100  # Number of samples for sensor calibration
 BEEP_DURATION = 0.2  # Duration of buzzer beep in seconds
@@ -202,8 +202,8 @@ ax.grid(True)
 ax.set_ylim(GRAPH_Y_LIMITS)
 
 # Text box for displaying top hits
-top_hits_text = ax.text(0.5, -0.2, "", transform=ax.transAxes, fontsize=10,
-                        verticalalignment="top", horizontalalignment="center")
+top_hits_text = ax.text(0.02, 0.95, "", transform=ax.transAxes, fontsize=10,
+                        verticalalignment="top", horizontalalignment="left")
 
 def init_graph():
     """Initialize the graph with empty data."""
@@ -230,9 +230,6 @@ def update_graph(frame):
     max_hits.sort(key=lambda x: x[1], reverse=True)  # Sort by magnitude, descending
     top_hits_display = "\n".join([f"{t[0]}: {t[1]:.2f}g" for t in max_hits[:NUM_TOP_HITS]])
     top_hits_text.set_text(f"{TOP_HITS_LABEL}{top_hits_display}")
-
-    # Position the text box inside the graph, aligned with the axes
-    top_hits_text.set_position((0.02, 0.95))  # Position relative to axes (x, y in normalized [0,1])
 
     return line_x, line_y, line_z, top_hits_text
 
