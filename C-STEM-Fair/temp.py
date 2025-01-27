@@ -173,37 +173,55 @@ def detect_tap():
 #                3. LIVE GRAPHING
 # -------------------------------------------------------------------------
 fig, ax = plt.subplots()
+
+# Define the graph lines with legend labels
 line_x, = ax.plot([], [], label="Accel X", color="blue")
 line_y, = ax.plot([], [], label="Accel Y", color="green")
 line_z, = ax.plot([], [], label="Accel Z", color="red")
 
-# Add main title for the graph
+# Set the main title for the axes
 ax.set_title("Concussion Detection Sensor for Athlete Safety")
-# Add subtitle for the figure
+
+# Set a subtitle for the figure
 fig.suptitle("Using Technology and Faith to Protect God's Gift of Life", fontsize=10)
+
+# Add axis labels
 ax.set_xlabel("Time (s)")
 ax.set_ylabel("Acceleration (g)")
-ax.legend()
+
+# Add legend with a title
+ax.legend(title="Legend", loc="upper right")
+
+# Set grid and fixed y-axis range
 ax.grid(True)
 ax.set_ylim(GRAPH_Y_LIMITS)
 
-def init_graph():
-    """Initialize the graph with empty data."""
-    line_x.set_data([], [])
-    line_y.set_data([], [])
-    line_z.set_data([], [])
-    return line_x, line_y, line_z
+# Text box for displaying top hits
+top_hits_text = ax.text(0.02, -0.15, "", transform=ax.transAxes, fontsize=10, verticalalignment="top")
 
+# Limit the x-axis to the last 10 seconds
 def update_graph(frame):
-    """Update the graph with new filtered data."""
+    """Update the graph with new filtered data and show top hits."""
     detect_tap()
+
+    # Update graph lines
     line_x.set_data(x_vals, acc_x_vals)
     line_y.set_data(x_vals, acc_y_vals)
     line_z.set_data(x_vals, acc_z_vals)
 
+    # Show the last 10 seconds on the x-axis
+    if x_vals:
+        ax.set_xlim(max(x_vals[-1] - 10, x_vals[0]), x_vals[-1])
+
+    # Update the top hits text box
+    max_hits.sort(key=lambda x: x[1], reverse=True)  # Sort by magnitude, descending
+    top_hits_display = "\n".join([f"{t[0]}: {t[1]:.2f}g" for t in max_hits[:5]])  # Top 5 hits
+    top_hits_text.set_text(f"Top Hits:\n{top_hits_display}")
+
+    # Auto-adjust limits
     ax.relim()
     ax.autoscale_view()
-    return line_x, line_y, line_z
+    return line_x, line_y, line_z, top_hits_text
 
 ani = animation.FuncAnimation(fig, update_graph, init_func=init_graph, interval=1000 / SAMPLE_RATE_HZ, blit=True)
 
