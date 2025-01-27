@@ -357,6 +357,7 @@ Features:
 - Vector-based impact detection for better sensitivity.
 - Adjustable thresholds and sampling rates.
 - Calibration at startup for offset correction.
+- Data smoothing with a moving average filter.
 
 Press Ctrl+C to stop the program.
 """
@@ -378,6 +379,7 @@ BUZZER_PIN = 17                  # GPIO pin for buzzer
 MPU_ADDRESS = 0x68               # I2C address of the MPU6050 sensor
 IMPACT_THRESHOLD_G = 2.0         # Threshold in g-forces for impact detection
 SAMPLE_RATE_HZ = 100             # Data sampling rate in Hz
+SMOOTHING_WINDOW = 10            # Number of samples for smoothing
 
 # Log file configuration
 current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -398,6 +400,17 @@ if USE_BUZZER:
 
 # Initialize the I2C bus
 bus = smbus.SMBus(1)
+
+def read_raw_data(register_address):
+    """
+    Reads raw 16-bit data from the MPU6050 sensor.
+    """
+    high_byte = bus.read_byte_data(MPU_ADDRESS, register_address)
+    low_byte = bus.read_byte_data(MPU_ADDRESS, register_address + 1)
+    value = (high_byte << 8) | low_byte
+    if value > 32768:
+        value -= 65536
+    return value
 
 # Wake up the sensor
 bus.write_byte_data(MPU_ADDRESS, 0x6B, 0)
@@ -428,22 +441,31 @@ def calibrate_sensor():
 calibrate_sensor()
 
 # -------------------------------------------------------------------------
-#                3. DATA COLLECTION AND IMPACT DETECTION
+#                3. DATA SMOOTHING
 # -------------------------------------------------------------------------
-def read_raw_data(register_address):
-    """
-    Reads raw 16-bit data from the MPU6050 sensor.
-    """
-    high_byte = bus.read_byte_data(MPU_ADDRESS, register_address)
-    low_byte = bus.read_byte_data(MPU_ADDRESS, register_address + 1)
-    value = (high_byte << 8) | low_byte
-    if value > 32768:
-        value -= 65536
-    return value
+# Buffers to store recent acceleration values for smoothing
+acc_x_buffer = []
+acc_y_buffer = []
+acc_z_buffer = []
 
+def moving_average(new_value, buffer):
+    """
+    Apply a moving average filter to smooth the data.
+    - new_value: The latest data point.
+    - buffer: A list storing recent values.
+    """
+    buffer.append(new_value)
+    if len(buffer) > SMOOTHING_WINDOW:
+        buffer.pop(0)  # Remove the oldest value
+    return sum(buffer) / len(buffer)
+
+# -------------------------------------------------------------------------
+#                4. DATA COLLECTION AND IMPACT DETECTION
+# -------------------------------------------------------------------------
 def check_impact():
     """
-    Reads acceleration and gyroscope data, applies offsets, and checks for dangerous impacts.
+    Reads acceleration and gyroscope data, applies offsets, smooths data, 
+    and checks for dangerous impacts.
     """
     # Read raw acceleration data
     raw_x = read_raw_data(0x3B) - acc_offset_x
@@ -455,20 +477,25 @@ def check_impact():
     acc_y_g = raw_y / 16384.0
     acc_z_g = raw_z / 16384.0
 
-    # Compute vector magnitude
-    acc_magnitude_g = (acc_x_g**2 + acc_y_g**2 + acc_z_g**2)**0.5
+    # Smooth the data
+    acc_x_smoothed = moving_average(acc_x_g, acc_x_buffer)
+    acc_y_smoothed = moving_average(acc_y_g, acc_y_buffer)
+    acc_z_smoothed = moving_average(acc_z_g, acc_z_buffer)
 
-    # Log data and debug output
+    # Compute vector magnitude using smoothed values
+    acc_magnitude_g = (acc_x_smoothed**2 + acc_y_smoothed**2 + acc_z_smoothed**2)**0.5
+
+    # Log and debug output
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     if DEBUG:
-        print(f"Timestamp: {timestamp}")
-        print(f"Acceleration: X={acc_x_g:.2f}g, Y={acc_y_g:.2f}g, Z={acc_z_g:.2f}g, Total={acc_magnitude_g:.2f}g")
+        print(f"Smoothed Acceleration: X={acc_x_smoothed:.2f}g, Y={acc_y_smoothed:.2f}g, Z={acc_z_smoothed:.2f}g")
+        print(f"Smoothed Total Magnitude: {acc_magnitude_g:.2f}g")
 
-    # Save data to file
+    # Save smoothed data to the log file
     with open(LOG_FILE, "a") as f:
-        f.write(f"{timestamp},{acc_x_g},{acc_y_g},{acc_z_g},{acc_magnitude_g}\n")
+        f.write(f"{timestamp},{acc_x_smoothed},{acc_y_smoothed},{acc_z_smoothed},{acc_magnitude_g}\n")
 
-    # Check impact
+    # Check for impacts
     if acc_magnitude_g > IMPACT_THRESHOLD_G:
         print(f"[{timestamp}] Impact detected! Magnitude: {acc_magnitude_g:.2f}g")
         if USE_BUZZER:
@@ -476,10 +503,10 @@ def check_impact():
             time.sleep(1)
             GPIO.output(BUZZER_PIN, GPIO.LOW)
 
-    return acc_x_g, acc_y_g, acc_z_g, acc_magnitude_g
+    return acc_x_smoothed, acc_y_smoothed, acc_z_smoothed, acc_magnitude_g
 
 # -------------------------------------------------------------------------
-#                4. LIVE GRAPHING
+#                5. LIVE GRAPHING
 # -------------------------------------------------------------------------
 fig, ax = plt.subplots()
 x_vals = []
@@ -500,8 +527,8 @@ def init_graph():
     return (line_acc,)
 
 def update_graph(frame):
-    """Update the graph with new data."""
-    acc_x_g, acc_y_g, acc_z_g, acc_magnitude_g = check_impact()
+    """Update the graph with new smoothed data."""
+    acc_x_smoothed, acc_y_smoothed, acc_z_smoothed, acc_magnitude_g = check_impact()
     elapsed_time = time.time() - start_time
 
     x_vals.append(elapsed_time)
@@ -520,7 +547,7 @@ def update_graph(frame):
 ani = animation.FuncAnimation(fig, update_graph, init_func=init_graph, interval=1000 / SAMPLE_RATE_HZ, blit=True)
 
 # -------------------------------------------------------------------------
-#                5. MAIN PROGRAM
+#                6. MAIN PROGRAM
 # -------------------------------------------------------------------------
 try:
     print("Starting helmet impact monitoring... Press Ctrl+C to stop.")
