@@ -5,11 +5,10 @@ Helmet Tap Detection with MPU6050 Sensor and Real-Time Graphing
 This program detects taps on a helmet using the MPU6050 sensor and displays real-time graphs
 of high-pass filtered acceleration values.
 
-Adjustments:
-- Increased accelerometer sensitivity to ±16g.
-- Improved high-pass filter retention for better response to taps.
-- Fixed y-axis scale for better graph visibility.
-- Debugging of raw and filtered acceleration values.
+Features:
+- Tap detection based on high-pass filtered acceleration.
+- Real-time graphing of filtered acceleration values.
+- Records and prints the top 10 maximum hits with timestamps.
 
 Press Ctrl+C to stop the program.
 """
@@ -24,8 +23,8 @@ import matplotlib.animation as animation
 # -------------------------------------------------------------------------
 #                1. USER SETTINGS
 # -------------------------------------------------------------------------
-USE_BUZZER = True                # Set to False if no buzzer is connected
-DEBUG = True                     # Set to True for detailed debug output
+USE_BUZZER = False                # Set to False if no buzzer is connected
+DEBUG = False                     # Set to True for detailed debug output
 BUZZER_PIN = 17                  # GPIO pin for buzzer
 MPU_ADDRESS = 0x68               # I2C address of the MPU6050 sensor
 TAP_THRESHOLD_G = 2.0            # Threshold in g-forces for a tap
@@ -33,7 +32,7 @@ COOLDOWN_SECONDS = 0.5           # Cooldown period after a tap detection
 SAMPLE_RATE_HZ = 100             # Data sampling rate in Hz
 HIGH_PASS_ALPHA = 0.85           # High-pass filter coefficient (0.8–0.99)
 WINDOW_SIZE = 50                 # Number of data points shown in the graph
-GRAPH_Y_LIMITS = (-5, 5)         # Fixed y-axis scale for the graph
+GRAPH_Y_LIMITS = (-20, 20)       # Fixed y-axis scale for the graph
 
 # -------------------------------------------------------------------------
 #                2. INITIALIZATION
@@ -100,6 +99,9 @@ acc_x_vals = []
 acc_y_vals = []
 acc_z_vals = []
 
+# List to store maximum hits
+max_hits = []
+
 def high_pass_filter(new_value, last_value):
     """
     Applies a high-pass filter to isolate high-frequency changes (like taps).
@@ -138,10 +140,10 @@ def detect_tap():
 
     # Get current time
     current_time = time.time()
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     # Update graph data
-    elapsed_time = time.time()
-    x_vals.append(elapsed_time)
+    x_vals.append(current_time)
     acc_x_vals.append(acc_x_filtered)
     acc_y_vals.append(acc_y_filtered)
     acc_z_vals.append(acc_z_filtered)
@@ -155,7 +157,8 @@ def detect_tap():
     # Check for a tap
     if acc_magnitude > TAP_THRESHOLD_G and (current_time - last_tap_time > COOLDOWN_SECONDS):
         last_tap_time = current_time
-        print(f"Tap detected! Magnitude: {acc_magnitude:.2f}g")
+        print(f"Tap detected! Magnitude: {acc_magnitude:.2f}g at {timestamp}")
+        max_hits.append((timestamp, acc_magnitude))
         if USE_BUZZER:
             GPIO.output(BUZZER_PIN, GPIO.HIGH)
             time.sleep(0.2)  # Short beep for tap
@@ -211,3 +214,9 @@ except KeyboardInterrupt:
 finally:
     if USE_BUZZER:
         GPIO.cleanup()
+    # Sort and print the top 10 maximum hits
+    max_hits.sort(key=lambda x: x[1], reverse=True)  # Sort by magnitude, descending
+    print("\nTop 10 Maximum Hits:")
+    print("{:<20} {}".format("Timestamp", "Magnitude (g)"))
+    for timestamp, magnitude in max_hits[:10]:
+        print(f"{timestamp:<20} {magnitude:.2f}")
