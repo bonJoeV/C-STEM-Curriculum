@@ -23,15 +23,18 @@ import matplotlib.animation as animation
 # -------------------------------------------------------------------------
 #                1. CONSTANTS AND SETTINGS
 # -------------------------------------------------------------------------
-# Constants for Titles and Labels
-GRAPH_MAIN_TITLE = "Athlete Helmet Safety Sensor"
-GRAPH_SUBTITLE = "Real-Time Concussion Detection with Technology and Faith"
-X_AXIS_LABEL = "Time (s)"
-Y_AXIS_LABEL = "Acceleration (g)"
-LEGEND_TITLE = "Legend"
-TOP_HITS_LABEL = "Top Hits:\n"
-TOP_HITS_HEADER = "{:<20} {}".format("Timestamp", "Magnitude (g)")
-TOP_HITS_FORMAT = "{timestamp:<20} {magnitude:.2f}"
+# Graph-related variables
+GRAPH_MAIN_TITLE = "Athlete Helmet Safety Sensor"  # Main title of the graph
+GRAPH_SUBTITLE = "Real-Time Concussion Detection with Technology and Faith"  # Subtitle of the graph
+X_AXIS_LABEL = "Time (s)"  # X-axis label
+Y_AXIS_LABEL = "Acceleration (g)"  # Y-axis label
+LEGEND_TITLE = "Legend"  # Legend title
+TOP_HITS_LABEL = "Top Hits:\n"  # Label for the top hits section
+GRAPH_Y_LIMITS = (-15, 15)  # Fixed Y-axis limits
+GRAPH_WINDOW_SIZE = 100  # Number of data points displayed in the graph window
+NUM_TOP_HITS = 5  # Number of top hits to display in the graph
+GRAPH_TITLE_FONT_SIZE = 14  # Font size for the main title
+GRAPH_SUBTITLE_FONT_SIZE = 10  # Font size for the subtitle
 
 # Numerical Constants
 USE_BUZZER = False
@@ -42,11 +45,8 @@ TAP_THRESHOLD_G = 2.0  # Threshold in g-forces for a tap
 COOLDOWN_SECONDS = 0.5  # Cooldown period after a tap detection
 SAMPLE_RATE_HZ = 100  # Data sampling rate in Hz
 HIGH_PASS_ALPHA = 0.85  # High-pass filter coefficient (0.8–0.99)
-WINDOW_SIZE = 100  # Number of data points shown in the graph
-GRAPH_Y_LIMITS = (-20, 20)  # Fixed y-axis scale for the graph
 CALIBRATION_SAMPLES = 100  # Number of samples for sensor calibration
 BEEP_DURATION = 0.2  # Duration of buzzer beep in seconds
-NUM_TOP_HITS = 5  # Number of top hits to display in the graph
 
 # -------------------------------------------------------------------------
 #                2. INITIALIZATION
@@ -162,10 +162,10 @@ def detect_tap():
     acc_z_vals.append(acc_z_filtered)
 
     # Trim graph data to window size
-    x_vals[:] = x_vals[-WINDOW_SIZE:]
-    acc_x_vals[:] = acc_x_vals[-WINDOW_SIZE:]
-    acc_y_vals[:] = acc_y_vals[-WINDOW_SIZE:]
-    acc_z_vals[:] = acc_z_vals[-WINDOW_SIZE:]
+    x_vals[:] = x_vals[-GRAPH_WINDOW_SIZE:]
+    acc_x_vals[:] = acc_x_vals[-GRAPH_WINDOW_SIZE:]
+    acc_y_vals[:] = acc_y_vals[-GRAPH_WINDOW_SIZE:]
+    acc_z_vals[:] = acc_z_vals[-GRAPH_WINDOW_SIZE:]
 
     # Check for a tap
     if acc_magnitude > TAP_THRESHOLD_G and (current_time - last_tap_time > COOLDOWN_SECONDS):
@@ -193,8 +193,8 @@ line_y, = ax.plot([], [], label="G-force Y", color="green")
 line_z, = ax.plot([], [], label="G-force Z", color="red")
 
 # Set titles and labels
-ax.set_title(GRAPH_MAIN_TITLE)
-fig.suptitle(GRAPH_SUBTITLE, fontsize=10)
+ax.set_title(GRAPH_MAIN_TITLE, fontsize=GRAPH_TITLE_FONT_SIZE)
+fig.suptitle(GRAPH_SUBTITLE, fontsize=GRAPH_SUBTITLE_FONT_SIZE)
 ax.set_xlabel(X_AXIS_LABEL)
 ax.set_ylabel(Y_AXIS_LABEL)
 ax.legend(title=LEGEND_TITLE, loc="upper right")
@@ -248,6 +248,6 @@ finally:
         GPIO.cleanup()
     max_hits.sort(key=lambda x: x[1], reverse=True)
     print("\nTop 10 Maximum Hits:")
-    print(TOP_HITS_HEADER)
+    print("{:<20} {}".format("Timestamp", "Magnitude (g)"))
     for timestamp, magnitude in max_hits[:10]:
-        print(TOP_HITS_FORMAT.format(timestamp=timestamp, magnitude=magnitude))
+        print(f"{timestamp:<20} {magnitude:.2f}")
