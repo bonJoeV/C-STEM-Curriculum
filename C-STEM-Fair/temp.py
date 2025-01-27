@@ -174,10 +174,10 @@ def detect_tap():
 # -------------------------------------------------------------------------
 fig, ax = plt.subplots()
 
-# Define the graph lines with legend labels
-line_x, = ax.plot([], [], label="Accel X", color="blue")
-line_y, = ax.plot([], [], label="Accel Y", color="green")
-line_z, = ax.plot([], [], label="Accel Z", color="red")
+# Define the graph lines with updated legend labels
+line_x, = ax.plot([], [], label="G-force X", color="blue")
+line_y, = ax.plot([], [], label="G-force Y", color="green")
+line_z, = ax.plot([], [], label="G-force Z", color="red")
 
 # Set the main title for the axes
 ax.set_title("Concussion Detection Sensor for Athlete Safety")
@@ -198,6 +198,15 @@ ax.set_ylim(GRAPH_Y_LIMITS)
 
 # Text box for displaying top hits
 top_hits_text = ax.text(0.02, -0.15, "", transform=ax.transAxes, fontsize=10, verticalalignment="top")
+
+# Initialize the graph with empty data
+def init_graph():
+    """Initialize the graph with empty data."""
+    line_x.set_data([], [])
+    line_y.set_data([], [])
+    line_z.set_data([], [])
+    top_hits_text.set_text("")  # Clear the top hits text box
+    return line_x, line_y, line_z, top_hits_text
 
 # Limit the x-axis to the last 10 seconds
 def update_graph(frame):
