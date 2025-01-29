@@ -95,8 +95,8 @@ If you are using a buzzer for impact alerts, wire it as follows:
 | [<img src="rPi400Pinout-3a.png" alt="Pi 400 Pinout" title="Pi 400 Pinout" width="820px">](rPi400Pinout-3a.png) |
 |:--------------------------------------------------------------------------------------------------------------:|
 | **Pi 400 Pinout**                                                                                             |
-
-#### Pi 400 Full 40-Pin GPIO Header
+<details>
+  <summary>#### Pi 400 Full 40-Pin GPIO Header</summary>
 
 Below is the complete 40-pin layout for the Pi 400 (which matches the Raspberry Pi 4 pinout).  
 Columns include **Physical Pin #**, **BCM GPIO** numbering, **Name/Function**, and a brief **Description**.
@@ -149,13 +149,15 @@ Columns include **Physical Pin #**, **BCM GPIO** numbering, **Name/Function**, a
 > - Pins 27 (ID_SD) and 28 (ID_SC) are reserved for HAT identification and should generally be left unused unless you’re designing a custom HAT with its own ID EEPROM.  
 > - Always verify power pins (3.3V and 5V) before making connections to ensure proper voltage levels for your devices.  
 > - For more detailed information, consult the [official Raspberry Pi documentation](https://www.raspberrypi.com/documentation/).
-
+</details>
 
 | [<img src="MPU6050-Module.jpg" alt="MPU6050 Module" title="MPU6050 Module" width="400px">](MPU6050-Module.jpg) | [<img src="MPU6050-Pinout.png" alt="MPU6050 Pinout" title="MPU6050 Pinout" width="400px">](MPU6050-Pinout.png) |
 |:--------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------:|
 | **MPU6050 Module**                                                                                            | **MPU6050 Pinout**                                                                                             |
 
-#### MPU6050 Pinout Configuration
+<details>
+  <summary>#### MPU6050 Pinout Configuration</summary>
+  
 | Pin Number | Pin Name              | Description                                                                  |
 |------------|-----------------------|------------------------------------------------------------------------------|
 | 1          | Vcc                   | Provides power to the module (3V-5V). Typically +5V is used.                 |
@@ -166,6 +168,7 @@ Columns include **Physical Pin #**, **BCM GPIO** numbering, **Name/Function**, a
 | 6          | Aux Serial Clock (XCL)| Can interface additional I2C modules (optional)                              |
 | 7          | AD0                   | Used to vary the address if multiple MPU6050s share the same I2C bus         |
 | 8          | Interrupt (INT)       | Signals when data is ready for the MCU to read                               |
+</details>
 
 ---
 
