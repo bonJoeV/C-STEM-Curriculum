@@ -15,15 +15,14 @@
    - [Additional Wiring Tips](#additional-wiring-tips)  
    - [Device Pinouts](#device-pinouts)  
 4. [Software Installation](#software-installation)  
-5. [Python Code for Delayed Logger](#python-code-for-delayed-logger)  
-6. [Python Code for Live Logger](#python-code-for-live-logger)  
-7. [How It Works](#how-it-works)  
-8. [Catholic Values Integration](#catholic-values-integration)  
-9. [Display Board and Presentation Script](#display-board-and-presentation-script)  
+5. [Python Code for Live Logger](#python-code-for-live-logger)  
+6. [How It Works](#how-it-works)  
+7. [Catholic Values Integration](#catholic-values-integration)  
+8. [Display Board and Presentation Script](#display-board-and-presentation-script)  
    - [Display Board Layout](#display-board-layout)  
    - [Presentation Script for JD](#presentation-script-for-jd)  
-10. [Additional Resources](#additional-resources)  
-11. [License](#license)
+9. [Additional Resources](#additional-resources)  
+10. [License](#license)
 
 ---
 
@@ -217,130 +216,6 @@ Columns include **Physical Pin #**, **BCM GPIO** numbering, **Name/Function**, a
    The MPU-6050 sensor should appear at address `0x68`.
 
 ---
-
-## Python Code for Delayed Logger
-``` python
-#!/usr/bin/env python3
-"""
-Script to monitor impacts using an MPU-6050 accelerometer on a Raspberry Pi.
-When a dangerous impact is detected, a buzzer is activated and the event is logged.
-A graph of the impact history is generated upon exit.
-
-Suggested improvements and explanatory comments are included throughout.
-"""
-
-import smbus                   # To communicate with the MPU-6050 sensor via I2C
-import time                    # To manage delays/sleep intervals
-import RPi.GPIO as GPIO        # To control GPIO pins (e.g., buzzer)
-import pandas as pd            # To handle CSV logging and data management
-import matplotlib.pyplot as plt
-from datetime import datetime  # To timestamp the logged data
-
-# ------------------------------------------------------------------------------
-#                           USER-MANIPULATED VARIABLES
-# ------------------------------------------------------------------------------
-BUZZER_PIN = 17            # GPIO pin number for the buzzer (BCM numbering)
-MPU_ADDRESS = 0x68         # I2C address for the MPU-6050 sensor
-IMPACT_THRESHOLD = 15000   # Threshold to trigger an impact alert (tune as needed)
-LOG_FILE = "impact_data.csv" # File to which impact data will be logged
-SAMPLING_INTERVAL = 0.1    # Time (seconds) between each reading of the sensor
-# ------------------------------------------------------------------------------
-
-# MPU-6050 register addresses (do not usually need to change)
-ACCEL_XOUT_H = 0x3B  # Address to read X-axis acceleration (high byte)
-PWR_MGMT_1 = 0x6B    # Address used to wake the MPU-6050
-
-# Initialize GPIO
-GPIO.setmode(GPIO.BCM)           # Use Broadcom GPIO numbering
-GPIO.setup(BUZZER_PIN, GPIO.OUT) # Set the buzzer pin as output
-
-# Initialize I2C (MPU-6050)
-bus = smbus.SMBus(1)                     # Using I2C bus 1 on Raspberry Pi
-bus.write_byte_data(MPU_ADDRESS, PWR_MGMT_1, 0)  # Wake up MPU-6050
-
-def read_raw_data(addr):
-    """
-    Read two bytes of raw data starting from the provided address on the MPU-6050.
-    Returns a 16-bit signed value (taking into account the sensor's two's complement data).
-    """
-    high = bus.read_byte_data(MPU_ADDRESS, addr)       # Read the high byte
-    low = bus.read_byte_data(MPU_ADDRESS, addr + 1)    # Read the low byte
-    value = (high << 8) | low
-
-    # Convert to signed value in case the number goes above 32767
-    if value > 32768:
-        value -= 65536
-    return value
-
-def log_data(timestamp, accel_x):
-    """
-    Appends a new row with the timestamp and X-axis acceleration to the CSV file.
-    """
-    with open(LOG_FILE, "a") as f:
-        f.write(f"{timestamp},{accel_x}\n")
-
-def generate_graph():
-    """
-    Reads data from the CSV file, converts timestamps, and plots the acceleration data
-    against time. An impact threshold line is also drawn.
-    """
-    data = pd.read_csv(LOG_FILE, names=["Timestamp", "Acceleration_X"])
-    data['Timestamp'] = pd.to_datetime(data['Timestamp'])
-
-    plt.figure(figsize=(10, 5))
-    plt.plot(data['Timestamp'], data['Acceleration_X'], label="Acceleration X")
-    plt.axhline(y=IMPACT_THRESHOLD, color="r", linestyle="--", label="Impact Threshold")
-
-    plt.title("Impact History")
-    plt.xlabel("Timestamp")
-    plt.ylabel("Acceleration (X-Axis)")
-    plt.legend()
-    plt.grid(True)
-    plt.savefig("impact_graph.png")
-    plt.show()
-
-def check_impact(threshold):
-    """
-    Reads current acceleration from MPU-6050, logs the data, and triggers buzzer alert
-    if the absolute X-axis acceleration exceeds the given threshold.
-    """
-    # Read the raw X-axis acceleration data
-    acc_x = read_raw_data(ACCEL_XOUT_H)
-    acc_total = abs(acc_x)
-
-    # Create a string timestamp for logging
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-    # Log the data to the CSV file
-    log_data(timestamp, acc_total)
-
-    # Compare to threshold and activate buzzer if above limit
-    if acc_total > threshold:
-        GPIO.output(BUZZER_PIN, GPIO.HIGH)
-        print(f"[{timestamp}] Impact detected! Value: {acc_total}")
-        time.sleep(1)
-        GPIO.output(BUZZER_PIN, GPIO.LOW)
-
-def main():
-    """
-    Main loop that continuously checks for impacts until interrupted.
-    On exit, cleans up GPIO resources and generates a graph of the recorded data.
-    """
-    print("Monitoring impacts... Press Ctrl+C to stop.")
-    try:
-        while True:
-            check_impact(IMPACT_THRESHOLD)
-            time.sleep(SAMPLING_INTERVAL)  # Wait between readings
-    except KeyboardInterrupt:
-        print("\nExiting...")
-    finally:
-        GPIO.cleanup()  # Always clean up GPIO
-        generate_graph()
-
-if __name__ == "__main__":
-    main()
-```
-
 
 ## Python Code for Live Logger
 ``` python
@@ -649,7 +524,7 @@ finally:
    - Show the prototype in action. Simulate an impact to trigger the buzzer alert.
 
 3. **Discussion**  
-   - Present how the collected data (from `impact_data.csv`) is visualized.  
+   - Present how the collected data (from `%date%_impact_data.csv`) is visualized.  
    - Emphasize patterns or trends in the data that can help prevent future injuries.
 
 ---
