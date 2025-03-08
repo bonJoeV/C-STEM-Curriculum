@@ -14,7 +14,7 @@ published: "14 Mar 2025"
 - **Topic:** Discovering Pi (π) and the Beauty of Circles  
 - **Tools:** iPad, Chromebook, Scratch Jr, Tinkercad, Measuring Tape, Paper Plates  
 - **Catholic Connection:** Circles as a reflection of God’s eternal love and intelligent design  
-- **Lesson Duration:** 50 minutes  
+- **Lesson Duration:** 40 minutes  
 
 ---
 
