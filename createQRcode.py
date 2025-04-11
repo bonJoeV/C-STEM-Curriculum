@@ -12,6 +12,7 @@
 # We need these tools to draw pictures and make a QR code (like a secret code you can scan with your phone)
 import qrcode  # This makes the QR code
 from PIL import Image, ImageDraw, ImageFont  # These help us draw pictures
+import random  # This helps us make things look different each time (like rolling a dice)
 import math  # This helps us with some math to make wavy lines
 
 # This is the secret message we want to hide in the QR code (it's a website link)
