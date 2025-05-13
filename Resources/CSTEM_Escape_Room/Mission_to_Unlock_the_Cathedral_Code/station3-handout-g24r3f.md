@@ -28,8 +28,3 @@ D1 (-), D2 (-) --- Battery (-)
 
 ## Catholic Connection
 The OR gate’s inclusivity mirrors St. Francis’ love for all of God’s creation.
-
-## Hint
-Ensure the OR gate (U2) connects to both LEDs. Check switch connections.
-
-[Circuit sketch: Battery, two switches, OR gate, two LEDs, resistors - Used as a special hint]

@@ -6,7 +6,7 @@
 *Our Lady of the Prairie Catholic School*
 
 ## Objective
-Design a 3D key in Tinkercad with a cross-shaped handle and notched blade, matching the reference image to earn the QR code.
+Design a 3D key in Tinkercad with a cross-shaped handle and notched blade to earn the QR code.
 
 ## Instructions
 - Open Tinkercad on the Chromebook (https://www.tinkercad.com/).
@@ -25,8 +25,3 @@ Design a 3D key in Tinkercad with a cross-shaped handle and notched blade, match
 
 ## Catholic Connection
 The cross on your key reflects St. Francis’ devotion to Jesus’ cross, guiding us to wisdom.
-
-## Hint
-Align notches at 8, 16, 24 mm along the blade. Use "hole" for triangular shapes.
-
-[Key sketch: Cylinder with cross top, blade with three notches - Used as a special hint]

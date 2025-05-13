@@ -42,8 +42,3 @@ Repeat 6:
 
 ## Catholic Connection
 Your hymn echoes St. Francis’ Canticle of the Sun, praising God’s creation.
-
-## Hint
-Use the MIDI chart: C4=60, E4=64, G4=67. Check rhythm timing.
-
-[Cross sketch: Simple cross (two rectangles) - Used as a special hint]

@@ -9,6 +9,7 @@
 Program your Sphero BOLT+ to navigate a Keva plank maze using its light sensor, displaying "FOUND" on the LCD when reaching the QR code.
 
 ## Instructions
+- Setup a simple maze 3x3 ft with at least 4 turns and one dark section
 - Use the Sphero Edu app on the iPad to code the BOLT+.
 - Navigate the maze (~150 cm): 50 cm forward, right 90°, 40 cm forward, left 45°, 30 cm through narrow passage (8 cm), pause in dark section, 30 cm to QR.
 - Use the light sensor to pause in the dark section (luminosity < 100 lux) for 1 second.
@@ -37,7 +38,3 @@ Stop
 ## Catholic Connection
 Like St. Francis trusting God in dark times, guide your Sphero with faith and precision.
 
-## Hint
-Check the light sensor threshold (<100 lux) or try manual distances if stuck.
-
-[Simple maze sketch: 3x3 ft with 4 turns, dark section, QR star - Used as a special hint]
