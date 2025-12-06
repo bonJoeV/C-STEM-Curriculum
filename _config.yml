@@ -1,16 +1,16 @@
 # _config.yml
 
-title: "C-STEM Curriculum"
-description: "A curriculum repository for C-STEM education."
+title: "C-STEM Has Moved to C-STREAM"
+description: "This project has moved to bonjoev.github.io/C-STREAM"
 markdown: kramdown
 
 # Specify Kramdown settings for Markdown processing
 kramdown:
-  input: GFM # Use GitHub Flavored Markdown (GFM) for compatibility
-  auto_ids: true # Automatically generate IDs for headers
+  input: GFM
+  auto_ids: true
 
-# GitHub Pages Theme
-remote_theme: pages-themes/leap-day@v0.2.0
+# GitHub Pages Theme - using minimal for clean redirect page
+remote_theme: pages-themes/minimal@v0.2.0
 
 # Site URL
 url: "https://bonJoeV.github.io"
