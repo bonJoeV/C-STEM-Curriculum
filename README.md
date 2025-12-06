@@ -2,8 +2,26 @@
 layout: default
 title: "C-STEM (Catholic STEM) Program"
 ---
+
+<div align="center" style="background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%); padding: 30px; border-radius: 10px; margin-bottom: 30px;">
+
+# 🚀 This Project Has Moved!
+
+### The **C-STREAM Framework** is now in its own repository
+
+<a href="https://bonjoev.github.io/C-STREAM/" style="display: inline-block; background: #4CAF50; color: white; padding: 15px 40px; font-size: 18px; text-decoration: none; border-radius: 8px; margin: 10px;">📚 Visit C-STREAM Website</a>
+
+<a href="https://github.com/bonJoeV/C-STREAM" style="display: inline-block; background: #333; color: white; padding: 15px 40px; font-size: 18px; text-decoration: none; border-radius: 8px; margin: 10px;">💻 View GitHub Repository</a>
+
+**C-STREAM** = **C**atholic · **S**cience · **T**echnology · **R**eligion · **E**ngineering · **A**rts · **M**ath
+
+</div>
+
+---
+
 # C-STEM (Catholic STEM) Program
 
+> ⚠️ **Note:** The C-STREAM Framework (templates, rubrics, year planner, and assessment tools) has moved to [github.com/bonJoeV/C-STREAM](https://github.com/bonJoeV/C-STREAM). This repository now contains legacy lesson plans and curriculum resources.
 
 <div style="display: flex; align-items: flex-start;">
   <img src="logo.jpg" alt="Faith and Technology" width="150" style="margin-right: 15px;">
@@ -50,6 +68,22 @@ Our lesson plans are organized by grade group and provide detailed guidance for 
 The **Big Bang Catholic STEM Fair** is a wonderful opportunity for students to showcase their science and engineering projects, demonstrating how faith and science can work together to solve real-world problems. For more information, you can read the full guide by following the link below:
 
 [Big Bang Catholic STEM Fair Information](./Resources/Big_Bang_Catholic_STEM_Fair.md)
+
+## 🌟 C-STREAM Framework
+
+**NEW!** The **C-STREAM Framework** (Catholic Science, Technology, Religion, Engineering, Arts, and Math) is now available in its own repository with comprehensive planning tools, templates, and rubrics:
+
+[![C-STREAM](https://img.shields.io/badge/C--STREAM-Framework-blue?style=for-the-badge)](https://bonjoev.github.io/C-STREAM/)
+
+- 📅 34-Week Year Planner
+- 📝 Lesson Plan Templates
+- 📊 Faith-Reason Integration Rubrics
+- 👨‍🔬 Catholic Scientists Heritage Guide
+- 🆘 Substitute Teacher Ready Plans
+
+**[→ Visit C-STREAM Framework](https://bonjoev.github.io/C-STREAM/)** | **[GitHub Repo](https://github.com/bonJoeV/C-STREAM)**
+
+---
 
 ## Resources
 

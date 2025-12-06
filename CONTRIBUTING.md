@@ -1,11 +1,15 @@
 ---
 layout: default
-title: "COntributing to the C-STEM (Catholic STEM) Program"
+title: "Contributing to the C-STEM (Catholic STEM) Program"
 ---
 
 # Contributing to the C-STEM (Catholic STEM) Program
 
-Thank you for your interest in contributing to the C-STEM Program at **Our Lady of the Prairie Catholic School**! We welcome your input, whether it’s submitting new lesson plans, improving existing resources, or helping us better integrate Catholic values into our STEM curriculum.
+Thank you for your interest in contributing to the C-STEM Program at **Our Lady of the Prairie Catholic School**! We welcome your input, whether it's submitting new lesson plans, improving existing resources, or helping us better integrate Catholic values into our STEM curriculum.
+
+> **📢 Looking for C-STREAM?** The C-STREAM Framework (templates, rubrics, year planner) has moved to its own repository:
+> - **Website:** [bonjoev.github.io/C-STREAM](https://bonjoev.github.io/C-STREAM/)
+> - **Contributing:** [C-STREAM Contributing Guide](https://bonjoev.github.io/C-STREAM/CONTRIBUTING.html)
 
 ## How to Contribute
 
